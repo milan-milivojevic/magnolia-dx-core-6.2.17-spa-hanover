@@ -23,7 +23,7 @@ export default function TemplateColorFilter({ onUpdateSelectedColor, selectedCol
         setSelectedOption(correspondingSelected || null);
       })
       .catch((error) => {
-        console.error("Greška prilikom preuzimanja podataka:", error);
+        console.error("Error fetching data:", error);
       });
   }, [selectedColor]);
 

@@ -58,7 +58,7 @@ function RedirectPage ({
               setPath(foundNode['@path']);
             }
           } catch (err) {
-            console.error("Greška prilikom dohvata navigacije:", err);
+            console.error("Error fetching navigation:", err);
           }
         }
 

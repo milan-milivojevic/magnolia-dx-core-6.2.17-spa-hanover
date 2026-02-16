@@ -205,7 +205,7 @@ function ImageTeaser ({
           setAclValue(response); 
         })
         .catch((error) => {
-          console.error("Greška prilikom izvršavanja aclCheck:", error);
+          console.error("Error executing aclCheck:", error);
           setAclValue(false);
         });
     } else setAclValue(true);
@@ -274,7 +274,7 @@ function ImageTeaser ({
           setResolvedPath(page);
         }
       } catch (e) {
-        console.error('Greška prilikom dohvata navigacije ili kod traženja čvora:', e);
+        console.error('Error fetching navigation or searching for node:', e);
         setResolvedPath(page);
       }
     }

@@ -202,7 +202,7 @@ function TextLink ({
           setResolvedPath(page);
         }
       } catch (e) {
-        console.error('Greška prilikom dohvata navigacije ili kod traženja čvora:', e);
+        console.error('Error fetching navigation or searching for node:', e);
         setResolvedPath(page);
       }
     }
