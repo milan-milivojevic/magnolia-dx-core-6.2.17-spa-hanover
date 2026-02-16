@@ -3,8 +3,6 @@
     z-index: 999999;
 }
 
-/*Close button */
-
 .closeButtonWrapper {
     border-bottom: 1px solid #e2e8f0;
     line-height: 0;
@@ -26,8 +24,6 @@
     width: 24px;
     height: 24px;
 }
-
-/*Details Modal*/
 
 .detailsModalWrapper {
     width: calc(100% - 100px);
@@ -90,29 +86,22 @@ a.linkToW2P {
 }
 
 .detailsModalOptions ::-webkit-scrollbar {
-    width: 8px;  /* width of the entire scrollbar */
+    width: 8px;  
   }
   
-  /* This styles the draggable scrolling handle */
   .detailsModalOptions ::-webkit-scrollbar-thumb {
-    background-color: darkgrey;  /* color of the scroll thumb */
-    border-radius: 4px;          /* roundness of the scroll thumb */
-    background-clip: content-box; /* this allows the thumb to be styled with borders or padding */
+    background-color: darkgrey;  
+    border-radius: 4px;          
+    background-clip: content-box; 
   }
   
-  /* This styles the buttons on the scrollbar (up and down arrows, usually not present on modern scrollbars) */
   .detailsModalOptions ::-webkit-scrollbar-button {
-    display: none;  /* hides them */
+    display: none;  
   }
   
-  /* Style the hover state of the scroll thumb */
   .detailsModalOptions ::-webkit-scrollbar-thumb:hover {
     background-color: grey;
   }
-
-/* .detailsModalOptions .assetCard {    
-    box-shadow: 0 1px 1px rgba(9,30,66,.5), 0 0 1px 1px rgba(9,30,66,.25);
-} */
 
 .detailsModal .detailsModalOptions .assetPreview {
     height: 100%;
@@ -120,8 +109,6 @@ a.linkToW2P {
     display: flex;
     align-items: center;
 }
-
-
 
 .detailOptions .closeButtonWrapper {
     justify-content: space-between;
@@ -215,8 +202,6 @@ a.linkToW2P {
     background-color: white;
 }
 
-
-
 .assetImagePages button.next {
     padding: 6px 10px 6px 12px;
 }
@@ -301,8 +286,6 @@ span.pagingStatus {
     margin: 0 auto;
     min-width: fit-content;
 }
-
-/*Download Modal*/
 
 .downloadModalWrapper,
 .emailModalWrapper {
@@ -422,8 +405,6 @@ span.pagingStatus {
 .downloadModal .downloadButton button.enabled:hover {
     border-color: #2d3748;
 }
-
-/*Email Modal */
 
 .emailModalForm label {
     display: block;

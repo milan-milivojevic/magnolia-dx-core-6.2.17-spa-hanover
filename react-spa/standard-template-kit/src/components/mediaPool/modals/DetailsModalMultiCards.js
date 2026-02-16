@@ -14,7 +14,6 @@ import { getAPIBase } from '../../../helpers/AppHelpers';
 import { AiOutlineClose } from "react-icons/ai";
 import { FiDownload, FiLink, FiMail } from "react-icons/fi";
 
-
 const DetailsModal = (props) => {
 
   const {
@@ -90,43 +89,12 @@ const DetailsModal = (props) => {
       })
   };
 
-  // const toggleDownloadModal = () => {
-  //   if (license) {
-  //     setShowDownloadModal(!showDownloadModal);
-  //     if (showDownloadModal) {
-  //       setShowAlert(true);
-  //       setMesage("Download Started");
-  //       setTimeout(() => {
-  //         setShowAlert(false);
-  //       }, 2500);
-  //     }
-  //   } else {
-  //     downloadFile();
-  //     setShowAlert(true);
-  //     setMesage("Download Started");
-  //     setTimeout(() => {
-  //       setShowAlert(false);
-  //     }, 2500);
-  //   }    
-  // }
-
   const toggleDownloadModal = () => {
     setShowDownloadModal(!showDownloadModal);
   }
   const closeDownloadModal = () => {
     setShowDownloadModal(false);
   }
-
-  // const toggleEmailModal = () => {
-  //   setShowEmailModal(!showEmailModal);
-  //   if (showEmailModal) {
-  //     setShowAlert(true);
-  //     setMesage("Email Sent");
-  //     setTimeout(() => {
-  //       setShowAlert(false);
-  //     }, 2500);
-  //   }
-  // };
 
   const toggleEmailModal = () => {
     setShowEmailModal(!showEmailModal);
@@ -160,12 +128,10 @@ const DetailsModal = (props) => {
     getRelatedAssets(assetId);
   }, []);
 
-  // Function to stop scrolling
   const stopScrolling = () => {
     document.body.style.overflow = 'hidden';
   };
 
-  // Function to enable scrolling
   const allowScrolling = () => {
     document.body.style.overflow = 'unset';
   };
@@ -177,7 +143,6 @@ const DetailsModal = (props) => {
       allowScrolling();
     }
 
-    // Cleanup function to set things back to normal when the component is unmounted or modal closed
     return () => allowScrolling();
   }, [isOpen]);
 

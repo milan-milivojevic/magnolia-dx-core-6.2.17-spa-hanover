@@ -26,14 +26,10 @@ export default function CategoriesFilter({
 
   useEffect(() => {
     (async () => {
-      // 1) Kloniraj payload
       const payload = JSON.parse(JSON.stringify(categoriesPayload));
 
-      // 2) Ubaci query
       payload.criteria.subs[0].value = query;
 
-      // 3) Ubaci ostale filtere (osim categories)
-      // suffixes -> customAttribute_28.id
       if (selectedSuffixes.length) {
         payload.criteria.subs.push({
           "@type": "in",
@@ -42,7 +38,6 @@ export default function CategoriesFilter({
           any: true
         });
       }
-      // tags -> keywords_multi
       if (selectedTags.length) {
         payload.criteria.subs.push({
           "@type": "in",
@@ -51,7 +46,6 @@ export default function CategoriesFilter({
           any: true
         });
       }
-      // business line -> customAttribute_27.id
       if (selectedKeywords.length) {
         payload.criteria.subs.push({
           "@type": "in",
@@ -60,9 +54,7 @@ export default function CategoriesFilter({
           any: true
         });
       }
-      // (ako imaš VdbFilter, tu ubaci i njega)
 
-      // 4) Pozovi direktno v1.1/search sa payloadom
       const response = await fetch(`${baseUrl}/rest/mp/v1.1/search`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -70,12 +62,10 @@ export default function CategoriesFilter({
       });
       const data = await response.json();
 
-      // 5) Izvuci counts
       const countsMap = new Map();
       const groups = data.aggregations.categories.aggs.id.subGroups;
       groups.forEach(g => countsMap.set(+g.group, g.count));
 
-      // 6) Rekurzivno mapiranje i sortiranje (isto kao pre)
       const mapItems = items => items
         .filter(i => !i.disabled)
         .map(i => {
@@ -102,7 +92,6 @@ export default function CategoriesFilter({
         })
         .map(i => i.children ? { ...i, children: sortItems(i.children) } : i);
 
-      // 7) fetch original theme tree
       const resp = await fetch(`${process.env.REACT_APP_MGNL_HOST_NEW}/rest/mp/v1.2/themes`);
       const themesData = await resp.json();
 
@@ -117,7 +106,6 @@ export default function CategoriesFilter({
     selectedKeywords
   ]);
 
-  /* Otvaranje / zatvaranje filtera */
   const extractCheckStates = (items) => items.map(i => ({
     isChecked: i.isChecked,
     children: i.children ? extractCheckStates(i.children) : null
@@ -130,7 +118,6 @@ export default function CategoriesFilter({
     setIsFilterOpen(!isFilterOpen);
   };
 
-  /* Dropdown toggles */
   const toggleParentDropdown = (parentId) => setParents(p => p.map(par => par.id === parentId ? { ...par, isParentOpen: !par.isParentOpen } : par));
   const toggleChildDropdown = (parentId, childId) => setParents(p => p.map(par => par.id === parentId ? {
     ...par,
@@ -144,7 +131,6 @@ export default function CategoriesFilter({
     } : ch)
   } : par));
 
-  /* Checkbox toggles (iste funkcije, samo ne diramo logiku) */
   const toggleParentCheckbox = (parentId) => setParents(prev => prev.map(par => {
     if (par.id === parentId) {
       if (par.children) {
@@ -231,7 +217,6 @@ export default function CategoriesFilter({
     return par;
   }));
 
-  /* Apply / Clear / Cancel */
   const applySelection = () => {
     const values = [];
     const traverse = (items) => {
@@ -267,7 +252,6 @@ export default function CategoriesFilter({
     setIsFilterOpen(false);
   };
 
-  /* Render */
   return (
     <div className="searchFilter categories">
       <Button className="filterButton" onClick={toggleFilter}>Categories</Button>

@@ -1,4 +1,3 @@
-/* Accordion List Component */
 
 .accordionList {
   display: flex;
@@ -34,8 +33,6 @@
   display: none;
 }
 
-/* Tabs Group Component */
-
 .tabsGroup {
   max-width: 100%;
 }
@@ -49,7 +46,6 @@
 .tabTitles .tab {
   flex: 1 1 0;
   text-transform: uppercase;
-  /* width: 200px; */
 }
 .tabContent {
   display: none;
@@ -57,8 +53,6 @@
 .tabContent.tabActiveContent {
   display: block;
 }
-
-/* Image Gallery Component */
 
 .imageGalleryComponent {
   display: grid;
@@ -122,13 +116,10 @@
   grid-column: 1 / 3;
 }
 
-/* List Components */
-
 .listComponents {
   display: grid;
   gap: inherit;
 }
-/* v-webkit is class from body tag only in edit mode */
 .editMode .listComponents :first-child,
 .editMode .listComponents :last-child {
   grid-column: 1 / -1;
@@ -178,5 +169,4 @@
 .listComponents.layout6 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
 

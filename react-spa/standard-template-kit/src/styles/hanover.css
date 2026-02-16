@@ -1,18 +1,9 @@
-/* .pageContainer {
-    top: 167px;
-    min-height: calc(100vh - 167px);
-} */
-/* header {
-    height: 112px;
-} */
 
 .staticSearch .headerSearch input.searchInput {
     width: 250px;
   }
 
-
 .staticSearch {
-    /* align-items: center; */
     padding: 100px 40px;
 }
 
@@ -48,13 +39,6 @@
     padding: 0 10px;
 }
 
-/* .topNav {
-    height: 55px;
-    top: 112px;
-} */
-/* .leftHandNav {
-    min-height: calc(100vh - 311px);
-} */
 .leftHandNav > .menus {
   height: fit-content;
 }
@@ -62,24 +46,6 @@
 .leftHandNav li button a {
     width: 242px;
 }
-
-/* Privremeno resenje za LHN internal lvl2 navigation */
-
-/* li.level-1.active > button > a {
-    color: #0e7bba;
-}
-li.level-2.active > button > a {
-    color: #fff;
-}
-li.level-2.active > button > a:hover {
-    color: #0e7bba;
-} */
-
-/* .rightMainContent {
-    min-height: calc(100vh - 311px);
-} */
-
-
 
 .logoSticky {
   position: sticky;
@@ -90,8 +56,6 @@ li.level-2.active > button > a:hover {
 .editMode .logoSticky {
   position: unset;
 }
-
-/* Corporate Icons */
 
 .corporateIcons .divider {
     border-bottom: 5px solid rgb(154, 154, 156);
@@ -114,7 +78,6 @@ li.level-2.active > button > a:hover {
     font-weight: normal;
 }
 
-/* Spinner.css */
 .loadingSpinner {
     position: absolute;
     top: 50%;

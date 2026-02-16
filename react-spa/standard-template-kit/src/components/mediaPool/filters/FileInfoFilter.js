@@ -26,19 +26,15 @@ export default function FileInfoFilter({
 
   useEffect(() => {
     (async () => {
-      // 1) Skinemo listu svih suffix opcija
       const respTree = await fetch(
         `${baseUrl}/rest/mp/v1.0/asset-attributes/28/trees`
       );
       const suffixesData = await respTree.json();
 
-      // 2) Kloniramo static payload
       const payload = JSON.parse(JSON.stringify(fileInfoFilterPayload));
 
-      // 3) Ubacimo query (match criteria)
       payload.criteria.subs[0].value = query;
 
-      // 4) Ubacimo ostale filtere, osim suffixes
       if (selectedCategories.length) {
         payload.criteria.subs.push({
           "@type": "in",
@@ -64,7 +60,6 @@ export default function FileInfoFilter({
         });
       }
 
-      // 5) Pošaljemo agragacijski zahtjev
       const respSearch = await fetch(
         `${baseUrl}/rest/mp/v1.1/search`,
         {
@@ -75,7 +70,6 @@ export default function FileInfoFilter({
       );
       const data = await respSearch.json();
 
-      // 6) Izvlačimo subGroups iz customAttribute_28
       const groups = data.aggregations
                          .customAttribute_28
                          .aggs
@@ -86,7 +80,6 @@ export default function FileInfoFilter({
         countsMap.set(parseInt(item.group, 10), item.count);
       });
 
-      // 7) Mapiramo suffixesData na stanje sa count i isChecked
       const mapped = suffixesData.map(item => ({
         id: item.id,
         label: item.label.EN,
@@ -102,7 +95,6 @@ export default function FileInfoFilter({
     selectedCategories,
     selectedTags,
     selectedKeywords,
-    // ne stavljamo selectedSuffixes, da bismo računali count-ove ZA suffixes
   ]);
 
   const toggleFilter = () => {

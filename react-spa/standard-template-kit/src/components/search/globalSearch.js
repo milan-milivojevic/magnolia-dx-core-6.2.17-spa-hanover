@@ -85,15 +85,9 @@ function GlobalSearch({
 
         <div className="globalSearchHeader">
           <div className="globalSearchButtons">
-            {/* <button className={currentView === 'mp' ? "active" : null} onClick={() => setCurrentView('mp')}>
-              MP Search
-            </button> */}
-            {/* <button className={currentView === 'w2p' ? "active" : null} onClick={() => setCurrentView('w2p')}>
-              W2P Search
-            </button> */}
-            {/* <button className={currentView === 'static' ? "active" : null} onClick={() => setCurrentView('static')}>
-              Content Search
-            </button> */}
+            {}
+            {}
+            {}
             {portalContainer && createPortal(searchInput, portalContainer)}
           </div>
           

@@ -4,19 +4,16 @@ import noImage from './no_image.jpg';
 
 const AssetPreview = ({ assetId, assetVersion, assetPageCount, assetResourceType, isModal }) => {
 
-  /* Defining state variables */
   const [currentPage, setCurrentPage] = useState(1);
   const [previewImageStatus, setPreviewImageStatus] = useState("large");
   const [imageStatus, setImageStatus] = useState("large");
 
-  /* Handling change of image preview based on number of asset pages */
   const handlePageChange = (nextPage) => {
     if (nextPage >= 1 && nextPage <= assetPageCount) {
       setCurrentPage(nextPage);
     }
   };
 
-  /* Handling error when there is no image for defined size or when there is no image at all */
   const handleImageError = (e) => {
     if (imageStatus === "large") {
       e.target.src = `/rest/mp/v1.0/previews/middle/asset/${assetId}/version/${assetVersion}`;
@@ -27,7 +24,6 @@ const AssetPreview = ({ assetId, assetVersion, assetPageCount, assetResourceType
     }
   };
 
-  /* Handling error when there is no image for defined size or when there is no image at all, for assets with multiple pages */
   const handlePageImageError = (e) => {
     if (previewImageStatus === "large") {
       e.target.src = `/rest/mp/v1.0/previews/middle/asset/${assetId}/version/${assetVersion}/watermark/false/page/${currentPage}`;

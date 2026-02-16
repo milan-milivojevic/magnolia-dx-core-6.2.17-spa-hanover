@@ -13,7 +13,6 @@ export default function VdbFilter({onUpdateSelectedVdbs, selectedVdbs}) {
 
   const baseUrl = process.env.REACT_APP_MGNL_HOST_NEW; 
 
-  /* Dohvatanje Filtera */
   useEffect(() => {
     fetch(`${baseUrl}/rest/mp/v1.1/virtual-databases`)
       .then((response) => response.json())
@@ -63,7 +62,7 @@ export default function VdbFilter({onUpdateSelectedVdbs, selectedVdbs}) {
     const values = [];
     
     parents.forEach(parent => {      
-      if (parent.isChecked) { // Ako nisu svi childovi selektovani, dodajemo vrednosti childova pojedinačno
+      if (parent.isChecked) {
         values.push(parent.value);
       }
     });
@@ -72,15 +71,12 @@ export default function VdbFilter({onUpdateSelectedVdbs, selectedVdbs}) {
     setIsFilterOpen(false);
   };
 
-  /* Restartovanje stanja svih Checkboxova */
-
   const clearAll = () => {
     setParents(initialParents.map(parent => {     
       parent.isChecked = false;
       return parent;
     }));
   };
-
 
   const cancel = () => {
     const resetParents = parents.map((parent, index) => {

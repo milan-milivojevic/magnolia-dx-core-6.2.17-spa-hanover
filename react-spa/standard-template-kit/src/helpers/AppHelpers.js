@@ -23,7 +23,6 @@ export function getAPIBase() {
     } else {
         M = process.env.REACT_APP_MGNL_BASE_PUBLIC;
     }
-    // let API_BASE = process.env.REACT_APP_MGNL_HOST + M;
     return M;
 }
 

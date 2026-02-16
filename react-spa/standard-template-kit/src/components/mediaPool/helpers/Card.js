@@ -15,10 +15,8 @@ import moment from "moment";
 
 const Card = ({ fields, buttonProps }) => {
 
-  /* ButtonProps Decomposition */
   const { downloadButton, emailButton, detailsButton, copyLinkButton, shopButton, b2bButton } = buttonProps;
 
-  /* Setting the "state" for each button based on the state of the checkbox in the component's dialog */
   const isDownloadButton = downloadButton === "true";
   const isEmailButton = emailButton === "true";
   const isDetailsButton = detailsButton === "true";
@@ -26,7 +24,6 @@ const Card = ({ fields, buttonProps }) => {
   const isShopButton = shopButton === "true";
   const isB2bButton = b2bButton === "true";
 
-  /* Defining state variables */
   const [showDetailsModal, setShowDetailsModal] = useState(false);
   const [showDownloadModal, setShowDownloadModal] = useState(false);
   const [showEmailModal, setShowEmailModal] = useState(false);
@@ -36,8 +33,6 @@ const Card = ({ fields, buttonProps }) => {
   const [showAlert, setShowAlert] = useState(false);
   const [message, setMesage] = useState("");  
   
-  /* Creating variables based on "fields" prop obtained from API call in the parent component */
-  // Variables for developers (API Calls, Downloads, Mail, etc.)
   const assetId = fields.id.value;
   const assetVersionCount = fields.versionCount?.value - 1;
   const assetVersion = fields.versions?.items[assetVersionCount].fields.versionNumber.value;
@@ -47,7 +42,6 @@ const Card = ({ fields, buttonProps }) => {
   const language = 'en';
   const download_version = 'FIXED';
   
-  /* Variables for displaying data */
   var title = fields.title.value;
   const description = fields.itemDescription?.value || null;
   const assetFileName = fields.currentVersion.fields.fileResource.fields.fileName.value;
@@ -67,7 +61,6 @@ const Card = ({ fields, buttonProps }) => {
   const shopId = fields.customAttribute_44?.fields.value.value.EN || null;
   const templateId = fields.customAttribute_45?.fields.value.value.EN || null;  
 
-  /* Transforming variables into useful values */
   const regex = /\[(.*?)\]\((.*?)\)/;
 
   const fbMatch = faceboookField ? faceboookField.match(regex) : null;
@@ -83,13 +76,7 @@ const Card = ({ fields, buttonProps }) => {
   uploadDate = moment(uploadDate).utc().format('MM/DD/YYYY');
   fileFormat = fileFormat.toUpperCase();
   keywords = keywords?.join(', ');
-  // title = title // This is optional, some clients may require default titles
-  //   .replace(/-/g, '_') // Replace dashes with underscores
-  //   .split('_') // Split the string by underscores into an array
-  //   .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize each word
-  //   .join(' '); // Join the words back together with spaces
 
-  /* Object for passing data to Details Modals */  
   const dataProps = {
     assetId,
     assetVersion,
@@ -127,7 +114,6 @@ const Card = ({ fields, buttonProps }) => {
     isB2bButton
   };
   
-  /* Add/remove image hover effect */
   const imageMouseEnter = () => {
     setIsImgHovered(true);
   };
@@ -135,7 +121,6 @@ const Card = ({ fields, buttonProps }) => {
     setIsImgHovered(false);
   };
 
-  /* Open/Close Details Modal */
   const toggleDetailsModal = () => {
     setShowDetailsModal(!showDetailsModal);
     setIsImgHovered(false);
@@ -151,12 +136,10 @@ const Card = ({ fields, buttonProps }) => {
     setIsImgHovered(false);
   }
   
-  /* Checking device type */
   const isMobileDevice = () => {
     return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   };
 
-  /* Trigger download based on link location */
   const openLink = (download_url, location) => {
     const a = document.createElement('a');
     a.setAttribute('href', download_url);
@@ -165,16 +148,14 @@ const Card = ({ fields, buttonProps }) => {
   };
 
   const downloadFile = async () => {
-    // 1. Pratimo event u Matomo – pre nego što stvarno otvorimo link
     window._paq = window._paq || [];
     window._paq.push([
       'trackEvent',
-      'Download',          // Kategorija eventa
-      'downloadFile',      // Akcija eventa
-      assetId              // Label eventa (opciono)
+      'Download',
+      'downloadFile',
+      assetId
     ]);
   
-    // 2. Onda radimo postojeću logiku
     const data = await downloadFileDirect(assetId, selectedOption, download_version, language, null);
   
     if (typeof data[0].download_url !== 'undefined') {
@@ -186,34 +167,6 @@ const Card = ({ fields, buttonProps }) => {
     }
   };
   
-
-  // /* Open/Close Download Modal if license exist or Direct asset download if no license */
-  // const toggleDownloadModal = () => {
-  //   if (license) {
-  //     setShowDownloadModal(!showDownloadModal);
-  //     if (showDownloadModal) {
-  //       setShowAlert(true);
-  //       setMesage("Download Started");
-  //       setTimeout(() => {
-  //         setShowAlert(false);
-  //       }, 2500);
-  //     }
-  //   } else {
-  //     downloadFile();
-  //     setIsImgHovered(false);
-  //     setShowAlert(true);
-  //     setMesage("Download Started");
-  //     setTimeout(() => {
-  //       setShowAlert(false);
-  //     }, 2500);
-  //   }    
-  // }
-
-  // /* For closing Download Modal without alert */
-  // const closeDownloadModal = () => {
-  //   setShowDownloadModal(false);
-  //   setIsImgHovered(false);
-  // }
 
   const toggleDownloadModal = () => {
     setShowDownloadModal(!showDownloadModal);    
@@ -232,7 +185,6 @@ const Card = ({ fields, buttonProps }) => {
     }, 2500);
   }
 
-  /* Open/Close Email Modal */
   const toggleEmailModal = () => {
     setShowEmailModal(!showEmailModal);
     setIsImgHovered(false);
@@ -245,17 +197,14 @@ const Card = ({ fields, buttonProps }) => {
     }
   };
 
-  /* For closing Email Modal without alert */
   const closeEmailModal = () => {
     setShowEmailModal(false);
     setIsImgHovered(false);
   }
 
-  /*Copy link variables*/
   const baseURL = process.env.REACT_APP_MGNL_HOST_NEW; 
   const apiBase = getAPIBase();
 
-  /* Copy link to asset - Internal (MP Search) */
   const internalLinkPath = `${baseURL}${apiBase}/Home/Search-Pages/MP-Search?query=${assetId}`;
 
   const copyInternalLink = () => {
@@ -269,7 +218,6 @@ const Card = ({ fields, buttonProps }) => {
       })
   };
 
-  /* Copy link to asset - External (MP Module) */
   const exernalLinkPath = `${baseURL}${apiBase}/web/mp/asset-details?assetId=${assetId}&skipHeader=true`;
 
   const copyExternalLink = () => {
@@ -317,16 +265,10 @@ const Card = ({ fields, buttonProps }) => {
             {linkedInLinkName}
           </a>
         }
-        {/* <p><span>Asset Contact: </span>{owner}</p> */}
-        {/* <p><span>File Size:</span>{fileSize}</p>
-        <p><span>VDB:</span>{vdb}</p>
-        <p><span>Upload Date:</span>{uploadDate}</p> */}
-        {/* <p><span>Last change: </span>{lastUpdatedTime}</p>             */}
-        {/* {keywords && 
-          <ul className='assetKeywords'>
-            {keywords.map(keyword => <li className='Keyword ID' key={keyword}>{keyword}</li>)}
-          </ul>
-        } */}
+        {}
+        {}
+        {}
+        {}
         <div className='fileFormatWrapper'>
           <div className='fileFormat'>{fileFormat}</div>        
         </div>   

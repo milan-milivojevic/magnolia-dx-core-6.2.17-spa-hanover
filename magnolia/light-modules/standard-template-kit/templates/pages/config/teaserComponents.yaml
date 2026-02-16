@@ -1,7 +1,5 @@
 title: Configuration Page (Teaser Components)
 
-# baseUrl: http://localhost:3000
-# routeTemplate: '/{language}{{@path}}'
 templateScript: /standard-template-kit/webresources/build/index.html
 
 dialog: standard-template-kit:pages/config/teaserComponents
@@ -31,5 +29,4 @@ areas:
       carouselTeaserConfig:
         id: standard-template-kit:components/advanced/config/carouselTeaserConfig
   
-
 

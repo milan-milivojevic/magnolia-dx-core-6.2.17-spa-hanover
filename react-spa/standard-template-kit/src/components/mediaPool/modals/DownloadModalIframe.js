@@ -3,23 +3,18 @@ import { AiOutlineClose } from "react-icons/ai";
 import Modal from 'react-modal';
 
 const DownloadModalIframe = ({ assetId, isOpen, onClose }) => {
-  // 1. Create a ref to the <iframe> so we can inspect its content once it loads
   const iframeRef = useRef(null);
 
-  // 2. When the iframe finishes loading, grab its document:
   const handleIframeLoad = useCallback(() => {
     const iframeElem = iframeRef.current;
     if (!iframeElem) return;
 
-    // Try/catch in case the iframe content is ever cross-origin
     try {
       const doc = iframeElem.contentDocument || iframeElem.contentWindow.document;
       if (!doc) return;
 
-      // 3a. Override styles on #bmPopupFooter
       const footer = doc.getElementById('bmPopupFooter');
       if (footer) {
-        // Example: change background and padding. Adjust as needed.
         footer.style.backgroundColor = '#fff';
         footer.style.borderTop = 'none';
         footer.style.height = '40px';
@@ -57,12 +52,9 @@ const DownloadModalIframe = ({ assetId, isOpen, onClose }) => {
       `;
       doc.head.appendChild(styleTag);
 
-      // 3b. Hijack the “Cancel” button inside the iframe so it runs onClose()
       const cancelBtn = doc.getElementById('cancelButton');
       if (cancelBtn) {
-        // Remove any existing onclick to avoid duplicate behavior
         cancelBtn.onclick = null;
-        // Attach our own listener
         cancelBtn.addEventListener('click', (e) => {
           e.preventDefault();
           onClose();
@@ -88,7 +80,7 @@ const DownloadModalIframe = ({ assetId, isOpen, onClose }) => {
         </div>
 
         <div className="detailsModal w2p">
-          {/* 1. Attach the ref and the onLoad handler */}
+          {}
           <iframe
             ref={iframeRef}
             className="detailsIframe"

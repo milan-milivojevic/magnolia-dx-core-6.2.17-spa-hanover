@@ -66,8 +66,6 @@ function TabsConfig ({
 		navigator.clipboard.writeText(copyText);
 	};
 
-	/* Setting active tab */
-
 	const [activeTab, setActiveTab] = useState(() => {
 		if (window.sessionStorage.getItem('activeTab') !== null || 'undefined') {		
 			return (JSON.parse(window.sessionStorage.getItem("activeTab")) || 1 );
@@ -88,8 +86,6 @@ function TabsConfig ({
 		setActiveTab(JSON.parse(window.sessionStorage.getItem("activeTab")));
 	}, []);
 
-	/* Filtering titles from multi field to get active titles array */
-
 	const titles = [];
 	for (let i = 0; i <= 10; i++) {
 		titles.push(multi[`multi${i}`]?.title);
@@ -97,8 +93,6 @@ function TabsConfig ({
 	const activeTitles = titles.filter((item) => {
 		return item !== undefined;
 	})
-
-	/* Filtering tabsComponents to get active tabsComponents array */
 
 	const tabsComponents = [tabsComponents1, tabsComponents2, tabsComponents3, tabsComponents4, tabsComponents5, tabsComponents6, tabsComponents7, tabsComponents8, tabsComponents9, tabsComponents10];
 	const activeTabsComponents = [];
@@ -109,11 +103,7 @@ function TabsConfig ({
 		}
 	})
 
-	/* Defining Headline Level*/
-
 	const HeadlineLevel = titleLevel || "h3";
-
-	/* Color & Hover Color Variables */
 
 	const defTabBgColor = tabsDefaultBackColor || null;
 	const hovTabBgColor = tabsHoverBackColor || defTabBgColor;
@@ -122,8 +112,6 @@ function TabsConfig ({
 	const defTitleColor = titleColor || null;
 	const hovTitleColor = titleHoverColor || defTitleColor;
 	const activeTitleColor = titleActiveColor || defTitleColor;
-
-	/* Styling variables */
 
 	const tabsGroupStyles = {
 		width: groupWidth || null,
@@ -195,6 +183,5 @@ function TabsConfig ({
 		</Wrapper>
 	);
 }
-
 
 export default TabsConfig;

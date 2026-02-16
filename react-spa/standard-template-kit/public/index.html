@@ -2,17 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <!-- <link rel="icon" href="%PUBLIC_URL%/dg_tab.ico" /> -->
     <link rel="icon" href="%PUBLIC_URL%/hanover_tab.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <title>DG</title> -->
     <title>Hanover</title>
-    
-    <!-- Matomo -->
+
     <script>
       var _paq = window._paq = window._paq || [];
-    
-      // Već odmah na startu setovati TrackerURL i siteId
+
       (function() {
         var u="//matomo.uptempo.io/";
         _paq.push(['setTrackerUrl', u+'matomo.php']);
@@ -21,28 +17,22 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
       })();
-    
-      // Zatim fetch usera:
+
       fetch('https://hanover.brandmakerinc.com/rest/administration/users/current')
         .then(response => response.json())
         .then(data => {
           var email = data.email;
           var orgUnit = data.orgUnitName;
-    
-          // Postavi user ID
+
           _paq.push(['setUserId', email]);
-          // Postavi custom dimension
           _paq.push(['setCustomDimension', 1, orgUnit]);
-          // Sada trackPageView
           _paq.push(['trackPageView']);
         })
         .catch(error => {
           console.error('Error fetching user data:', error);
         });
     </script>
-    
-    <!-- End Matomo Code -->
-    
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -50,18 +40,5 @@
       <div class="loader"></div>
     </div>
     <div id="root"></div>
-
-    <!-- Loading Spinner Div -->
-    
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

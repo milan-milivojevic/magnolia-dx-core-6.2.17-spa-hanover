@@ -1,5 +1,3 @@
-# cssFiles:
-# jsFiles:
 imaging:
   class: info.magnolia.templating.imaging.VariationAwareImagingSupport
   variations:

@@ -7,10 +7,8 @@ function AdvancedComponentsConfiguration (props) {
     accordionComponents,
     carouselComponents,
     carouselDividedComponents,
-    // corporateFontsComponents,
     corporateIconsComponents,
     corporateIdentityColorsComponents,
-    // footerNavigationComponents,
     textLinkComponents
   } = props;
 
@@ -29,10 +27,8 @@ function AdvancedComponentsConfiguration (props) {
       <div>{corporateIconsComponents && <EditableArea content={corporateIconsComponents} />}</div>      
       <h2 className='titles'>Corporate Identity Colors Components</h2>
       <div>{corporateIdentityColorsComponents && <EditableArea content={corporateIdentityColorsComponents} />}</div>      
-      {/* <h2 className='titles'>Corporate Fonts Components</h2>
-      <div>{corporateFontsComponents && <EditableArea content={corporateFontsComponents} />}</div> */}
-      {/* <h2 className='titles'>Footer Navigation Components</h2>
-      <div>{footerNavigationComponents && <EditableArea content={footerNavigationComponents} />}</div> */}
+      {}
+      {}
     </div>
   );
 }

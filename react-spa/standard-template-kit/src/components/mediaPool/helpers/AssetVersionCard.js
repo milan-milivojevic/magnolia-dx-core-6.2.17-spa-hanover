@@ -28,10 +28,10 @@ const AssetVersionCard = ({ assetVersionData }) => {
   const download_version = 'FIXED';
 
   title = title
-    .replace(/-/g, '_') // Replace dashes with underscores
-    .split('_') // Split the string by underscores into an array
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize each word
-    .join(' '); // Join the words back together with spaces
+    .replace(/-/g, '_')
+    .split('_')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 
   uploadDate = moment(uploadDate).utc().format('MM/DD/YYYY');
   fileFormat = fileFormat.toUpperCase();

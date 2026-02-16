@@ -22,7 +22,6 @@ export default function TemplateCategoriesFilter({ onUpdateSelectedTemplateCateg
         }));
         setParents(transformedParents);
 
-        // After setting the parents, also set the correct selected option based on prop
         const correspondingSelected = transformedParents.find(parent => parent.value === selectedTemplateCategory);
         setSelectedOption(correspondingSelected || null);
       })

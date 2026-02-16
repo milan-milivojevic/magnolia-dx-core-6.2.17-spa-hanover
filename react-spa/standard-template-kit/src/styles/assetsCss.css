@@ -15,13 +15,6 @@ body {
     position: relative;
 }
 
-/* .mpAssetWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-} */
-
 .mpAssetWrapper {
     width: 100%;
     height: 100%;
@@ -31,7 +24,6 @@ body {
 .list.mpAssetWrapper .assetCard {
     width: 100%;
     height: 100%;
-    /* max-height: 360px; */
 }
 
 .editMode .mpAssetWrapper .assetCard, 
@@ -52,8 +44,6 @@ body {
 }
 
 .assetImage {
-    /* border-top-left-radius: 4px; */
-    /* border-top-right-radius: 4px; */
     height: 160px;
     border-bottom: 1px solid #eaeaea;
     object-fit: contain;
@@ -65,7 +55,6 @@ body {
     color: #333333;
     font-weight: normal;
     letter-spacing: 0;
-    /* line-height: 24px; */
     display: -webkit-box;
     line-clamp: 2;
     -webkit-line-clamp: 2;
@@ -214,8 +203,6 @@ body {
     margin-top: auto;
 }
 
-/*MP Search*/
-
 .mpSearchContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -309,7 +296,6 @@ body {
     height: 16px;
 }
 
-
 .searchActions .viewButtons .gridView.grid {
     background-color: #7ca940;
     color: #fff;
@@ -332,8 +318,6 @@ body {
     background-color: #7ca940;
 }
 
-/* Load More Button */
-
 .loadMoreItems {
     width: 100%;
     display: flex;
@@ -355,7 +339,6 @@ body {
 .loadMoreItems button:hover {
     border: 1px solid #7ca940;
 }
-
 
 .staticSearch.mpSearch {
     display: flex;
@@ -381,8 +364,6 @@ body {
     background-color: #fff;
     width: 160px;
     border-radius: 0;
-    /* border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px; */
 }
 
 .mpSearch.staticSearch .headerSearch button {
@@ -395,8 +376,6 @@ body {
     gap: 20px;
 }
 
-/* FILTERS */
-
 .searchFilter > button {
     border: #7ca940 1px solid;
     color: #7ca940;
@@ -404,7 +383,6 @@ body {
     font-family: 'MuseoSans500;';
     font-size: 14px;
 }
-
 
 .searchFilter > button:hover {
     border-color: #7ca940;
@@ -597,8 +575,6 @@ body {
     width: 24px;
 }
 
-/* List view Asset */
-
 .mpSearchContainer.list {
     grid-template-columns: 1fr !important;
 }
@@ -656,15 +632,6 @@ body {
     border-right: 1px solid #eaeaea;
 }
 
-/* .list .fileFormatWrapper {
-    align-self: flex-end;
-    position: absolute;
-    bottom: 20px;
-    left: calc(40% + 10px);
-} */
-
-/*Copy link to Search Result*/
-
 a.copyLinkToResult {
     color: #2d3748;
     display: flex;
@@ -686,8 +653,6 @@ a.copyLinkToResult:hover {
     border-radius: 4px;
 }
 
-/* Global Search */
-
 .globalSearch,
 .mpSearchComponent {
     position: relative;
@@ -697,7 +662,6 @@ a.copyLinkToResult:hover {
 
 .globalSearchButtons {
     position: absolute;
-    /* top: 96px; */
     top: 121px;
     left: calc(50% - 151px);
     display: flex;

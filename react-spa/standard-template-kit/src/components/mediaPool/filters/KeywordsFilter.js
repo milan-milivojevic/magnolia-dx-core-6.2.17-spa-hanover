@@ -25,19 +25,15 @@ export default function KeywordsFilter({
 
   useEffect(() => {
     (async () => {
-      // 1) Fetch full list of business lines
       const respTree = await fetch(
         `${baseUrl}/rest/mp/v1.0/asset-attributes/27/trees`
       );
       const keywordsData = await respTree.json();
 
-      // 2) Clone payload
       const payload = JSON.parse(JSON.stringify(keywordsPayload));
 
-      // 3) Inject query
       payload.criteria.subs[0].value = query;
 
-      // 4) Inject other filters (except business line itself)
       if (selectedCategories.length) {
         payload.criteria.subs.push({
           "@type": "in",
@@ -63,7 +59,6 @@ export default function KeywordsFilter({
         });
       }
 
-      // 5) POST for aggregation
       const respSearch = await fetch(
         `${baseUrl}/rest/mp/v1.1/search`,
         {
@@ -74,7 +69,6 @@ export default function KeywordsFilter({
       );
       const data = await respSearch.json();
 
-      // 6) Extract counts from customAttribute_27
       const groups = data.aggregations
                          .customAttribute_27
                          .aggs
@@ -83,7 +77,6 @@ export default function KeywordsFilter({
       const countsMap = new Map();
       groups.forEach(g => countsMap.set(parseInt(g.group, 10), g.count));
 
-      // 7) Map tree data into items with count & checked state
       const mapped = keywordsData.map(item => ({
         id: item.id,
         label: item.label.EN,

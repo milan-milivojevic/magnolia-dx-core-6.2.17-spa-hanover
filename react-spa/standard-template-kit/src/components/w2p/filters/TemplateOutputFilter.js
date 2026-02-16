@@ -19,7 +19,6 @@ export default function TemplateOutputFilter({ onUpdateSelectedOutput, selectedO
         const transformedParents = mapData(JSON.parse(templateOutputObject.options));
         setParents(transformedParents);
 
-        // After setting the parents, also set the correct selected option based on prop
         const correspondingSelected = transformedParents.find(parent => parent.value === selectedOutput);
         setSelectedOption(correspondingSelected || null);
       })

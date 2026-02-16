@@ -32,7 +32,6 @@ function W2PDocumentsByStatus ({
   titlePaddingLeft,
   titlePaddingRight
 }) {
-  // Postavljanje inicijalnog sortiranja
   const initialSortOrder = sortOrderDocuments ? sortOrderDocuments : "modificationDate,desc";
   const [sortField, sortDirection] = initialSortOrder.split(',');
   const initialSortType = sortField;
@@ -40,11 +39,10 @@ function W2PDocumentsByStatus ({
 
   const [products, setProducts] = useState([]);
   const [offset, setOffset] = useState(0);
-  const [limit] = useState(18); // limit postavljen na 18
+  const [limit] = useState(18);
   const [hasMore, setHasMore] = useState(true);
   const [matches, setMatches] = useState(0);
 
-  // Funkcija za dohvaćanje dokumenata ovisno o statusu, offsetu i limitu
   const fetchDocuments = async (currentOffset, currentLimit) => {
     let response;
     if (documentStatuses === "my") {

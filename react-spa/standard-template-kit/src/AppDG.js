@@ -26,7 +26,6 @@ function App() {
   const isPagesApp = window.location.search.includes("mgnlPreview");
   const editMode = isPagesApp ? "editMode" : "";
   
-  /* Rendering Languages */
   function renderLanguages() {
     const currentLanguage = getCurrentLanguage();    
     return (
@@ -46,7 +45,6 @@ function App() {
 
   const [query, setQuery] = useState("");  
 
-  /* Setting top position and min-height of Page Content */
   const headerRef = React.useRef(null);  
   const topNavRef = React.useRef(null); 
   const pageRef = React.useRef(null);
@@ -63,7 +61,6 @@ function App() {
     setTimeout(function( ) { clearInterval( interval ); }, 6000);
   }, []);
 
-  /* Getting props from headerConfig for setting logo and logo link */
   const baseUrl = process.env.REACT_APP_MGNL_HOST_NEW; 
   const apiBase = getAPIBase();
   const restPath = process.env.REACT_APP_MGNL_API_PAGES;
@@ -95,7 +92,6 @@ function App() {
       });
   }, []);
 
-  /* Setting pathname */
   const [pathname, setPathname] = useState(window.location.pathname);
 
   useEffect(() => {
@@ -112,10 +108,8 @@ function App() {
     };
   }, []);
 
-  /* Questionable part of the code because of querySelector */
   var leftNavInterval = setInterval(() => {
 
-    /* Adding active class on active nav item elemets */
     const links = document.querySelectorAll('.menu-item > button > a');
     const leftLinks = document.querySelectorAll('.leftHandNav .menu-item > button > a');
     function setActiveLink(link) {
@@ -137,22 +131,6 @@ function App() {
       setActiveLink(leftLink);
     }
 
-    // /* Setting all chevrons in the same place */
-    // const navItems = document.querySelectorAll('.leftHandNav ul li a');
-    // // console.log(navItems);
-    // let longestNavItemWidth = 0;
-    // // console.log(longestNavItemWidth);
-    // navItems.forEach(navItem => {
-    //   const navItemWidth = navItem.getBoundingClientRect().width;
-    //   // console.log(navItemWidth);
-    //   if (navItemWidth > longestNavItemWidth) {
-    //     longestNavItemWidth = navItemWidth;
-    //   }
-    // });
-    // // console.log(longestNavItemWidth);
-    // navItems.forEach(navItem => {
-    //   navItem.style.width = longestNavItemWidth + 'px';
-    // });
   }, 300);
   setTimeout(function( ) { clearInterval( leftNavInterval ); }, 6000);
 

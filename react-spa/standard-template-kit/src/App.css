@@ -94,14 +94,6 @@
   column-gap: 20px;
 }
 
-/* .menus > .menu-item.level-0:nth-child(2) .dropdown {
-  left: -379px;
-}
-
-.menus > .menu-item.level-0:nth-child(3) .dropdown {
-  left: -758px;
-} */
-
 @media (max-width: 1140px) {
   .menus > .menu-item.level-0.dropdown {
     position: fixed;
@@ -109,7 +101,6 @@
     width: 100%;
   }
 }
-
 
 .topNav .dropdown.level-1.show {
   display: grid;
@@ -120,40 +111,10 @@
   display: block;
 }
 
-/* .topNav .col-1 .dropdown {
-  min-width: 100%;
-}
-.topNav .col-2 .dropdown {
-  min-width: 50%;
-}
-.topNav .col-3 .dropdown {
-  min-width: calc(100% / 3);
-}
-.topNav .col-4 .dropdown {
-  min-width: calc(100% / 4);
-}
-.topNav .col-5 .dropdown {
-  min-width: calc(100% / 5);
-}
-.topNav .col-6 .dropdown {
-  min-width: calc(100% / 6);
-}
-.topNav .col-7 .dropdown {
-  min-width: calc(100% / 7);
-}
-.topNav .col-8 .dropdown {
-  min-width: calc(100% / 8);
-} */
-
 .topNav .dropdown-submenu {  
   position: relative;
   width: auto;
   box-shadow: unset;
-  /* position: absolute;
-  left: 100% ;
-  top: -7px; 
-  margin: 0px 10px;   
-  padding: 0 0 0 10px; */    
 }
 
 .topNav .dropdown-submenu.level-2 {
@@ -178,9 +139,6 @@
   top: 0px;
   bottom: unset;
 }
-
-
-/*Content with left hand navigation*/
 
 .leftHandNav {
   width: 25%;  
@@ -212,14 +170,6 @@
   align-items: center;
 }
 
-/* .leftHandNav a {
-  min-width: fit-content;
-} */
-
-/* .leftNavChevron {
-  position: relative;
-  top: 2px;
-} */
 .leftNavChevron {
   box-sizing: border-box;
   position: relative;
@@ -273,35 +223,22 @@
 }
 
 .leftHandNav ::-webkit-scrollbar {
-  width: 8px;  /* width of the entire scrollbar */
+  width: 8px;  
 }
 
-/* This styles the draggable scrolling handle */
 .leftHandNav ::-webkit-scrollbar-thumb {
-  background-color: darkgrey;  /* color of the scroll thumb */
-  border-radius: 4px;          /* roundness of the scroll thumb */
-  background-clip: content-box; /* this allows the thumb to be styled with borders or padding */
+  background-color: darkgrey;  
+  border-radius: 4px;          
+  background-clip: content-box; 
 }
 
-/* This styles the buttons on the scrollbar (up and down arrows, usually not present on modern scrollbars) */
 .leftHandNav ::-webkit-scrollbar-button {
-  display: none;  /* hides them */
+  display: none;  
 }
 
-/* Style the hover state of the scroll thumb */
 .leftHandNav ::-webkit-scrollbar-thumb:hover {
   background-color: grey;
 }
-
-/* .arrow::after {
-  content: "";
-  display: inline-block;
-  margin-left: 0.28em;
-  vertical-align: 0.09em;
-  border-top: 0.42em solid;
-  border-right: 0.32em solid transparent;
-  border-left: 0.32em solid transparent;
-} */
 
 a {
   color: #337ab7;

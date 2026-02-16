@@ -36,7 +36,6 @@ function Carousel ({
 }) {
 
   const id = useId(); 
-  // const [isAutoSliding, setIsAutoSliding] = useState(true);
 
   const apiBase = getAPIBase();
   const restPath = process.env.REACT_APP_MGNL_API_PAGES;
@@ -90,24 +89,12 @@ function Carousel ({
     setActiveIndicatorIndex(slideIndex);
   };
 
-
-  // Function to start auto-sliding
-  // const startAutoSlide = () => {
-  //   setIsAutoSliding(true);
-  // };
-
-  // Function to stop auto-sliding
-  // const stopAutoSlide = () => {
-  //   setIsAutoSliding(false);
-  // };
-
-  // Auto-slide effect
   useEffect(() => {
     let interval;
     if (carouselAutoplay === true || carouselAutoplay === "true") {
       interval = setInterval(() => {
         goToNext();
-      }, 3000); // 3000ms = 3 seconds
+      }, 3000);
     }
 
     return () => {
@@ -116,8 +103,6 @@ function Carousel ({
       }
     };
   }, [carouselAutoplay, goToNext]);
-
-
 
   const imageBase = process.env.REACT_APP_MGNL_HOST_NEW;
   const image = activeImages[currentIndex];
@@ -197,8 +182,6 @@ function Carousel ({
 
   return (
     <div className='carouselWrapper'
-      // onMouseEnter={stopAutoSlide}  // Pause on hover
-      // onMouseLeave={startAutoSlide} // Resume on mouse leave
     >
       <div className='carouselComponent' style={{ justifyContent: carouselPosition || configProps?.carouselPosition || "left" }}>
         <div className={`carousel carouselArea`} style={carouselStyles}> 

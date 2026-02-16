@@ -8,7 +8,6 @@ import CryptoJS from 'crypto-js';
 import { aclCheck } from '../../helpers/ACL';
 import ClipLoader from "react-spinners/ClipLoader";
 
-
 function W2PTemplatesCarousel({ 
   templateIds, 
   linkToSearchResult, 
@@ -52,21 +51,15 @@ function W2PTemplatesCarousel({
   const editMode = isPagesApp ? true : false;
   
 
-  // const initialSortOrder = sortOrderTemplates ? sortOrderTemplates : "creationDate,desc";
-  // const splitedSortOrder = initialSortOrder.split(',');
-  // const initialSortType = splitedSortOrder[0];
-  // const initialSortDirection = splitedSortOrder[1] === "asc" ? "asc" : "desc";
-
   const initialSortOrder = sortOrderTemplates || null;
   const splitedSortOrder = initialSortOrder ? initialSortOrder.split(',') : [];
   const initialSortType = splitedSortOrder[0] || null;
   const initialSortDirection = splitedSortOrder[1] === "asc" ? "asc" : (splitedSortOrder[1] ? "desc" : null);
 
-
   const sliderRef = useRef(null);
   const [products, setProducts] = useState([]);
-  const [isLoading, setIsLoading] = useState(true); // Praćenje statusa učitavanja
-  const [error, setError] = useState(null); // Praćenje grešaka
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
   
   const settings = {
     
@@ -82,14 +75,14 @@ function W2PTemplatesCarousel({
         breakpoint: 1440,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1, // Na manjim ekranima prikazuje samo 1 aset istovremeno
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1, // Na manjim ekranima prikazuje samo 1 aset istovremeno
+          slidesToScroll: 1,
         },
       },
     ],
@@ -100,7 +93,6 @@ function W2PTemplatesCarousel({
 
   const resetTransform = () => {
     var interval = setInterval(() => {
-      // Delay the transformation to give react-slick time to update
       const slickList = sliderRef.current.innerSlider.list;
       if (slickList) {
         const slickTrack = slickList.querySelector('.slick-track');
@@ -114,14 +106,13 @@ function W2PTemplatesCarousel({
   
   const templatesIdsArray = templateIds?.split(',').map(templateId => templateId.trim());
 
-
   const size = cardsLimit ? parseInt(cardsLimit, 10) > 40 ? 40 : parseInt(cardsLimit, 10) : null;
   const templatesIdsArrayLength = templatesIdsArray ? templatesIdsArray.length : 0;
   const calculatedSize = size ? size - templatesIdsArrayLength : 20 - templatesIdsArrayLength;  
 
   const templatesSearch = async () => {
     try {
-      setIsLoading(true); // Postavi status učitavanja na true
+      setIsLoading(true);
       let url = new URL(linkToSearchResult);
       let searchParams = new URLSearchParams(url.search);  
       const encryptedData = searchParams.get('data');
@@ -148,12 +139,12 @@ function W2PTemplatesCarousel({
 
       const data = await templatesSearchService(query, sortType, sortDirection, calcCustomSize, offset, selectedVdb, selectedColor, selectedFormat, selectedOutput, selectedTemlateStatus);
       setProducts((prevProducts) => prevProducts.concat(data.rows));
-      setError(null); // Resetuj grešku ako je uspešno učitano
+      setError(null);
     } catch (err) {
       console.error('Error fetching templates:', err);
       setError('Your session on the system has expired. Please login again.');
     } finally {
-      setIsLoading(false); // Status učitavanja na false
+      setIsLoading(false);
     }
   }
 
@@ -186,13 +177,9 @@ function W2PTemplatesCarousel({
 
   const idsSearch = async () => {
     try {
-      setIsLoading(true); // Show spinner before starting the API call
-      setError(null); // Clear any existing errors
+      setIsLoading(true);
+      setError(null);
 
-      // const templatesData = await Promise.all(templatesIdsArray.map(async (templateId) => {
-      //   const response = await idSearch(templateId);
-      //   return response.rows;
-      // }));
   
       const response = await idSearch(
         templatesIdsArray,
@@ -201,12 +188,12 @@ function W2PTemplatesCarousel({
         size || templatesIdsArrayLength
       );
       const flattenedData = response.rows.flat();
-      setProducts(flattenedData); // Update the products state with the fetched data
+      setProducts(flattenedData);
     } catch (error) {
       console.error("Error fetching data:", error);
-      setError("Your session on the system has expired. Please login again."); // Set error message
+      setError("Your session on the system has expired. Please login again.");
     } finally {
-      setIsLoading(false); // Hide spinner after the operation is complete
+      setIsLoading(false);
     }
   };
   

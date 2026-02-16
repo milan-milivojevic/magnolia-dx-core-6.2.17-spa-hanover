@@ -25,13 +25,10 @@ export default function TagsFilter({
 
   useEffect(() => {
     (async () => {
-      // 1) Clone static payload
       const payload = JSON.parse(JSON.stringify(tagsPayload));
 
-      // 2) Inject query
       payload.criteria.subs[0].value = query;
 
-      // 3) Inject other filters (except tags)
       if (selectedCategories.length) {
         payload.criteria.subs.push({
           "@type": "in",
@@ -57,7 +54,6 @@ export default function TagsFilter({
         });
       }
 
-      // 4) POST for aggregation
       const resp = await fetch(
         `${baseUrl}/rest/mp/v1.1/search`,
         {
@@ -68,12 +64,10 @@ export default function TagsFilter({
       );
       const data = await resp.json();
 
-      // 5) Extract counts from tags
       const groups = data.aggregations.tags.subGroups;
       const countsMap = new Map();
       groups.forEach(g => countsMap.set(g.group, g.count));
 
-      // 6) Map into list of tag objects
       const mapped = groups.map(item => ({
         name: item.group,
         count: countsMap.get(item.group) || 0,

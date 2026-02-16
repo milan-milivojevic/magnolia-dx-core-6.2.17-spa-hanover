@@ -163,8 +163,6 @@ function CarouselTeaserConfig ({
   }, [linkStyleName, linkNoStyles, apiBase, restPath, nodeName]);
 
   const dimensionsRef = useRef()
-  // const headlineRef = useRef()
-  // const descLinkRef = useRef()
   const useContainerDimensions = myRef => {
     const [dimensions, setDimensions] = useState({ width: 0, height: 0})
     const myRefCurrent = myRef.current;
@@ -172,8 +170,6 @@ function CarouselTeaserConfig ({
       const getDimensions = () => ({
         width: myRefCurrent.offsetWidth,
         height: myRefCurrent.offsetHeight,
-        // headlineHeight: myRefCurrent.offsetHeight,
-        // descLinkHeight: myRefCurrent.offsetHeight,
       })  
       const handleResize = () => {
         setDimensions(getDimensions())
@@ -192,10 +188,6 @@ function CarouselTeaserConfig ({
     return dimensions;
   };  
   const { width, height } = useContainerDimensions(dimensionsRef);
-  // const { headlineHeight } = useContainerDimensions(headlineRef);
-  // const { descLinkHeight } = useContainerDimensions(descLinkRef);
-  // console.log(headlineHeight, descLinkHeight);
-  // const acctualHeight = headlineHeight + descLinkHeight + componentPaddingTop + componentPaddingBottom;
 
   
   const images = [];

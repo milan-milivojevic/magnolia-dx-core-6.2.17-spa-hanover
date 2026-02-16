@@ -3,16 +3,6 @@ wide: true
 form:
   properties:
     
-    # assetIds:
-    #   label: Assets ID's
-    #   $type: jcrMultiField
-    #   maxItems: 20
-    #   minItems: 0
-    #   field:
-    #     label: ""
-    #     $type: compositeField
-    #     properties:
-    #       assetId: !include:/standard-template-kit/includes/dialogs/mpAsset/assetId.yaml
 
     assetIds: !include:/standard-template-kit/includes/dialogs/mpAsset/assetId.yaml
     

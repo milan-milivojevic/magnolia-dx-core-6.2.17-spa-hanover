@@ -48,7 +48,6 @@
       'mgnl:template': 'spa-lm:components/paragraph'
       'richText': '<p>Ahhhhh,&nbsp;<strong><em>springtime</em></strong>.</p>
 
-
         <p>Throw wide the windows, and let the cool breeze sweep through the apartment
         and chase away the winter blues.</p>
 
@@ -220,9 +219,7 @@
             'richText': '<p>Reach out to us anytime, 24/7. Really. Go ahead, just
               call us!&nbsp;<em>Please?</em></p>
 
-
               <p>sales@minimal-spa-demo.com</p>
-
 
               <p>+41 12 34 567 89 00</p>
 
@@ -275,9 +272,7 @@
             'mgnl:template': 'spa-lm:components/paragraph'
             'richText': '<p>Available from 3:00 - 3:25. Every 2nd Tuesday of the month.</p>
 
-
               <p>support@minimal-spa-demo.com</p>
-
 
               <p>+41 98 765 43 21 00</p>
 

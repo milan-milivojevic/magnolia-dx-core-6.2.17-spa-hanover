@@ -3,16 +3,6 @@ wide: true
 form:
   properties:
     
-    # templateIds:
-    #   label: Templates ID's
-    #   $type: jcrMultiField
-    #   maxItems: 20
-    #   minItems: 0
-    #   field:
-    #     label: ""
-    #     $type: compositeField
-    #     properties:
-    #       templateId: !include:/standard-template-kit/includes/dialogs/w2p/templateId.yaml
 
     templateIds: !include:/standard-template-kit/includes/dialogs/w2p/templateId.yaml
     
