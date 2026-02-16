@@ -1,0 +1,55 @@
+title: Configuration Page (Grouping Components)
+
+# baseUrl: http://localhost:3000
+# routeTemplate: '/{language}{{@path}}'
+templateScript: /standard-template-kit/webresources/build/index.html
+
+dialog: standard-template-kit:pages/config/groupingComponents
+
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+
+areas:
+  accordionListComponents:
+    title: Accordion List Configuration Components Area
+    availableComponents:      
+      accordionListConfig:
+        id: standard-template-kit:components/grouping/config/accordionListConfig
+  borderTeaserListComponents:
+    title: Border Teaser List Configuration Components Area
+    availableComponents:      
+      borderTeaserListConfig:
+        id: standard-template-kit:components/grouping/config/borderTeaserListConfig
+  cardTeaserListComponents:
+    title: Card Teaser List Configuration Components Area
+    availableComponents:      
+      cardTeaserListConfig:
+        id: standard-template-kit:components/grouping/config/cardTeaserListConfig
+  imageGalleryComponents:
+    title: Image Gallery Configuration Components Area
+    availableComponents:      
+      imageGalleryConfig:
+        id: standard-template-kit:components/grouping/config/imageGalleryConfig
+  imageTeaserListComponents:
+    title: Image Teaser List Configuration Components Area
+    availableComponents:      
+      imageTeaserListConfig:
+        id: standard-template-kit:components/grouping/config/imageTeaserListConfig
+  linkListComponents:
+    title: Link List Configuration Components Area
+    availableComponents:      
+      linkListConfig:
+        id: standard-template-kit:components/grouping/config/linkListConfig
+  tabsComponents:
+    title: Tabs Configuration Components Area
+    availableComponents:      
+      tabsConfig:
+        id: standard-template-kit:components/grouping/config/tabsConfig
+  textLinkListComponents:
+    title: Text & Link List Configuration Components Area
+    availableComponents:      
+      textLinkListConfig:
+        id: standard-template-kit:components/grouping/config/textLinkListConfig
+  
+
+

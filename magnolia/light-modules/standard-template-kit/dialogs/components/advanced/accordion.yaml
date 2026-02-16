@@ -1,0 +1,41 @@
+label: Accordion
+wide: true
+form:
+  properties:       
+
+    title: !include:/standard-template-kit/includes/dialogs/accordion/title.yaml
+    titleStyles: !include:/standard-template-kit/includes/dialogs/accordion/titleStyles.yaml
+    titleDropdowns: !include:/standard-template-kit/includes/dialogs/accordion/titleDropdowns.yaml
+    chevronStyles: !include:/standard-template-kit/includes/dialogs/accordion/chevronStyles.yaml
+    accordionInnerPadding: !include:/standard-template-kit/includes/dialogs/accordion/accordionInnerPadding.yaml
+
+    styleWithCheckbox: !include:/standard-template-kit/includes/dialogs/shared/styleWithCheckbox.yaml    
+    accordionOuterPadding: !include:/standard-template-kit/includes/dialogs/accordion/accordionOuterPadding.yaml
+    backgroundWidthPosition: !include:/standard-template-kit/includes/dialogs/accordion/backgroundWidthPosition.yaml
+    accordionBorder: !include:/standard-template-kit/includes/dialogs/accordion/border.yaml
+
+    acl: !include:/standard-template-kit/includes/dialogs/acl/acl.yaml
+   
+  
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: title
+      - label: Title Settings
+        fields:
+          - name: title              
+          - name: titleDropdowns
+          - name: titleStyles  
+          - name: accordionInnerPadding   
+          - name: chevronStyles  
+      - name: styles
+      - label: Accordion Settings
+        fields:
+          - name: styleWithCheckbox     
+          - name: backgroundWidthPosition    
+          - name: accordionBorder      
+          - name: accordionOuterPadding    
+      - name: acl
+      - label: Audience Control
+        fields:
+          - name: acl

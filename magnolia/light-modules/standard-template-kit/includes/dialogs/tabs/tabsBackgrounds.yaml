@@ -1,0 +1,11 @@
+label: Tabs
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  tabsDefaultBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  tabsHoverBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
+  tabsActiveBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/active.yaml
+  

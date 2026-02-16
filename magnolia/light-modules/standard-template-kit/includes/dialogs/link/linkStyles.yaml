@@ -1,0 +1,16 @@
+label: Link
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  linkWidth: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+  linkHeight: !include:/standard-template-kit/includes/dialogs/basics/height.yaml
+  
+  
+  
+  
+  
+  
+  

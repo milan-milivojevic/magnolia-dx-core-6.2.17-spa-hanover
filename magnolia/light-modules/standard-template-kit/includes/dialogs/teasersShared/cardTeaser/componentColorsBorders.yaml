@@ -1,0 +1,33 @@
+label: Info Box
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  bordersToShow:
+    label: Display Borders
+    $type: comboBoxField
+    datasource:
+      $type: optionListDatasource
+      options:
+        - name: unset
+          label: Unset
+          value: unset
+        - name: all
+          label: All Borders
+          value: allBorders
+        - name: topOnly
+          label: Top Border Only
+          value: topBorderOnly
+        - name: hideTop
+          label: Hide Top Border
+          value: hideTopBorder
+        - name: hideAll
+          label: Hide All Borders
+          value: hideAllBorders
+  componentDefaultBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  componentHoverBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
+  componentBorderHoverColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
+    label: Hover Border Color
+  

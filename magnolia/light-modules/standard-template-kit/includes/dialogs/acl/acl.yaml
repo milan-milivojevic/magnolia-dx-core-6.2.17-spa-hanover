@@ -1,0 +1,13 @@
+label: ""
+$type: compositeField
+layout:
+  $type: stacked
+itemProvider:
+  $type: currentItemProvider
+properties:
+  hideComponent: !include:/standard-template-kit/includes/dialogs/acl/hideComponent.yaml
+  logic: !include:/standard-template-kit/includes/dialogs/acl/logic.yaml
+  infoAlowed: !include:/standard-template-kit/includes/dialogs/acl/infoAlowed.yaml
+  allowedGroups: !include:/standard-template-kit/includes/dialogs/acl/allowedGroups.yaml
+  infoDenied: !include:/standard-template-kit/includes/dialogs/acl/infoDenied.yaml
+  deniedGroups: !include:/standard-template-kit/includes/dialogs/acl/deniedGroups.yaml

@@ -1,0 +1,13 @@
+label: Title
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  headlineMarginTop: !include:/standard-template-kit/includes/dialogs/basics/margin/top.yaml
+  headlineMarginRight: !include:/standard-template-kit/includes/dialogs/basics/margin/right.yaml
+  headlineMarginBottom: !include:/standard-template-kit/includes/dialogs/basics/margin/bottom.yaml
+  headlineMarginLeft: !include:/standard-template-kit/includes/dialogs/basics/margin/left.yaml
+    
+  

@@ -1,0 +1,8 @@
+title: Text & Link List
+dialog: standard-template-kit:components/grouping/textLinkList
+areas:
+  column1: &column1
+    title: Text & Link Components
+    availableComponents:
+      textLink:
+        id: standard-template-kit:components/advanced/textLink

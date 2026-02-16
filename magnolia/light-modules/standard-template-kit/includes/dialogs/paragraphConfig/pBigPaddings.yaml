@@ -1,0 +1,12 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  pBigPaddingTop: !include:/standard-template-kit/includes/dialogs/basics/padding/top.yaml
+  pBigPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
+  pBigPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
+  pBigPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
+  

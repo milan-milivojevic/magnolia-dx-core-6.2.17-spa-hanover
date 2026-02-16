@@ -1,0 +1,11 @@
+label: Title
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  headlineBackground: !include:/standard-template-kit/includes/dialogs/teasersShared/includes/titleBackground.yaml
+  headlineTextTransform: !include:/standard-template-kit/includes/dialogs/text/includes/textTransform.yaml
+  headlineBold: !include:/standard-template-kit/includes/dialogs/text/includes/bold.yaml
+  headlineItalic: !include:/standard-template-kit/includes/dialogs/text/includes/italic.yaml

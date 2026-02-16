@@ -1,0 +1,12 @@
+label: Label
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  linkLabelDecoration: !include:/standard-template-kit/includes/dialogs/link/includes/decoration.yaml
+  linkLabelHorizontalPosition: !include:/standard-template-kit/includes/dialogs/link/includes/justifyContent.yaml
+  linkLabelVerticalPosition: !include:/standard-template-kit/includes/dialogs/basics/positions/verticalPosition.yaml
+  linkBold: !include:/standard-template-kit/includes/dialogs/link/includes/bold.yaml
+  linkFontFamily: !include:/standard-template-kit/includes/dialogs/text/includes/fontFamily.yaml

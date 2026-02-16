@@ -1,0 +1,35 @@
+label: iFrame Configuration
+wide: true 
+form:
+  properties:
+    link:
+      $type: textField
+      required: true
+      label: "Enter url (including http://):"
+
+    styleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+    padding: !include:/standard-template-kit/includes/dialogs/shared/padding.yaml
+      label: Component
+    backgroundColor: !include:/standard-template-kit/includes/dialogs/shared/backgroundColors.yaml
+      label: Component
+    border: !include:/standard-template-kit/includes/dialogs/shared/border.yaml
+      label: Component
+    widthHeightPosition: !include:/standard-template-kit/includes/dialogs/shared/widthHeightPosition.yaml
+      label: Component
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: data
+      - label: Data
+        fields:
+          - name: link
+      - name: iFrameSettings
+      - label: iFrame Settings
+        fields:
+          - name: styleName            
+          - name: widthHeightPosition
+          - name: padding
+          - name: border          
+          - name: backgroundColor  
+            

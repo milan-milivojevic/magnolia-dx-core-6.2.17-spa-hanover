@@ -1,0 +1,54 @@
+label: Accordion List Configuration
+wide: true
+form:
+  properties:
+  
+    multi:
+      label: Accordion List Titles
+      $type: jcrMultiField
+      maxItems: 20
+      minItems: 2
+      field:
+        label: ""
+        $type: compositeField
+        properties:
+          title: !include:/standard-template-kit/includes/dialogs/accordion/title.yaml
+            required: true
+
+    styleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+    groupPadding: !include:/standard-template-kit/includes/dialogs/accordion/groupPadding.yaml
+    gapWidthPosition: !include:/standard-template-kit/includes/dialogs/accordion/gapWidthPosition.yaml
+
+    accordionStyleWithCheckbox: !include:/standard-template-kit/includes/dialogs/accordion/accordionStyleWithCheckbox.yaml
+    titleDropdowns: !include:/standard-template-kit/includes/dialogs/accordion/titleDropdowns.yaml
+    titleStyles: !include:/standard-template-kit/includes/dialogs/accordion/titleStyles.yaml
+    accordionInnerPadding: !include:/standard-template-kit/includes/dialogs/accordion/accordionInnerPadding.yaml
+    chevronStyles: !include:/standard-template-kit/includes/dialogs/accordion/chevronStyles.yaml
+    accordionBorder: !include:/standard-template-kit/includes/dialogs/accordion/border.yaml
+    backgroundColors: !include:/standard-template-kit/includes/dialogs/accordion/backgroundColors.yaml
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: titles
+      - label: Titles
+        fields:
+          - name: multi
+      - name: listSettings
+      - label: List Settings
+        fields:
+          - name: styleName
+          - name: groupPadding
+          - name: gapWidthPosition
+      - name: accordionSettings
+      - label: Accordion Settings
+        fields:
+          - name: accordionStyleWithCheckbox
+          - name: titleDropdowns
+          - name: titleStyles
+          - name: accordionInnerPadding
+          - name: chevronStyles
+          - name: accordionBorder  
+          - name: backgroundColors         
+          
+        

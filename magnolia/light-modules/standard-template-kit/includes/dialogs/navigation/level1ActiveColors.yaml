@@ -1,0 +1,11 @@
+label: Active Colors
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:    
+  l1ActiveColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+  l1ActiveHoverColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontHoverColor.yaml
+  l1ActiveDefBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  l1ActiveHoverBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml

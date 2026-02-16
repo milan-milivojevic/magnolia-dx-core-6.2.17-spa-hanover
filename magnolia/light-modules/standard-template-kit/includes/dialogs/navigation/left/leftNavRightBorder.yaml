@@ -1,0 +1,10 @@
+label: Right Border
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  rightBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  rightBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  rightBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml

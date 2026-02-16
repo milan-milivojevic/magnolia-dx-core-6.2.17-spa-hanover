@@ -1,0 +1,41 @@
+label: Image Configuration
+wide: true
+form:
+  properties:
+    image: !include:/standard-template-kit/includes/dialogs/image/imageRequired.yaml
+    imageCaption: !include:/standard-template-kit/includes/dialogs/image/caption.yaml
+    imageCaptionStyles: !include:/standard-template-kit/includes/dialogs/image/captionStyles.yaml
+
+    styleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+    imageBackgroundColors: !include:/standard-template-kit/includes/dialogs/image/backgroundColors.yaml
+    imagePositionFitWidthHeight: !include:/standard-template-kit/includes/dialogs/image/positionFitWidthHeight.yaml
+    imageBorder: !include:/standard-template-kit/includes/dialogs/image/border.yaml
+    imagePadding: !include:/standard-template-kit/includes/dialogs/image/padding.yaml    
+
+    imageWrapperBackgroundPosition: !include:/standard-template-kit/includes/dialogs/image/wrapper/imageBackgroundPosition.yaml   
+    imageWrapperBorder: !include:/standard-template-kit/includes/dialogs/image/wrapper/border.yaml
+    imageWrapperPadding: !include:/standard-template-kit/includes/dialogs/image/wrapper/padding.yaml
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: data
+      - label: Data
+        fields:
+          - name: image   
+          - name: imageCaption
+          - name: imageCaptionStyles       
+      - name: imageSettings
+      - label: Image Settings
+        fields:      
+          - name: styleName  
+          - name: imagePositionFitWidthHeight
+          - name: imagePadding
+          - name: imageBackgroundColors
+          - name: imageBorder
+      - name: componentStyles
+      - label: Component Styles
+        fields:          
+          - name: imageWrapperBackgroundPosition
+          - name: imageWrapperBorder
+          - name: imageWrapperPadding

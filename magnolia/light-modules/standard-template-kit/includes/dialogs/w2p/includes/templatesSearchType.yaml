@@ -1,0 +1,18 @@
+label: Search Type 
+$type: comboBoxField
+required: true
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: searchLink
+      value: searchLink
+      label: "Search Link"
+    - name: newTemplates
+      value: new
+      label: "New Templates"
+    - name: favorites
+      value: favorites
+      label: "Favorites"
+    - name: recentlyUsed
+      value: used
+      label: "Recently Used"    

@@ -1,0 +1,11 @@
+label: Title
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  titleColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+  titleHoverColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontHoverColor.yaml
+  titleActiveColor: !include:/standard-template-kit/includes/dialogs/text/includes/activeFontColor.yaml
+  

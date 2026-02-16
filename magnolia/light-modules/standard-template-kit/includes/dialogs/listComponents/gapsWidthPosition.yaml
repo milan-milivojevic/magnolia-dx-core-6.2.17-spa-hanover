@@ -1,0 +1,11 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  width: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+  position: !include:/standard-template-kit/includes/dialogs/basics/positions/marginPosition.yaml  
+  columnGap: !include:/standard-template-kit/includes/dialogs/listComponents/includes/columnGap.yaml
+  rowGap: !include:/standard-template-kit/includes/dialogs/listComponents/includes/rowGap.yaml

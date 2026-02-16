@@ -1,0 +1,102 @@
+label: Corporate Fonts Configuration
+form:
+  properties:
+
+    headline: !include:/standard-template-kit/includes/dialogs/text/headline.yaml
+    headlineDropdowns: !include:/standard-template-kit/includes/dialogs/text/headlineDropdowns.yaml
+    headlineTextStyles: !include:/standard-template-kit/includes/dialogs/text/headlineTextStyles.yaml
+    headlinePadding: !include:/standard-template-kit/includes/dialogs/text/headlinePadding.yaml
+
+    description: !include:/standard-template-kit/includes/dialogs/text/description.yaml
+    descriptionPadding: !include:/standard-template-kit/includes/dialogs/text/descriptionPadding.yaml
+
+    textWidthHeight: !include:/standard-template-kit/includes/dialogs/textLink/textWidthHeight.yaml
+    
+    linkType: !include:/standard-template-kit/includes/dialogs/link/type.yaml
+    linkLabel: !include:/standard-template-kit/includes/dialogs/link/label.yaml
+    linkLocation: !include:/standard-template-kit/includes/dialogs/link/location.yaml
+    
+    linkLabelStyles: !include:/standard-template-kit/includes/dialogs/link/labelStyles.yaml
+    linkLabelDropdowns: !include:/standard-template-kit/includes/dialogs/link/labelDropdowns.yaml
+    linkStyles: !include:/standard-template-kit/includes/dialogs/link/linkStyles.yaml
+    linkPadding: !include:/standard-template-kit/includes/dialogs/link/padding.yaml
+    linkBorder: !include:/standard-template-kit/includes/dialogs/link/border.yaml
+
+    image: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+    imageCaption: !include:/standard-template-kit/includes/dialogs/image/caption.yaml
+
+    imageBackgroundColors: !include:/standard-template-kit/includes/dialogs/image/backgroundColors.yaml
+    imagePositionFitWidthHeight: !include:/standard-template-kit/includes/dialogs/image/positionFitWidthHeight.yaml
+    imageBorder: !include:/standard-template-kit/includes/dialogs/image/border.yaml
+    imagePadding: !include:/standard-template-kit/includes/dialogs/image/padding.yaml
+    imageCaptionStyles: !include:/standard-template-kit/includes/dialogs/image/captionStyles.yaml
+
+    imageWrapperPosition: !include:/standard-template-kit/includes/dialogs/image/wrapper/flexPosition.yaml
+    imageWrapperBackgroundColors: !include:/standard-template-kit/includes/dialogs/image/wrapper/backgroundColors.yaml   
+    imageWrapperBorder: !include:/standard-template-kit/includes/dialogs/image/wrapper/border.yaml
+    imageWrapperPadding: !include:/standard-template-kit/includes/dialogs/image/wrapper/padding.yaml
+
+    wrapperPadding: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperPadding.yaml
+    wrapperBackgroundColors: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperBackgroundColors.yaml
+    wrapperBorder: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperBorder.yaml
+    wrapperWidthHeight: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperWidthHeight.yaml
+    textLinkLayout: !include:/standard-template-kit/includes/dialogs/textLink/layout.yaml
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: data
+      - label: Text 
+        fields:
+          - name: headline          
+          - name: description
+      - name: linkConfig
+      - label: Link configuration
+        fields:
+          - name: linkType          
+          - name: linkLabel
+          - name: linkLocation
+      - name: image
+      - label: Image
+        fields:
+          - name: image   
+          - name: imageCaption
+          - name: imageCaptionStyles  
+      - name: textStyles
+      - label: Text Styles
+        fields:
+          - name: headlineDropdowns
+          - name: headlineTextStyles
+          - name: headlinePadding
+          - name: descriptionPadding
+          - name: textWidthHeight
+      - name: linkStyles
+      - label: Link Styles
+        fields:        
+          - name: linkLabelDropdowns      
+          - name: linkLabelStyles 
+          - name: linkStyles       
+          - name: linkBorder          
+          - name: linkPadding  
+      - name: imageStyles
+      - label: Image Styles
+        fields:          
+          - name: imagePositionFitWidthHeight
+          - name: imagePadding
+          - name: imageBackgroundColors
+          - name: imageBorder
+      - name: imageWrapperStyles
+      - label: Image Wrapper Styles
+        fields:          
+          - name: imageWrapperPosition
+          - name: imageWrapperBackgroundColors
+          - name: imageWrapperBorder
+          - name: imageWrapperPadding
+      - name: layoutStyles
+      - label: Layout + Wrapper Styles
+        fields:                  
+          - name: textLinkLayout
+          - name: wrapperPadding
+          - name: wrapperBackgroundColors
+          - name: wrapperBorder
+          - name: wrapperWidthHeight

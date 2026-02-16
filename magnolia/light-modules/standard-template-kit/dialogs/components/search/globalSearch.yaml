@@ -1,0 +1,30 @@
+label: Global Search
+wide: true
+form:
+  properties:
+    
+    searchConfig: !include:/standard-template-kit/includes/dialogs/mpSearch/searchConfig.yaml
+    actions: !include:/standard-template-kit/includes/dialogs/mpSearch/actions.yaml
+    templatesSearchConfig: !include:/standard-template-kit/includes/dialogs/globalSearch/globalTemplatesSearchConfig.yaml      
+    templateActions: !include:/standard-template-kit/includes/dialogs/globalSearch/globalTemplateActions.yaml    
+    
+      
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: searchConfig MP
+      - label: Search Config
+        fields:
+          - name: searchConfig
+      - name: actions
+      - label: MP Actions
+        fields:
+          - name: actions
+      - name: searchConfig W2P
+      - label: W2P Search Config
+        fields:
+          - name: templatesSearchConfig
+      - name: actions
+      - label: W2P Actions
+        fields:
+          - name: templateActions

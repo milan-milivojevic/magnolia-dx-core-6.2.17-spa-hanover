@@ -1,0 +1,15 @@
+label: Horizontal Position
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: left
+  options:
+    - name: left  
+      label: Left
+      value: left
+    - name: center
+      label: Center
+      value: center
+    - name: right
+      label: Right
+      value: right

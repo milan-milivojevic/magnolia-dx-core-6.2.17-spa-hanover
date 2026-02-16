@@ -1,0 +1,10 @@
+label: Title
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  headlineLevel: !include:/standard-template-kit/includes/dialogs/text/includes/headlineLevel.yaml
+  headlinePosition: !include:/standard-template-kit/includes/dialogs/basics/positions/horizontalPosition.yaml
+  headlineFontFamily: !include:/standard-template-kit/includes/dialogs/text/includes/fontFamily.yaml

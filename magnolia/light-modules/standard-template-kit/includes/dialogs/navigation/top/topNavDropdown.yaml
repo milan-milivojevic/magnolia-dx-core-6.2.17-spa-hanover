@@ -1,0 +1,17 @@
+label: Dropdown Styles
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  dropdownHeight: !include:/standard-template-kit/includes/dialogs/basics/height.yaml
+  dropdownBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  level2Gap: 
+    label: Level 2 Gap
+    placeholder: 10% or 20px
+    $type: textField
+  # openOnClick: 
+  #   label: Open Dropdown On Click
+  #   buttonLabel: yes/no
+  #   $type: checkBoxField

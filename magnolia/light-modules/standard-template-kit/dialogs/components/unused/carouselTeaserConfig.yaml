@@ -1,0 +1,88 @@
+label: Carousel Teaser Configuration
+wide: true
+
+form:
+  properties:
+
+    styleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+    linkStyleWithCheckbox: !include:/standard-template-kit/includes/dialogs/teasersShared/styleWithCheckbox/link.yaml
+    imageTeaserStyleWithCheckbox: !include:/standard-template-kit/includes/dialogs/teasersShared/styleWithCheckbox/imageTeaser.yaml
+    carouselPadding: !include:/standard-template-kit/includes/dialogs/carousel/padding.yaml
+    carouselBorder: !include:/standard-template-kit/includes/dialogs/carousel/border.yaml
+    carouselWidthHeightPosition: !include:/standard-template-kit/includes/dialogs/carousel/widthHeightPosition.yaml
+    carouselArrowStyles: !include:/standard-template-kit/includes/dialogs/carousel/arrowStyles.yaml
+    carouselIndicatorStyles: !include:/standard-template-kit/includes/dialogs/carousel/indicatorStyles.yaml
+    
+    multi:
+      i18n: true
+      label: Multi
+      $type: jcrMultiField
+      field:
+        label: Field
+        $type: compositeField
+        properties:
+          headlineDesc:
+            label: Label
+            $type: compositeField
+            layout:
+              $type: horizontal
+            itemProvider:
+              $type: currentItemProvider
+            properties:
+              headline: !include:/standard-template-kit/includes/dialogs/text/headline.yaml
+                styleName: stk_headline
+              description: !include:/standard-template-kit/includes/dialogs/text/description.yaml  
+                height: 200 
+              image: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+                label: Image
+          linkTypelabel:
+            label: Label
+            $type: compositeField
+            layout:
+              $type: horizontal
+            itemProvider:
+              $type: currentItemProvider
+            properties:
+              linkType: !include:/standard-template-kit/includes/dialogs/teasersShared/linkType.yaml
+              linkLabel: !include:/standard-template-kit/includes/dialogs/link/label.yaml
+          
+          
+          linkLocationIconClickable: !include:/standard-template-kit/includes/dialogs/teasersShared/linkLocationIconClickable.yaml
+          
+    
+    
+    
+    
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: first10
+      - label: Images 1-10
+        fields:          
+          - name: multi
+      - name: last10
+      - label: Images 11-20 
+        fields:
+          - name: image11
+          - name: image12 
+          - name: image13  
+          - name: image14  
+          - name: image15  
+          - name: image16  
+          - name: image17  
+          - name: image18  
+          - name: image19
+          - name: image20
+      - name: carouselSettings
+      - label: Carousel Settings
+        fields:
+          - name: styleName
+          - name: imageTeaserStyleWithCheckbox
+          - name: linkStyleWithCheckbox
+          - name: carouselPadding
+          - name: carouselBorder   
+          - name: carouselWidthHeightPosition       
+          - name: carouselArrowStyles
+          - name: carouselIndicatorStyles
+         
+        

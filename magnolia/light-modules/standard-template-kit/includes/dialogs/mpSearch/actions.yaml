@@ -1,0 +1,38 @@
+label: ""
+$type: compositeField
+layout:
+  $type: stacked
+itemProvider:
+  $type: currentItemProvider
+properties:
+  downloadButton:
+    $type: checkBoxField
+    defaultValue: true
+    label: ""
+    buttonLabel: Show Download Button
+  emailButton:
+    $type: checkBoxField
+    defaultValue: true
+    label: ""
+    buttonLabel: Show Email Button
+  detailsButton:
+    $type: checkBoxField
+    defaultValue: true
+    label: ""
+    buttonLabel: Show Details Button
+  copyLinkButton:
+    $type: checkBoxField
+    defaultValue: true
+    label: ""
+    buttonLabel: Show Copy Link Button
+  shopButton:
+    $type: checkBoxField
+    defaultValue: true
+    label: ""
+    buttonLabel: Show Shop Button
+  b2bButton:
+    $type: checkBoxField
+    defaultValue: true
+    label: ""
+    buttonLabel: Show B2B Button
+  

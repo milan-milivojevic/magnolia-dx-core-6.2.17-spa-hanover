@@ -1,0 +1,4 @@
+label: Infinite Loop
+$type: checkBoxField
+defaultValue: false
+buttonLabel: yes/no

@@ -1,0 +1,484 @@
+.ReactModalPortal {
+    position: absolute;
+    z-index: 999999;
+}
+
+/*Close button */
+
+.closeButtonWrapper {
+    border-bottom: 1px solid #e2e8f0;
+    line-height: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closeButton {
+    color: #7ca940;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.closeButton svg {
+    width: 24px;
+    height: 24px;
+}
+
+/*Details Modal*/
+
+.detailsModalWrapper {
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.detailsModal {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    height: calc(100% - 45px);
+}
+
+a.linkToW2P {
+    color: #7ca940;
+    text-decoration: underline;
+    font-family: MuseoSans500;;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.detailOptions .detailsModal {
+    height: calc(100% - 55px);
+    padding-left: 15px;
+}
+
+.detailsModal div.detailsModalOptions {
+    height: 100%;
+    position: relative;
+    height: 100%;
+    max-width: 60%;
+    position: relative;
+    width: 60%;    
+}
+
+.assetPreview {
+    background-color: #e6e6e6;
+    border-right: 1px #e6e6e6 solid;
+    border-left: 1px #e6e6e6 solid;
+}
+.detailsModalOptions .assetCardPreview {
+    height: 230px;
+}
+.assetVersions, .assetVariants, .relatedAssets {  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    padding: 0 5px;
+}
+
+.detailsModalOptions ::-webkit-scrollbar {
+    width: 8px;  /* width of the entire scrollbar */
+  }
+  
+  /* This styles the draggable scrolling handle */
+  .detailsModalOptions ::-webkit-scrollbar-thumb {
+    background-color: darkgrey;  /* color of the scroll thumb */
+    border-radius: 4px;          /* roundness of the scroll thumb */
+    background-clip: content-box; /* this allows the thumb to be styled with borders or padding */
+  }
+  
+  /* This styles the buttons on the scrollbar (up and down arrows, usually not present on modern scrollbars) */
+  .detailsModalOptions ::-webkit-scrollbar-button {
+    display: none;  /* hides them */
+  }
+  
+  /* Style the hover state of the scroll thumb */
+  .detailsModalOptions ::-webkit-scrollbar-thumb:hover {
+    background-color: grey;
+  }
+
+/* .detailsModalOptions .assetCard {    
+    box-shadow: 0 1px 1px rgba(9,30,66,.5), 0 0 1px 1px rgba(9,30,66,.25);
+} */
+
+.detailsModal .detailsModalOptions .assetPreview {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.detailOptions .closeButtonWrapper {
+    justify-content: space-between;
+    padding: 15px 20px;
+    gap: 40px;
+}
+
+.closeButtonWrapper .closeButtonDiv {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closeButtonWrapper .navButtons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 60%;
+}
+
+.closeButtonWrapper .navButtons button {background-color: unset;border: 0;outline: 0;font-size: 16px;font-family: MuseoSans500;;cursor: pointer;}
+
+.closeButtonWrapper .navButtons button.active {
+    color: #7ca940;
+}
+
+.closeButtonWrapper .navButtons button:hover {
+    color: #7ca940;
+}
+
+.assetImageWrapper, 
+.assetVideoWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.assetImageWithNavigation {
+    width: 100%;
+    height: 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detailsModal .assetImageWrapper .assetImage,
+.detailsModal .assetVideoWrapper .assetVideo {
+    height: 100%;
+    border: 0px;
+}
+
+.assetImageWrapper .assetImageWithNavigation img {
+    height: calc(100% - 54px);
+}
+
+.detailsModalContent {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.assetImagePages {
+    position: relative;
+    height: 54px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.assetImagePages button svg {
+    width: 18px;
+    height: 18px;
+    line-height: 0;
+}
+
+.assetImagePages button {
+    color: #7ca940;
+    line-height: 0;
+    padding: 6px 12px 6px 10px;
+    cursor: pointer;
+    border: 1px solid #7ca940;
+    background-color: white;
+}
+
+
+
+.assetImagePages button.next {
+    padding: 6px 10px 6px 12px;
+}
+
+span.pagingStatus {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    color: #2d3748;
+}
+
+.detailsModalContent .assetTitle {
+    font-size: 20px;
+    line-height: 30px;
+    -webkit-line-clamp: 2;
+    max-height: 60px;
+    height: auto;
+}
+
+.detailsModalContent p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #2d3748;
+}
+
+.detailsModalContent p span {
+    color: #718096;
+}
+
+.fileFormatActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.fileFormatActions .assetActionButtons.show {
+    display: flex;
+    gap: 5px;
+}
+
+.fileFormatActions .assetActionButtons button {
+    color: #fff;
+    background-color: #7ca940;
+    border-radius: 4px;
+    padding: 11px 9px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+.fileFormatActions .assetActionButtons button:hover {
+    color: #7ca940;
+    background-color: #fff;
+    border: 1px solid #7ca940;
+    padding: 10px 9px;
+}
+
+.fileFormatActions .assetActionButtons svg path {
+    stroke: #fff;
+}
+.fileFormatActions .assetActionButtons button:hover svg path {
+    stroke: #7ca940;
+}
+
+.fileFormatActions .fileFormat {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 15px;
+    height: 36px;
+}
+
+.detailsModal span.error {
+    padding: 15px 20px;
+    background-color: #1e88e5;
+    color: #fff;
+    font-family: 'MuseoSans500';
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+    min-width: fit-content;
+}
+
+/*Download Modal*/
+
+.downloadModalWrapper,
+.emailModalWrapper {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    left: 50%;
+    max-width: 90%;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 600px;
+}
+
+.downloadModalWrapper .closeButtonWrapper h1.titleId,
+.emailModalWrapper h1.titleId {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+    max-height: 30px;
+    height: 30px;
+    color: #2d3748;
+    letter-spacing: 0;
+    padding: 0;
+}
+
+.downloadModalWrapper .closeButtonWrapper,
+.emailModalWrapper .closeButtonWrapper {
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.downloadModal,
+.emailModalForm {
+    padding: 20px;
+}
+
+.downloadModalWrapper .downloadOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 20px;
+}
+
+.downloadModalWrapper .assetDownloadSchemes h1.titleId,
+.downloadModalWrapper .licensePermission h1.titleId {
+    color: #2d3748;
+    font-family: MuseoSans500;;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 24px;
+}
+
+.downloadModalWrapper .downloadOptions label {
+    color: #2d3748;
+    display: block;
+    font-family: MuseoSans500;;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 0;
+}
+
+.downloadModalWrapper .downloadOptions label input {
+    margin-right: 5px;
+}
+
+.downloadModal p {
+    color: #2d3748;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.downloadModal span {
+    color: #718096;
+}
+
+.downloadModal label {
+    color: #2d3748;
+    font-family: MuseoSans500;;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 20px;
+    display: block;
+}
+
+.licenseConfirmation {
+    padding-top: 0;
+    display: inline-block;
+    accent-color: #7ca940;
+}
+
+.downloadModal .downloadButton {
+    display: flex;
+    justify-content: right;
+}
+
+.downloadModal .downloadButton button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 16px;
+    outline: 0;
+    border-radius: 4px;
+}
+
+.downloadModal .downloadButton button.enabled {
+    background-color: #7ca940;
+    color: #fff;
+    border: 1px solid #7ca940;
+    padding: 11px 21px;
+    cursor: pointer;
+}
+.downloadModal .downloadButton button.enabled:hover {
+    border-color: #2d3748;
+}
+
+/*Email Modal */
+
+.emailModalForm label {
+    display: block;
+    font-family: MuseoSans500;;
+    color: #2d3748;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 2px;
+}
+
+.emailModalInput {
+    padding-bottom: 10px;
+}
+
+.emailModalForm input[type="text"],
+.emailModalForm input[type="checkbox"],
+.emailModalForm textarea {
+  border: 1px solid #878787;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  outline-color: #2d3748;
+}
+
+.emailModalForm .sendMailButton {
+    display: flex;
+    justify-content: right;
+}
+
+.emailModalForm .sendMailButton button {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    outline: 0;
+    border-radius: 4px;
+    background-color: #7ca940;
+    color: #fff;
+    border: 1px solid #7ca940;
+    padding: 11px 21px;
+    cursor: pointer;
+}
+.emailModalForm .sendMailButton button:hover {
+    border-color: #2d3748;
+}
+
+.staticSearch .searchBox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.staticSearch .searchModal p {
+    color: #cc0000;
+    font-size: 12px;
+    line-height: 12px;
+}

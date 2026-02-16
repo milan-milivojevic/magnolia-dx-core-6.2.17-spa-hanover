@@ -1,0 +1,15 @@
+label: Description & Link Layout
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: start
+  options:
+    - name: unset  
+      label: Unset
+      value: null
+    - name: layout1  
+      label: Layout 1 - Description Top - Link Bottom
+      value: layout1
+    - name: layout2
+      label: Layout 2 - Description Left - Link Right
+      value: layout2

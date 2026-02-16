@@ -1,0 +1,11 @@
+label: Default Colors
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:    
+  l1Color: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+  l1HoverColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontHoverColor.yaml
+  l1DefBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  l1HoverBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml

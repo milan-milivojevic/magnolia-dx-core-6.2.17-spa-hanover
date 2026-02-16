@@ -1,0 +1,11 @@
+label: User Styles
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:    
+  userColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+  userHoverColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontHoverColor.yaml
+  userFontSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml
+  userFontFamily: !include:/standard-template-kit/includes/dialogs/text/includes/fontFamily.yaml

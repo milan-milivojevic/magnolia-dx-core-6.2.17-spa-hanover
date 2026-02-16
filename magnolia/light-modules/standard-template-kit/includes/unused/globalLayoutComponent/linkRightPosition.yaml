@@ -1,0 +1,38 @@
+label: Layouts 2,4,6,7 - Link Position
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: start
+  options:
+    - name: unset  
+      label: Unset
+      value: null
+    - name: topLeft  
+      label: Top Left
+      value: top_left
+    - name: topCenter
+      label: Top Center
+      value: top_center
+    - name: topRight
+      label: Top Right
+      value: top_right
+    - name: center left
+      label: Center Left
+      value: center_left    
+    - name: center
+      label: Center
+      value: center 
+    - name: center right
+      label: Center Right
+      value: center_right
+    - name: bottomLeft
+      label: Bottom Left
+      value: bottom_left
+    - name: bottomCenter
+      label: Bottom Center
+      value: bottom_center
+    - name: bottomRight
+      label: Bottom Right
+      value: bottom_right
+    
+      

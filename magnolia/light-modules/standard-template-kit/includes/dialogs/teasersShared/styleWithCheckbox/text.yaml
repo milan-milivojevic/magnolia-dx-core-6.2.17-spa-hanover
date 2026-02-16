@@ -1,0 +1,13 @@
+$type: compositeField
+label: "Text Config Style"
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  textStyleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+  textNoStyles:
+    $type: checkBoxField
+    label: Without Config Styles
+    buttonLabel: "yes/no"
+    defaultValue: true

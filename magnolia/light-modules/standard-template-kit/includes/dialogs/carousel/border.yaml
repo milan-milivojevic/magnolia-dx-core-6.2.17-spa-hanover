@@ -1,0 +1,13 @@
+label: Carousel
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  carouselBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  carouselBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  carouselBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
+  carouselBorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml
+  
+  

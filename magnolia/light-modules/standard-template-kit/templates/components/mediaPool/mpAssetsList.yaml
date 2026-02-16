@@ -1,0 +1,8 @@
+title: MP List of Assets
+dialog: standard-template-kit:components/mediaPool/mpAssetsList
+areas:
+  column1: &column1
+    title: MP Single Asset Components
+    availableComponents:
+      mpSingleAsset:
+        id: standard-template-kit:components/mediaPool/mpSingleAsset

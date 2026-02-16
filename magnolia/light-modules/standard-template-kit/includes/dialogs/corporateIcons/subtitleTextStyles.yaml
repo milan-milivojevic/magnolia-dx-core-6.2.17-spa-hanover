@@ -1,0 +1,11 @@
+label: Subtitle
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  subtitleFontSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml
+  subtitleLineHeight: !include:/standard-template-kit/includes/dialogs/text/includes/lineHeight.yaml
+  subtitleColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+  subtitleLetterSpacing: !include:/standard-template-kit/includes/dialogs/text/includes/letterSpacing.yaml

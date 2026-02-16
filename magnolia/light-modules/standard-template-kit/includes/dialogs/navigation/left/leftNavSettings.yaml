@@ -1,0 +1,16 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  leftNavWidth: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+  leftNavBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  leftNavChevronColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/chevronColor.yaml
+  leftNavChevronPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
+    label: Chevron Padding Left
+  lvl3AlwaysOpen: 
+    label: Lvl3 Open
+    buttonLabel: yes/no
+    $type: checkBoxField

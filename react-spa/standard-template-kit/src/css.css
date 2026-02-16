@@ -1,0 +1,285 @@
+@import url('./styles/basicComponents.css');
+@import url('./styles/advancedComponents.css');
+@import url('./styles/groupingComponents.css');
+@import url('./styles/fonts.css');
+@import url('./styles/hanover.css');
+@import url('./styles/hanover1.css');
+@import url('./styles/assetsCss.css');
+@import url('./styles/mediaPool/modal.css');
+@import url('./styles/w2p/modals.css');
+
+.homePage > div,
+.contentPage > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.spacer {
+  width: 100%;
+  display: block;
+}
+
+figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.v-textfield-stk_headline {
+  width: 800px !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+h6 {
+  border-bottom: 1px solid #716f73;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.columnSections {
+  display: flex;
+  flex-direction: row;
+}
+
+.columnSections.layout1>div {
+  width: 100%;
+}
+
+.columnSections.layout2>div {
+  width: 50%;
+}
+.columnSections.layout21>div:first-child {
+  width: 75%;
+}
+.columnSections.layout21>div:last-child {
+  width: 25%;
+}
+.columnSections.layout22>div:first-child {
+  width: 25%;
+}
+.columnSections.layout22>div:last-child {
+  width: 75%;
+}
+.columnSections.layout23>div:first-child {
+  width: calc((100% / 3) * 2);
+}
+.columnSections.layout23>div:last-child {
+  width: calc(100% / 3);
+}
+.columnSections.layout24>div:first-child {
+  width: calc(100% / 3);
+}
+.columnSections.layout24>div:last-child {
+  width: calc((100% / 3) * 2);
+}
+
+.columnSections.layout3>div {
+  width: calc(100% / 3);
+}
+.columnSections.layout31>div:first-child {
+  width: 50%;
+}
+.columnSections.layout31>div:nth-child(2) {
+  width: 25%;
+}
+.columnSections.layout31>div:last-child {
+  width: 25%;
+}
+.columnSections.layout32>div:first-child {
+  width: 25%;
+}
+.columnSections.layout32>div:nth-child(2) {
+  width: 50%;
+}
+.columnSections.layout32>div:last-child {
+  width: 25%;
+}
+.columnSections.layout33>div:first-child {
+  width: 25%;
+}
+.columnSections.layout33>div:nth-child(2) {
+  width: 25%;
+}
+.columnSections.layout33>div:last-child {
+  width: 50%;
+}
+
+.columnSections.layout4>div {
+  width: calc(100% / 4);
+}
+
+.columnSections.layout5>div {
+  width: calc(100% / 5);
+}
+
+.columnSections.layout6>div {
+  width: calc(100% / 6);
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+
+
+.editMode .mgnlEditor {
+  display: flex !important;
+}
+
+.editMode .mgnlEditor.mgnlPlaceholder {
+  display: block !important;
+}
+
+
+
+
+
+.configComponentsPage {
+  background-color: #ededed;
+}
+
+.configComponentsPage .titles { 
+  padding: 40px 0;
+  text-align: center;
+  color: #003150;
+}
+
+.configComponentsPage > div {
+  border-bottom: 4px #464646 dashed;
+  padding: 40px 0;
+}
+
+.configComponentsPage > div:last-child {
+  border-bottom: 0;
+}
+
+.configComponents {
+  padding-bottom: 20px;
+}
+
+.copyStyleName {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.copyStyleName h3 {
+  text-align: center;  
+  padding: 0 20px 0 0;
+  text-transform: none;
+}
+
+.copyStyleName button{
+  padding: 2.5px 5px;
+}
+
+.flex {
+  display: flex;
+}
+.flexColumn {
+display: flex;
+flex-direction: column;
+}
+
+
+
+
+
+
+
+
+.corporateIcons .iconsWrapper {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40px;
+}
+
+.corporateIcons .iconsWrapper > div {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.corporateIcons .iconsWrapper a {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.corporateIcons .iconsWrapper svg {
+  width: 24px;
+  height: 24px;
+  color: #464646;
+}
+
+.corporateIcons .iconSmall {
+  width: 50px;
+  height: 50px;
+}
+
+.corporateIcons .iconMedium {
+  width: 100px;
+  height: 100px;
+}
+
+.corporateIcons .iconLarge {
+  width: 250px;
+  height: 250px;
+}
+
+.corporateIcons .iconSmallLink {
+  width: 50px;
+}
+
+.corporateIcons .iconMediumLink {
+  width: 100px;
+}
+
+.corporateIcons .iconLargeLink {
+  width: 250px;
+}
+
+/* a, figcaption {
+  font-family: 'Sohne Buch';
+} */
+
+a.link svg {
+  margin-left: 10px;
+}
+
+
+
+.linkComponent {
+  min-width: fit-content;
+}
+
+
+

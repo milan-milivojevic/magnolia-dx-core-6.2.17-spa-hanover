@@ -1,0 +1,13 @@
+$type: compositeField
+label: "Link Config Style"
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  linkStyleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+  linkNoStyles:
+    $type: checkBoxField
+    label: Without Config Styles
+    buttonLabel: "yes/no"
+    defaultValue: false

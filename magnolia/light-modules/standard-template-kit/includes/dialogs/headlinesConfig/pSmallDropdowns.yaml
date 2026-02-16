@@ -1,0 +1,11 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  pSmallFontFamily: !include:/standard-template-kit/includes/dialogs/text/includes/fontFamily.yaml
+  pSmallTextTransform: !include:/standard-template-kit/includes/dialogs/text/includes/textTransform.yaml
+  pSmallBold: !include:/standard-template-kit/includes/dialogs/text/includes/bold.yaml
+  pSmallItalic: !include:/standard-template-kit/includes/dialogs/text/includes/italic.yaml

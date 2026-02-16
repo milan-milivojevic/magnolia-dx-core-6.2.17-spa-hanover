@@ -1,0 +1,19 @@
+label: W2P Templates Search
+wide: true
+form:
+  properties:    
+  
+    templatesSearchConfig: !include:/standard-template-kit/includes/dialogs/w2p/search/templatesSearchConfig.yaml  
+    templateActions: !include:/standard-template-kit/includes/dialogs/w2p/templateActions.yaml
+      
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: searchConfig
+      - label: Search Config
+        fields:
+          - name: templatesSearchConfig
+      - name: actions
+      - label: Actions
+        fields:
+          - name: templateActions

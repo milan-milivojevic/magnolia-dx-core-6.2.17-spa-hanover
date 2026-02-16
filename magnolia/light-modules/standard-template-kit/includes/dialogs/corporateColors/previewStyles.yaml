@@ -1,0 +1,11 @@
+label: Color Preview
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  previewStyle: !include:/standard-template-kit/includes/dialogs/corporateColors/previewStyle.yaml
+  previewHeight: !include:/standard-template-kit/includes/dialogs/basics/height.yaml
+  previewNameSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml
+    label: Name Font Size

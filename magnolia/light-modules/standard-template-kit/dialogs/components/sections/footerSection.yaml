@@ -1,0 +1,20 @@
+label: Footer Section
+wide: true
+form:
+  properties:
+    layout: !include:/standard-template-kit/includes/dialogs/listComponents/layout.yaml  
+    gap: !include:/standard-template-kit/includes/dialogs/listComponents/includes/gap.yaml
+    padding: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperPadding.yaml
+    border: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperBorder.yaml
+      label: Top Border
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: sectionStyles
+      - label: Section Settings
+        fields:
+          - name: layout
+          - name: gap
+          - name: padding
+          - name: border

@@ -1,0 +1,11 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  h2FontSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml
+  h2LineHeight: !include:/standard-template-kit/includes/dialogs/text/includes/lineHeight.yaml
+  h2Color: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+  h2LetterSpacing: !include:/standard-template-kit/includes/dialogs/text/includes/letterSpacing.yaml

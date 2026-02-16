@@ -1,0 +1,296 @@
+'nextjs-ssg-minimal':
+  'jcr:mixinTypes': ['mgnl:hasVersion']
+  'jcr:primaryType': 'mgnl:page'
+  'jcr:uuid': '7afa0424-eaf2-418c-a192-ddbbab99e45a'
+  'mgnl:activationStatus': true
+  'mgnl:created': 2021-11-10T18:09:52.086+01:00
+  'mgnl:createdBy': 'superuser'
+  'mgnl:lastActivated': 2021-11-10T18:27:11.680+01:00
+  'mgnl:lastActivatedBy': 'superuser'
+  'mgnl:lastActivatedVersion': '1.0'
+  'mgnl:lastActivatedVersionCreated': 2021-11-10T18:27:01.137+01:00
+  'mgnl:lastModified': 2021-11-10T18:10:37.340+01:00
+  'mgnl:lastModifiedBy': 'superuser'
+  'mgnl:template': 'nextjs-ssg-minimal-lm:pages/basic'
+  'title': 'NEXTJS SSG Minimal'
+  'main':
+    'jcr:primaryType': 'mgnl:area'
+    'jcr:uuid': '6066f4bf-d8ea-468d-9f24-cf6f8659602a'
+    'mgnl:activationStatus': true
+    'mgnl:created': 2021-11-10T18:09:52.086+01:00
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastActivated': 2021-11-10T18:27:11.685+01:00
+    'mgnl:lastActivatedBy': 'superuser'
+    '00':
+      'image': 'jcr:090eb9c4-b35b-4869-a12f-6ea80292cba4'
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': '36d40d6a-369e-4678-b78b-38879c499d2d'
+      'mgnl:activationStatus': true
+      'mgnl:created': 2021-11-10T18:09:52.086+01:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastActivated': 2021-11-10T18:27:11.685+01:00
+      'mgnl:lastActivatedBy': 'superuser'
+      'mgnl:template': 'spa-lm:components/image'
+    '01':
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': '0e8ef90b-c4de-40d2-8dce-5c1ca4474f21'
+      'mgnl:activationStatus': true
+      'mgnl:created': 2021-11-10T18:09:52.086+01:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastActivated': 2021-11-10T18:27:11.685+01:00
+      'mgnl:lastActivatedBy': 'superuser'
+      'mgnl:template': 'spa-lm:components/paragraph'
+      'richText': '<p>Ahhhhh, <strong><em>springtime</em></strong>.</p>
+
+
+        <p>Throw wide the windows, and let the cool breeze sweep through the apartment
+        and chase away the winter blues.</p>
+
+        '
+      'richText_de': '<p>Ahhhhh, <em><strong>Fr&uuml;hlingszeit.</strong></em></p>
+
+
+        <p>Werft die Fenster weit auf und lasst die k&uuml;hle Brise durch die Wohnung
+        str&ouml;men und die Bedr&uuml;cktheit des Winters vertreiben.</p>
+
+
+        <p>&nbsp;</p>
+
+        '
+  'contact':
+    'jcr:mixinTypes': ['mgnl:hasVersion']
+    'jcr:primaryType': 'mgnl:page'
+    'jcr:uuid': '6fc97992-1ac6-4b97-8ecf-a474a1a70a6b'
+    'mgnl:activationStatus': true
+    'mgnl:created': 2021-11-10T18:09:52.086+01:00
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastActivated': 2021-11-10T18:27:11.918+01:00
+    'mgnl:lastActivatedBy': 'superuser'
+    'mgnl:lastActivatedVersion': '1.0'
+    'mgnl:lastActivatedVersionCreated': 2021-11-10T18:27:01.254+01:00
+    'mgnl:lastModified': 2021-11-10T18:10:56.136+01:00
+    'mgnl:lastModifiedBy': 'superuser'
+    'mgnl:template': 'nextjs-ssg-minimal-lm:pages/contact'
+    'title': 'Contact'
+    'title_de': 'Kontakt'
+    'main':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': '565063d4-7047-4b5b-b227-b756b23f4128'
+      'mgnl:activationStatus': true
+      'mgnl:created': 2021-11-10T18:09:52.086+01:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastActivated': 2021-11-10T18:27:11.919+01:00
+      'mgnl:lastActivatedBy': 'superuser'
+      '00':
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': 'f90703fd-e931-44e3-9b1d-24779f48030f'
+        'mgnl:activationStatus': true
+        'mgnl:created': 2021-11-10T18:09:52.086+01:00
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastActivated': 2021-11-10T18:27:11.919+01:00
+        'mgnl:lastActivatedBy': 'superuser'
+        'mgnl:template': 'spa-lm:components/paragraph'
+        'richText': '<p><strong>Contact Sales</strong></p>
+
+          '
+        'richText_de': '<p><strong>Kontakt Verkauf</strong></p>
+
+          '
+      '0':
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': '823ea207-500d-45e9-8d16-63a9f3bef4bf'
+        'mgnl:activationStatus': true
+        'mgnl:created': 2021-11-10T18:09:52.086+01:00
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastActivated': 2021-11-10T18:27:11.919+01:00
+        'mgnl:lastActivatedBy': 'superuser'
+        'mgnl:template': 'spa-lm:components/expander'
+        'expanderItems':
+          'jcr:primaryType': 'mgnl:area'
+          'jcr:uuid': '1be0f16c-2aa7-4de4-a5e2-a883fb5cde33'
+          'mgnl:activationStatus': true
+          'mgnl:created': 2021-11-10T18:09:52.086+01:00
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastActivated': 2021-11-10T18:27:11.919+01:00
+          'mgnl:lastActivatedBy': 'superuser'
+          '00':
+            'jcr:primaryType': 'mgnl:component'
+            'jcr:uuid': '12247935-e291-41c3-b302-ed001d23b600'
+            'mgnl:activationStatus': true
+            'mgnl:created': 2021-11-10T18:09:52.086+01:00
+            'mgnl:createdBy': 'superuser'
+            'mgnl:lastActivated': 2021-11-10T18:27:11.920+01:00
+            'mgnl:lastActivatedBy': 'superuser'
+            'mgnl:template': 'spa-lm:components/paragraph'
+            'richText': '<p>Reach out to us anytime, 24/7. Really. Go ahead, just
+              call us! <em>Please?</em></p>
+
+
+              <p>sales@minimal-spa-demo.com</p>
+
+
+              <p>+41 12 34 567 89 00</p>
+
+              '
+            'richText_de': '<p>Kontaktiert uns jederzeit, 24/7. Ernsthaft. Kommt schon,
+              ruft uns einfach an! <em>Bitte?</em></p>
+
+
+              <p>sales@minimal-spa-demo.com</p>
+
+
+              <p>+41 12 34 567 89 00</p>
+
+
+              <p>&nbsp;</p>
+
+              '
+      '01':
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': 'a2697b40-19fc-4daa-8fa9-8649beec25a8'
+        'mgnl:activationStatus': true
+        'mgnl:created': 2021-11-10T18:09:52.086+01:00
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastActivated': 2021-11-10T18:27:11.920+01:00
+        'mgnl:lastActivatedBy': 'superuser'
+        'mgnl:template': 'spa-lm:components/paragraph'
+        'richText': '<p><strong>Contact Support</strong></p>
+
+          '
+        'richText_de': '<p><strong>Kontakt Support</strong></p>
+
+          '
+      '02':
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': 'ef7d4980-1293-41c5-b6ec-a7cb036a02ed'
+        'mgnl:activationStatus': true
+        'mgnl:created': 2021-11-10T18:09:52.086+01:00
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastActivated': 2021-11-10T18:27:11.920+01:00
+        'mgnl:lastActivatedBy': 'superuser'
+        'mgnl:template': 'spa-lm:components/expander'
+        'expanderItems':
+          'jcr:primaryType': 'mgnl:area'
+          'jcr:uuid': 'e32b573b-8c6a-4545-ae05-fb5c40dae887'
+          'mgnl:activationStatus': true
+          'mgnl:created': 2021-11-10T18:09:52.086+01:00
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastActivated': 2021-11-10T18:27:11.920+01:00
+          'mgnl:lastActivatedBy': 'superuser'
+          '00':
+            'jcr:primaryType': 'mgnl:component'
+            'jcr:uuid': 'a677957a-f762-41ea-8925-8032c3e41238'
+            'mgnl:activationStatus': true
+            'mgnl:created': 2021-11-10T18:09:52.086+01:00
+            'mgnl:createdBy': 'superuser'
+            'mgnl:lastActivated': 2021-11-10T18:27:11.921+01:00
+            'mgnl:lastActivatedBy': 'superuser'
+            'mgnl:template': 'spa-lm:components/paragraph'
+            'richText': '<p>Available from 3:00 - 3:25. Every 2nd Tuesday of the month.</p>
+
+
+              <p>support@minimal-spa-demo.com</p>
+
+
+              <p>+41 98 765 43 21 00</p>
+
+              '
+            'richText_de': '<p>Erreichbar von 15:00 - 15:25. Jeden 2. Dienstag des
+              Monats.</p>
+
+
+              <p>support@minimal-spa-demo.com</p>
+
+
+              <p>+41 98 765 43 21 00</p>
+
+
+              <p><br />
+
+              &nbsp;</p>
+
+              '
+  'extras':
+    'jcr:primaryType': 'mgnl:area'
+    'jcr:uuid': '2cab13f8-1922-49ee-a750-337176ec0f78'
+    'mgnl:activationStatus': true
+    'mgnl:created': 2021-11-10T18:09:52.086+01:00
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastActivated': 2021-11-10T18:27:11.685+01:00
+    'mgnl:lastActivatedBy': 'superuser'
+    '0':
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': 'df645902-0af6-48b4-b66b-000400c3b1e7'
+      'mgnl:activationStatus': true
+      'mgnl:created': 2021-11-10T18:09:52.086+01:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastActivated': 2021-11-10T18:27:11.686+01:00
+      'mgnl:lastActivatedBy': 'superuser'
+      'mgnl:template': 'spa-lm:components/headline'
+      'text': 'Spring Essentials'
+      'text_de': 'Essential für den Fruhling'
+    '00':
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': '45f15f19-7183-4cf2-b0e7-c388c8c02d14'
+      'mgnl:activationStatus': true
+      'mgnl:created': 2021-11-10T18:09:52.086+01:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastActivated': 2021-11-10T18:27:11.686+01:00
+      'mgnl:lastActivatedBy': 'superuser'
+      'mgnl:template': 'spa-lm:components/list'
+      'items':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': '8f72182c-24ee-4fc3-8c1e-c4e164e3ef56'
+        'mgnl:activationStatus': true
+        'mgnl:created': 2021-11-10T18:09:52.086+01:00
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastActivated': 2021-11-10T18:27:11.686+01:00
+        'mgnl:lastActivatedBy': 'superuser'
+        '0':
+          'jcr:primaryType': 'mgnl:component'
+          'jcr:uuid': '921a729e-d9a1-4def-b1ba-267b21c82a3b'
+          'mgnl:activationStatus': true
+          'mgnl:created': 2021-11-10T18:09:52.086+01:00
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastActivated': 2021-11-10T18:27:11.686+01:00
+          'mgnl:lastActivatedBy': 'superuser'
+          'mgnl:template': 'spa-lm:components/listItem'
+          'text': 'Put ski''s in storage'
+          'text_de': 'Räumt die Skier weg'
+        '00':
+          'jcr:primaryType': 'mgnl:component'
+          'jcr:uuid': '52e7ccc2-e1be-4737-8454-758060dc7924'
+          'mgnl:activationStatus': true
+          'mgnl:created': 2021-11-10T18:09:52.086+01:00
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastActivated': 2021-11-10T18:27:11.686+01:00
+          'mgnl:lastActivatedBy': 'superuser'
+          'mgnl:template': 'spa-lm:components/listItem'
+          'text': 'Get grill on balcony'
+          'text_de': 'Macht den Grill auf den Balkon'
+        '01':
+          'jcr:primaryType': 'mgnl:component'
+          'jcr:uuid': '5c90b31b-56e0-4a17-b070-e361a6c546a0'
+          'mgnl:activationStatus': true
+          'mgnl:created': 2021-11-10T18:09:52.086+01:00
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastActivated': 2021-11-10T18:27:11.687+01:00
+          'mgnl:lastActivatedBy': 'superuser'
+          'mgnl:template': 'spa-lm:components/listItem'
+          'text': 'Buy beer'
+          'text_de': 'Kauft Bier'
+    '01':
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': 'd14bcd45-0927-4da4-b29a-2f47c3e167a2'
+      'mgnl:activationStatus': true
+      'mgnl:created': 2021-11-10T18:09:52.086+01:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastActivated': 2021-11-10T18:27:11.687+01:00
+      'mgnl:lastActivatedBy': 'superuser'
+      'mgnl:template': 'spa-lm:components/paragraph'
+      'richText': '<p>It&#39;s all about <em>priorities</em>.</p>
+
+        '
+      'richText_de': '<p>Es geht alles um die Priorit&auml;ten</p>
+
+        '

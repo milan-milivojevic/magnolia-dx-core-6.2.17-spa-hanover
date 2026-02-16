@@ -1,0 +1,67 @@
+label: Headlines Configuration
+wide: true
+form:
+  properties:
+    h1Dropdowns: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h1Dropdowns.yaml
+    h1Styles: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h1Styles.yaml
+    h1Paddings: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h1Paddings.yaml
+    
+    h2Dropdowns: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h2Dropdowns.yaml
+    h2Styles: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h2Styles.yaml
+    h2Paddings: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h2Paddings.yaml
+
+    h3Dropdowns: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h3Dropdowns.yaml
+    h3Styles: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h3Styles.yaml
+    h3Paddings: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h3Paddings.yaml
+
+    h4Dropdowns: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h4Dropdowns.yaml
+    h4Styles: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h4Styles.yaml
+    h4Paddings: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h4Paddings.yaml
+
+    h5Dropdowns: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h5Dropdowns.yaml
+    h5Styles: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h5Styles.yaml
+    h5Paddings: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h5Paddings.yaml
+
+    h6Dropdowns: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h6Dropdowns.yaml
+    h6Styles: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h6Styles.yaml
+    h6Paddings: !include:/standard-template-kit/includes/dialogs/headlinesConfig/h6Paddings.yaml
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: h1 
+      - label: H1 Config
+        fields:
+          - name: h1Styles          
+          - name: h1Dropdowns
+          - name: h1Paddings
+      - name: h2
+      - label: H2 Config
+        fields:
+          - name: h2Styles          
+          - name: h2Dropdowns
+          - name: h2Paddings
+      - name: h3
+      - label: H3 Config
+        fields:
+          - name: h3Styles          
+          - name: h3Dropdowns
+          - name: h3Paddings
+      - name: h4
+      - label: H4 Config
+        fields:
+          - name: h4Styles          
+          - name: h4Dropdowns
+          - name: h4Paddings
+      - name: h5
+      - label: H5 Config
+        fields:
+          - name: h5Styles          
+          - name: h5Dropdowns
+          - name: h5Paddings
+      - name: h6
+      - label: H6 Config
+        fields:
+          - name: h6Styles          
+          - name: h6Dropdowns
+          - name: h6Paddings

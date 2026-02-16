@@ -1,0 +1,12 @@
+title: Search Page - Static Content 
+
+# baseUrl: http://localhost:3000 
+# routeTemplate: '/{language}{{@path}}'
+templateScript: /standard-template-kit/webresources/build/index.html
+
+dialog: standard-template-kit:pages/search/staticContent
+
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+
+

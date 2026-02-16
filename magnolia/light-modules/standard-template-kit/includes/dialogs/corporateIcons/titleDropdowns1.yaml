@@ -1,0 +1,10 @@
+label: Title
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  titleTextTransform: !include:/standard-template-kit/includes/dialogs/text/includes/textTransform.yaml
+  titleBold: !include:/standard-template-kit/includes/dialogs/text/includes/bold.yaml
+  titleItalic: !include:/standard-template-kit/includes/dialogs/text/includes/italic.yaml

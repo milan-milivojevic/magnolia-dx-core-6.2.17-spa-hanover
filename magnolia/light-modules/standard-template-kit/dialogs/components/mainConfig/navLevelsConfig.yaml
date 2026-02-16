@@ -1,0 +1,64 @@
+label: Navigation Levels Configuration
+wide: true
+form:
+  properties:
+
+    level1Font: !include:/standard-template-kit/includes/dialogs/navigation/level1Font.yaml
+    level1Colors: !include:/standard-template-kit/includes/dialogs/navigation/level1Colors.yaml
+    level1ActiveColors: !include:/standard-template-kit/includes/dialogs/navigation/level1ActiveColors.yaml
+    level1OpenColors: !include:/standard-template-kit/includes/dialogs/navigation/level1OpenColors.yaml
+    level1Padding: !include:/standard-template-kit/includes/dialogs/navigation/level1Padding.yaml
+    level1SeparationBorder: !include:/standard-template-kit/includes/dialogs/navigation/level1SeparationBorder.yaml
+
+    level2Font: !include:/standard-template-kit/includes/dialogs/navigation/level2Font.yaml
+    level2Colors: !include:/standard-template-kit/includes/dialogs/navigation/level2Colors.yaml
+    level2ActiveColors: !include:/standard-template-kit/includes/dialogs/navigation/level2ActiveColors.yaml
+    level2OpenColors: !include:/standard-template-kit/includes/dialogs/navigation/level2OpenColors.yaml
+    level2Padding: !include:/standard-template-kit/includes/dialogs/navigation/level2Padding.yaml
+
+    level3Font: !include:/standard-template-kit/includes/dialogs/navigation/level3Font.yaml
+    level3Colors: !include:/standard-template-kit/includes/dialogs/navigation/level3Colors.yaml
+    level3ActiveColors: !include:/standard-template-kit/includes/dialogs/navigation/level3ActiveColors.yaml
+    level3OpenColors: !include:/standard-template-kit/includes/dialogs/navigation/level3OpenColors.yaml
+    level3Padding: !include:/standard-template-kit/includes/dialogs/navigation/level3Padding.yaml
+    level3Margin: !include:/standard-template-kit/includes/dialogs/navigation/level3Margin.yaml
+
+    level4Font: !include:/standard-template-kit/includes/dialogs/navigation/level4Font.yaml
+    level4Colors: !include:/standard-template-kit/includes/dialogs/navigation/level4Colors.yaml
+    level4ActiveColors: !include:/standard-template-kit/includes/dialogs/navigation/level4ActiveColors.yaml
+    level4OpenColors: !include:/standard-template-kit/includes/dialogs/navigation/level4OpenColors.yaml
+    level4Padding: !include:/standard-template-kit/includes/dialogs/navigation/level4Padding.yaml
+  
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: level1
+      - label: Level 1
+        fields:
+          - name: level1Font
+          - name: level1Colors
+          - name: level1ActiveColors
+          - name: level1Padding
+          - name: level1SeparationBorder
+      - name: level2
+      - label: Level 2
+        fields:
+          - name: level2Font
+          - name: level2Colors
+          - name: level2ActiveColors
+          - name: level2Padding
+      - name: level3
+      - label: Level 3
+        fields:
+          - name: level3Font
+          - name: level3Colors
+          - name: level3ActiveColors
+          - name: level3Padding
+          - name: level3Margin
+      - name: level4
+      - label: Level 4
+        fields:
+          - name: level4Font
+          - name: level4Colors
+          - name: level4ActiveColors
+          - name: level4Padding

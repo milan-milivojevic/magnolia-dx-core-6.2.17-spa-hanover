@@ -1,0 +1,23 @@
+label: User Settings
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:    
+  showAdminLink: 
+    label: Show Admin Link
+    buttonLabel: yes/no
+    $type: checkBoxField
+  adminLinkDisplayName:
+    label: Admin Display Name
+    placeholder: Enter Name
+    $type: textField  
+  showUserLink: 
+    label: Show User Link
+    buttonLabel: yes/no
+    $type: checkBoxField
+  userLinkDisplayName:
+    label: User Display Name
+    placeholder: Enter Name
+    $type: textField

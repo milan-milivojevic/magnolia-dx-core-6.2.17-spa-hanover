@@ -1,0 +1,55 @@
+label: Paragraph Configuration
+wide: true
+form:
+  properties:
+    pDefaultDropdowns: !include:/standard-template-kit/includes/dialogs/paragraphConfig/pDefaultDropdowns.yaml
+    pDefaultStyles: !include:/standard-template-kit/includes/dialogs/paragraphConfig/pDefaultStyles.yaml
+    pDefaultPaddings: !include:/standard-template-kit/includes/dialogs/paragraphConfig/pDefaultPaddings.yaml
+
+    pSmallDropdowns: !include:/standard-template-kit/includes/dialogs/paragraphConfig/pSmallDropdowns.yaml
+    pSmallStyles: !include:/standard-template-kit/includes/dialogs/paragraphConfig/pSmallStyles.yaml
+    pSmallPaddings: !include:/standard-template-kit/includes/dialogs/paragraphConfig/pSmallPaddings.yaml
+
+    pNormalDropdowns: !include:/standard-template-kit/includes/dialogs/paragraphConfig/pNormalDropdowns.yaml
+    pNormalStyles: !include:/standard-template-kit/includes/dialogs/paragraphConfig/pNormalStyles.yaml
+    pNormalPaddings: !include:/standard-template-kit/includes/dialogs/paragraphConfig/pNormalPaddings.yaml
+
+    pBigDropdowns: !include:/standard-template-kit/includes/dialogs/paragraphConfig/pBigDropdowns.yaml
+    pBigStyles: !include:/standard-template-kit/includes/dialogs/paragraphConfig/pBigStyles.yaml
+    pBigPaddings: !include:/standard-template-kit/includes/dialogs/paragraphConfig/pBigPaddings.yaml
+
+    imageCaptionDropdowns: !include:/standard-template-kit/includes/dialogs/paragraphConfig/imageCaptionDropdowns.yaml
+    imageCaptionStyles: !include:/standard-template-kit/includes/dialogs/paragraphConfig/imageCaptionStyles.yaml
+
+  layout:
+    $type: tabbedLayout
+    tabs:      
+      - name: paragraphDefalt
+      - label: Default Paragraph Config
+        fields:
+          - name: pDefaultStyles          
+          - name: pDefaultDropdowns
+          - name: pDefaultPaddings
+      - name: paragraphSmall
+      - label: Small Paragraph Config
+        fields:
+          - name: pSmallStyles          
+          - name: pSmallDropdowns
+          - name: pSmallPaddings
+      - name: paragraphNormal
+      - label: Normal Paragraph Config
+        fields:
+          - name: pNormalStyles          
+          - name: pNormalDropdowns
+          - name: pNormalPaddings
+      - name: paragraphBig
+      - label: Big Paragraph Config
+        fields:
+          - name: pBigStyles          
+          - name: pBigDropdowns
+          - name: pBigPaddings
+      - name: imageCaption
+      - label: Image Caption Config
+        fields:
+          - name: imageCaptionStyles          
+          - name: imageCaptionDropdowns

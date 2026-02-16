@@ -1,0 +1,33 @@
+label: Pages Configuration
+wide: true
+form:
+  properties:
+    homePageWidthBackground: !include:/standard-template-kit/includes/dialogs/pagesConfig/homePageWidthBackground.yaml
+    homePagePadding: !include:/standard-template-kit/includes/dialogs/pagesConfig/homePagePadding.yaml
+
+    contetPageWidthBackground: !include:/standard-template-kit/includes/dialogs/pagesConfig/contetPageWidthBackground.yaml
+    contetPagePadding: !include:/standard-template-kit/includes/dialogs/pagesConfig/contetPagePadding.yaml
+
+    lhnPageWidthBackground: !include:/standard-template-kit/includes/dialogs/pagesConfig/lhnPageWidthBackground.yaml
+    lhnPagePadding: !include:/standard-template-kit/includes/dialogs/pagesConfig/lhnPagePadding.yaml
+    
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: homePageStyles
+      - label: Home Page Styles
+        fields:
+          - name: homePageWidthBackground
+          - name: homePagePadding
+      - name: contentPageStyles
+      - label: Content Page Styles
+        fields:
+          - name: contetPageWidthBackground
+          - name: contetPagePadding
+      - name: lhnPageStyles
+      - label: Left Hand Nav Page Styles
+        fields:
+          - name: lhnPageWidthBackground
+          - name: lhnPagePadding
+          

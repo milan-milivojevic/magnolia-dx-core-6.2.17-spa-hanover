@@ -1,0 +1,3 @@
+label: Info Allowed
+$type: staticField
+value: "If a group is chosen here, only this group can see this component."

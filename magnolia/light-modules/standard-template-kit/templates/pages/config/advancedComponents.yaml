@@ -1,0 +1,60 @@
+title: Configuration Page (Advanced Components)
+
+# baseUrl: http://localhost:3000
+# routeTemplate: '/{language}{{@path}}'
+templateScript: /standard-template-kit/webresources/build/index.html
+
+dialog: standard-template-kit:pages/config/advancedComponents
+
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+
+areas:
+  accordionComponents:
+    title: Accordion Configuration Components Area
+    availableComponents:      
+      accordionConfig:
+        id: standard-template-kit:components/advanced/config/accordionConfig
+  cardTeaserComponents:
+    title: Card Teaser Configuration Components Area
+    availableComponents:      
+      cardTeaserConfig:
+        id: standard-template-kit:components/advanced/config/cardTeaserConfig
+  carouselComponents:
+    title: Carousel Configuration Components Area
+    availableComponents:      
+      carouselConfig:
+        id: standard-template-kit:components/advanced/config/carouselConfig
+  carouselDividedComponents:
+    title: Carousel Divided Configuration Components Area
+    availableComponents:      
+      carouselDividedConfig:
+        id: standard-template-kit:components/advanced/config/carouselDividedConfig
+  corporateFontsComponents:
+    title: Corporate Fonts Configuration Components Area
+    availableComponents:      
+      corporateFontsConfig:
+        id: standard-template-kit:components/advanced/config/corporateFontsConfig
+  corporateIconsComponents:
+    title: Corporate Icons Configuration Components Area
+    availableComponents:      
+      corporateIconsConfig:
+        id: standard-template-kit:components/advanced/config/corporateIconsConfig
+  corporateIdentityColorsComponents:
+    title: Corporate Identity Colors Configuration Components Area
+    availableComponents:      
+      corporateIdentityColorsConfig:
+        id: standard-template-kit:components/advanced/config/corporateIdentityColorsConfig
+  footerNavigationComponents:
+    title: Footer Navigation Configuration Components Area
+    availableComponents:      
+      footerNavigationConfig:
+        id: standard-template-kit:components/advanced/config/footerNavigationConfig  
+  textLinkComponents:
+    title: Text & Link Configuration Components Area
+    availableComponents:      
+      textLinkConfig:
+        id: standard-template-kit:components/advanced/config/textLinkConfig
+  
+
+

@@ -1,0 +1,9 @@
+label: Component
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  componentBorderHoverColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
+    label: Hover Border Color

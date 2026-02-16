@@ -1,0 +1,9 @@
+title: Link List Configuration
+dialog: standard-template-kit:components/grouping/config/linkListConfig
+areas:
+areas:
+  column1: &column1
+    title: Links
+    availableComponents:
+      textLink:
+        id: standard-template-kit:components/basic/link

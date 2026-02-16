@@ -1,0 +1,12 @@
+label: Image/Video 2
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  image2BorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  image2BorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  image2BorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
+  image2BorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml
+  

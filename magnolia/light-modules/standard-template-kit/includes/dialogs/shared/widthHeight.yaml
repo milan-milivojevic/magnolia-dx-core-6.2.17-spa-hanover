@@ -1,0 +1,9 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  width: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+  height: !include:/standard-template-kit/includes/dialogs/basics/height.yaml

@@ -1,0 +1,12 @@
+label: Accordion
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  accordionBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  accordionBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  accordionBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
+  accordionBorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml
+  

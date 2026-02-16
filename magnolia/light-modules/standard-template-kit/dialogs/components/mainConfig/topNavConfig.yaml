@@ -1,0 +1,31 @@
+label: Top Navigation Configuration
+wide: true
+form:
+  properties:
+
+    topBorder: !include:/standard-template-kit/includes/dialogs/navigation/top/topBorder.yaml
+    bottomBorder: !include:/standard-template-kit/includes/dialogs/navigation/top/bottomBorder.yaml    
+    topNavSettings: !include:/standard-template-kit/includes/dialogs/navigation/top/topNavSettings.yaml
+    topNavPadding: !include:/standard-template-kit/includes/dialogs/navigation/top/topNavPadding.yaml
+    topNavDropdown: !include:/standard-template-kit/includes/dialogs/navigation/top/topNavDropdown.yaml   
+    dropdownPadding: !include:/standard-template-kit/includes/dialogs/navigation/top/dropdownPadding.yaml
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: topNav
+      - label: First Level
+        fields:
+          - name: topNavSettings
+          - name: topBorder
+          - name: bottomBorder          
+          - name: topNavPadding 
+      - name: dropdown
+      - label: Dropdown
+        fields:
+          - name: topNavDropdown
+          - name: dropdownPadding
+          
+          
+          
+          

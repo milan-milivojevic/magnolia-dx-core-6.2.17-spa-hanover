@@ -1,0 +1,24 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  pSmallPaddingTop:
+    label: Padding Top
+    placeholder: 10px
+    $type: textField
+  pSmallPaddingRight:
+    label: Padding Right
+    placeholder: 10px
+    $type: textField
+  pSmallPaddingBottom:
+    label: Padding Bottom
+    placeholder: 10px
+    $type: textField
+  pSmallPaddingLeft:
+    label: Padding Left
+    placeholder: 10px
+    $type: textField
+  

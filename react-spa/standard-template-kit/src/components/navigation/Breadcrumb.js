@@ -1,0 +1,48 @@
+import React, { useState, useEffect } from 'react';
+import { CgChevronRight } from "react-icons/cg";
+import { getAPIBase } from '../../helpers/AppHelpers';
+
+const Breadcrumb = ({title}) => {
+  const [path, setPath] = useState(window.location.pathname);
+
+  useEffect(() => {
+    const handlePathChange = () => {
+      setPath(window.location.pathname);
+    };
+
+    window.addEventListener('popstate', handlePathChange);
+
+    return () => {
+      window.removeEventListener('popstate', handlePathChange);
+    };
+  }, []);
+
+  const baseUrl = process.env.REACT_APP_MGNL_HOST_NEW; 
+  const apiBase = getAPIBase();
+
+  // Razbijanje putanje na delove, preskakanje prvog elementa '/'
+  const pathParts = path.split('/').filter(part => part !== 'cmsAuthor' &&  part !== 'cmsPublic' &&  part !== 'en' && part !== 'de' && part !== '');
+
+  // Formiranje breadcrumb linkova
+  const breadcrumbs = pathParts.map((part, index) => {
+    // Formiranje putanje bez prvog '/'
+    const linkPath = `/${pathParts.slice(0, index + 1).join('/')}`;
+
+    // Poslednji element nema link
+    if (index === pathParts.length - 1) {
+      return <span className="lastItem" key={part}>{title}</span>;
+    }
+
+    // Ostali elementi su automatski generisani linkovi
+    return (
+      <React.Fragment key={part}>
+        <a href={`${apiBase}${linkPath}`}>{part}</a>
+        <CgChevronRight />
+      </React.Fragment>
+    );
+  });
+
+  return <div className="breadcrumb">{breadcrumbs}</div>;
+};
+
+export default Breadcrumb;

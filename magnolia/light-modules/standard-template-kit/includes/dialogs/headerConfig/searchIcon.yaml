@@ -1,0 +1,16 @@
+label: Icon Styles
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  iconColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/color.yaml
+  iconHoverColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/hoverColor.yaml
+  iconBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  iconHoverColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
+  iconLeftBorder: 
+    label: Hide Left Border
+    buttonLabel: yes/no
+    $type: checkBoxField
+    

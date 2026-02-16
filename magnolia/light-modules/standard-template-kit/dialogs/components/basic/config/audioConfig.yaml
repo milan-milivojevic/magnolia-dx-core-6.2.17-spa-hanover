@@ -1,0 +1,31 @@
+label: Audio Config
+wide: true
+form:
+  properties:
+    
+    audio: !include:/standard-template-kit/includes/dialogs/audio/audio.yaml
+    mediaOptions: !include:/standard-template-kit/includes/dialogs/shared/mediaOptions.yaml
+
+    styleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+    margin: !include:/standard-template-kit/includes/dialogs/shared/margin.yaml
+      label: Component
+    border: !include:/standard-template-kit/includes/dialogs/shared/border.yaml
+      label: Component
+    widthPosition: !include:/standard-template-kit/includes/dialogs/audio/widthPosition.yaml
+      label: Component
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: data
+      - label: Data
+        fields:
+          - name: audio
+          - name: mediaOptions
+      - name: audioSettings
+      - label: Audio Settings
+        fields:
+          - name: styleName
+          - name: widthPosition
+          - name: margin      
+          - name: border  

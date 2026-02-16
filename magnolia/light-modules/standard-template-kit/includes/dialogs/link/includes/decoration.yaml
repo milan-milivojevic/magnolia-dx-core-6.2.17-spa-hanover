@@ -1,0 +1,21 @@
+label: Decoration
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: none
+  options:
+    - name: none
+      value: none
+      label: None
+    - name: overline
+      value: overline
+      label: Overline
+    - name: underline
+      value: underline
+      label: Underline
+    - name: line-through
+      value: line-through
+      label: Line Through
+    - name: overUnder
+      value: overline underline
+      label: Overline + Underline

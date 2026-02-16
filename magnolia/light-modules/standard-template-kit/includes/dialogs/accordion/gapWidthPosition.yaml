@@ -1,0 +1,11 @@
+label: Accordion List
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  groupWidth: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+  groupPosition: !include:/standard-template-kit/includes/dialogs/basics/positions/horizontalPosition.yaml  
+  horizontalGap: !include:/standard-template-kit/includes/dialogs/accordion/horizontalGap.yaml
+  

@@ -1,0 +1,8 @@
+title: Border Teaser List
+dialog: standard-template-kit:components/grouping/borderTeaserList
+areas:
+  column1: &column1
+    title: Border Teasers
+    availableComponents:
+      textLink:
+        id: standard-template-kit:components/advanced/borderTeaser

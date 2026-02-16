@@ -1,0 +1,9 @@
+label: Image
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  imageDefaultBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  imageHoverBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml

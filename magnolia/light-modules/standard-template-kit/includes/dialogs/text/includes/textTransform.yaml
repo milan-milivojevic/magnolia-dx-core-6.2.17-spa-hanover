@@ -1,0 +1,18 @@
+label: Text Transform
+$type: comboBoxField
+placeholder: ""
+datasource:
+  $type: optionListDatasource  
+  options:
+    - name: capitalize
+      value: capitalize
+      label: Capitalize
+    - name: lowercase
+      value: lowercase
+      label: Lowercase
+    - name: uppercase
+      value: uppercase
+      label: Uppercase
+    - name: none
+      value: none
+      label: None

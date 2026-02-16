@@ -1,0 +1,46 @@
+label: Carousel Configuration
+wide: true
+
+form:
+  properties:
+
+    multi:
+      label: Carousel Images/Videos
+      $type: jcrMultiField
+      maxItems: 20
+      minItems: 2
+      field:
+        label: ""
+        $type: compositeField
+        properties:
+          media: !include:/standard-template-kit/includes/dialogs/carousel/mediaType.yaml
+    
+    carouselWidthHeightPosition: !include:/standard-template-kit/includes/dialogs/carousel/widthHeightPosition.yaml
+    carouselBorder: !include:/standard-template-kit/includes/dialogs/carousel/border.yaml
+    carouselOuterMargin: !include:/standard-template-kit/includes/dialogs/carousel/outerMargin.yaml    
+    carouselArrowStyles: !include:/standard-template-kit/includes/dialogs/carousel/arrowStyles.yaml    
+    carouselIndicatorStyles: !include:/standard-template-kit/includes/dialogs/carousel/indicatorStyles.yaml
+    carouselIndicatorColorsGap: !include:/standard-template-kit/includes/dialogs/carousel/indicatorColorsGap.yaml
+    carouselIndicatorBorder: !include:/standard-template-kit/includes/dialogs/carousel/indicatorBorder.yaml
+    styleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+    
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: media
+      - label: Media
+        fields:          
+          - name: multi 
+      - name: carouselSettings
+      - label: Carousel Settings
+        fields:
+          - name: styleName
+          - name: carouselWidthHeightPosition  
+          - name: carouselBorder            
+          - name: carouselOuterMargin     
+          - name: carouselArrowStyles          
+          - name: carouselIndicatorStyles
+          - name: carouselIndicatorColorsGap
+          - name: carouselIndicatorBorder
+         
+        

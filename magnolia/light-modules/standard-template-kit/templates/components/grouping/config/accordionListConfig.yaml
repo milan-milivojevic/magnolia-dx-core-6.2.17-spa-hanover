@@ -1,0 +1,87 @@
+title: Accordion List Configuration
+dialog: standard-template-kit:components/grouping/config/accordionListConfig
+areas:
+areas:
+  accordionComponents: &accordionComponents
+    title: Accordion Components
+    availableComponents:
+      audio:
+        id: standard-template-kit:components/basic/audio
+      borderTeaser:
+        id: standard-template-kit:components/advanced/borderTeaser
+      borderTeaserList:
+        id: standard-template-kit:components/grouping/borderTeaserList
+      cardTeaser:
+        id: standard-template-kit:components/advanced/cardTeaser
+      cardTeaserList:
+        id: standard-template-kit:components/grouping/cardTeaserList
+      carousel:
+        id: standard-template-kit:components/advanced/carousel
+      carouselDivided:
+        id: standard-template-kit:components/advanced/carouselDivided
+      carouselTeaser:
+        id: standard-template-kit:components/advanced/carouselTeaser
+      corporateFonts:
+        id: standard-template-kit:components/advanced/corporateFonts
+      corporateIcons:
+        id: standard-template-kit:components/advanced/corporateIcons
+      corporateIdentityColors:
+        id: standard-template-kit:components/advanced/corporateIdentityColors
+      divider:
+        id: standard-template-kit:components/basic/divider
+      globalStaticContent:
+        id: standard-template-kit:components/advanced/globalLayoutComponent
+      html:
+        id: standard-template-kit:components/basic/html
+      iframe:
+        id: standard-template-kit:components/basic/iframe
+      image:
+        id: standard-template-kit:components/basic/image      
+      imageGallery:
+        id: standard-template-kit:components/grouping/imageGallery
+      imageTeaser:
+        id: standard-template-kit:components/advanced/imageTeaser
+      imageTeaserList:
+        id: standard-template-kit:components/grouping/imageTeaserList
+      innerSection:
+        id: standard-template-kit:components/sections/innerSection
+      link:
+        id: standard-template-kit:components/basic/link
+      linkList:
+        id: standard-template-kit:components/grouping/linkList
+      separationBlock:
+        id: standard-template-kit:components/basic/separationBlock
+      spacer:
+        id: standard-template-kit:components/basic/spacer
+      tabs:
+        id: standard-template-kit:components/grouping/tabs
+      text:
+        id: standard-template-kit:components/basic/text
+      textLink:
+        id: standard-template-kit:components/advanced/textLink
+      textLinkList:
+        id: standard-template-kit:components/grouping/textLinkList
+      video:
+        id: standard-template-kit:components/basic/video
+      youtube:
+        id: standard-template-kit:components/basic/youtube  
+  accordionComponents1: *accordionComponents
+  accordionComponents2: *accordionComponents
+  accordionComponents3: *accordionComponents
+  accordionComponents4: *accordionComponents
+  accordionComponents5: *accordionComponents
+  accordionComponents6: *accordionComponents
+  accordionComponents7: *accordionComponents
+  accordionComponents8: *accordionComponents
+  accordionComponents9: *accordionComponents
+  accordionComponents10: *accordionComponents
+  accordionComponents11: *accordionComponents
+  accordionComponents12: *accordionComponents
+  accordionComponents13: *accordionComponents
+  accordionComponents14: *accordionComponents
+  accordionComponents15: *accordionComponents
+  accordionComponents16: *accordionComponents
+  accordionComponents17: *accordionComponents
+  accordionComponents18: *accordionComponents
+  accordionComponents19: *accordionComponents
+  accordionComponents20: *accordionComponents

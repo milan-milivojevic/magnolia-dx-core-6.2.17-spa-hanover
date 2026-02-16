@@ -1,0 +1,19 @@
+label: Component Layout
+$type: comboBoxField
+i18n: true
+datasource:
+  $type: optionListDatasource
+  defaultValue: []
+  options:
+    - name: layout1
+      value: textLink1
+      label: "text ▲ link ▼"
+    - name: layout2
+      value: textLink2
+      label: "text ▼ link ▲"
+    - name: layout3
+      value: textLink3
+      label: "text ◀ link ▶"
+    - name: layout4
+      value: textLink4
+      label: "text ▶ link ◀"

@@ -1,0 +1,13 @@
+$type: compositeField
+label: "Space Bottom Config Style"
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  spaceBottomStyleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+  spaceBottomNoStyles:
+    $type: checkBoxField
+    label: Without Config Styles
+    buttonLabel: "yes/no"
+    defaultValue: false

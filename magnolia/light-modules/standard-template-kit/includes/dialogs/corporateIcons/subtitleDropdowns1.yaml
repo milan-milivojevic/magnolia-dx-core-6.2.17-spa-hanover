@@ -1,0 +1,10 @@
+label: Subtitle
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  subtitleTextTransform: !include:/standard-template-kit/includes/dialogs/text/includes/textTransform.yaml
+  subtitleBold: !include:/standard-template-kit/includes/dialogs/text/includes/bold.yaml
+  subtitleItalic: !include:/standard-template-kit/includes/dialogs/text/includes/italic.yaml

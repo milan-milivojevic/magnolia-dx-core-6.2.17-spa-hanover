@@ -1,0 +1,14 @@
+label: Title
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  titleFontSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml
+  titleColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+  titleHoverColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/hoverColor.yaml
+    label: Hover Font Color
+  titleLineHeight: !include:/standard-template-kit/includes/dialogs/text/includes/lineHeight.yaml
+  
+  

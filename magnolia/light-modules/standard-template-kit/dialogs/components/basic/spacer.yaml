@@ -1,0 +1,5 @@
+label: Spacer
+form:
+  properties:
+    styleWithCheckbox: !include:/standard-template-kit/includes/dialogs/shared/styleWithCheckbox.yaml
+    spacer: !include:/standard-template-kit/includes/dialogs/separators/spacer.yaml

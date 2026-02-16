@@ -1,0 +1,38 @@
+label: Font Family
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: default
+      value: default
+      label: default
+    - name: MuseoSans100
+      value: MuseoSans100
+      label: MuseoSans100
+    - name: MuseoSans300
+      value: MuseoSans300
+      label: MuseoSans300     
+    - name: MuseoSans500
+      value: MuseoSans500
+      label: MuseoSans500
+    - name: MuseoSans700
+      value: MuseoSans700
+      label: MuseoSans700
+    - name: MuseoSans900
+      value: MuseoSans900
+      label: MuseoSans900
+    - name: MuseoSans100_Italic
+      value: MuseoSans100_Italic
+      label: MuseoSans100_Italic     
+    - name: MuseoSans300_Italic
+      value: MuseoSans300_Italic
+      label: MuseoSans300_Italic         
+    - name: MuseoSans500_Italic
+      value: MuseoSans500_Italic
+      label: MuseoSans500_Italic       
+    - name: MuseoSans700_Italic
+      value: MuseoSans700_Italic
+      label: MuseoSans700_Italic    
+    - name: MuseoSans900_Italic
+      value: MuseoSans900_Italic
+      label: MuseoSans900_Italic

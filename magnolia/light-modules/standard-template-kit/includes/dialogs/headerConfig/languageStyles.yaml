@@ -1,0 +1,11 @@
+label: Language Styles
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:    
+  languageColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+  languageHoverColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontHoverColor.yaml
+  languageFontSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml
+  languageFontFamily: !include:/standard-template-kit/includes/dialogs/text/includes/fontFamily.yaml

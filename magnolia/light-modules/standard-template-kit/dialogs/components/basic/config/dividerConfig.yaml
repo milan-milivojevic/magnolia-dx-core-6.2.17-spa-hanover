@@ -1,0 +1,5 @@
+label: Divider Configuration
+form:
+  properties:
+      styleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+      divider: !include:/standard-template-kit/includes/dialogs/separators/divider.yaml

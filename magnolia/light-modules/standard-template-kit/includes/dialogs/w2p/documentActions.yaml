@@ -1,0 +1,31 @@
+label: ""
+$type: compositeField
+layout:
+  $type: stacked
+itemProvider:
+  $type: currentItemProvider
+properties:
+  detailsButton:
+    $type: checkBoxField
+    defaultValue: true
+    label: ""
+    buttonLabel: Show Details Button
+  editButton:
+    $type: checkBoxField
+    defaultValue: true
+    label: ""
+    buttonLabel: Show Edit Button  
+  downloadButton:
+    $type: checkBoxField
+    label: ""
+    buttonLabel: Show Download Button
+  emailButton:
+    $type: checkBoxField
+    label: ""
+    buttonLabel: Show Email Button
+  deleteButton:
+    $type: checkBoxField
+    defaultValue: true
+    label: ""
+    buttonLabel: Show Delete Button
+  

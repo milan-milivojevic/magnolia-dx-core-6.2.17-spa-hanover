@@ -1,0 +1,11 @@
+label: Tabs
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  tabsBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  tabsBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  tabsBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
+  tabsBorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml

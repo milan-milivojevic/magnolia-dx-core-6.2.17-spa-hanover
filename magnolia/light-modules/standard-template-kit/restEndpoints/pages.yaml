@@ -1,0 +1,203 @@
+workspace: website
+limit: 100
+bypassWorkspaceAcls: true
+systemProperties:
+ - mgnl:createdBy
+ - mgnl:template
+depth: 20
+nodeTypes:
+  - mgnl:page
+  - mgnl:area
+  - mgnl:component
+childNodeTypes:
+  - mgnl:area
+  - mgnl:component
+references:
+  - name: imageReference
+    propertyName: download
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: download1
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: download2
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: download3
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: download4
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: download5
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: download6
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: download7
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: download8
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: download9
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: download10
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: download11
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: audio
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: video
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image0
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image1
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image2
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image3
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image4
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image5
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image6
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image7
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image8
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image9
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image10
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image11
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image12
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image13
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image14
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image15
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image16
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image17
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image18
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image19
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image20
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image1hover
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image2hover
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image3hover
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image4hover
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image5hover
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image6hover
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image7hover
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image8hover
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image9hover
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image10hover
+    referenceResolver:
+      $type: assetReferenceResolver
+  - name: imageReference
+    propertyName: image11hover
+    referenceResolver:
+      $type: assetReferenceResolver

@@ -1,0 +1,35 @@
+title: Configuration Page (Teaser Components)
+
+# baseUrl: http://localhost:3000
+# routeTemplate: '/{language}{{@path}}'
+templateScript: /standard-template-kit/webresources/build/index.html
+
+dialog: standard-template-kit:pages/config/teaserComponents
+
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+
+areas:
+  borderTeaserComponents:
+    title: Border Teaser Configuration Components Area
+    availableComponents:      
+      borderTeaserConfig:
+        id: standard-template-kit:components/advanced/config/borderTeaserConfig
+  cardTeaserComponents:
+    title: Card Teaser Configuration Components Area
+    availableComponents:      
+      cardTeaserConfig:
+        id: standard-template-kit:components/advanced/config/cardTeaserConfig
+  imageTeaserComponents:
+    title: Image Teaser Configuration Components Area
+    availableComponents:      
+      imageTeaserConfig:
+        id: standard-template-kit:components/advanced/config/imageTeaserConfig  
+  carouselTeaserComponents:
+    title: Carousel Teaser Configuration Components Area
+    availableComponents:      
+      carouselTeaserConfig:
+        id: standard-template-kit:components/advanced/config/carouselTeaserConfig
+  
+
+

@@ -1,0 +1,12 @@
+label: Margins
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  l3MarginTop: !include:/standard-template-kit/includes/dialogs/basics/margin/top.yaml
+  l3MarginRight: !include:/standard-template-kit/includes/dialogs/basics/margin/right.yaml
+  l3MarginBottom: !include:/standard-template-kit/includes/dialogs/basics/margin/bottom.yaml
+  l3MarginLeft: !include:/standard-template-kit/includes/dialogs/basics/margin/left.yaml
+  

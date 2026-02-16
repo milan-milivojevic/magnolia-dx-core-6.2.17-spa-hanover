@@ -1,0 +1,12 @@
+label: Description
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  descriptionBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  descriptionBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  descriptionBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
+  descriptionBorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml
+  

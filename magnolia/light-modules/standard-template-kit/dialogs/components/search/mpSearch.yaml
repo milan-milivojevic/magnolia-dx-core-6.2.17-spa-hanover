@@ -1,0 +1,20 @@
+label: MP Search
+wide: true
+form:
+  properties:
+    
+    searchConfig: !include:/standard-template-kit/includes/dialogs/mpSearch/searchConfig.yaml
+    
+    actions: !include:/standard-template-kit/includes/dialogs/mpSearch/actions.yaml
+      
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: searchConfig
+      - label: Search Config
+        fields:
+          - name: searchConfig
+      - name: actions
+      - label: Actions
+        fields:
+          - name: actions

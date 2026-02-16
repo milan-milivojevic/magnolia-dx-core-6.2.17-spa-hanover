@@ -1,0 +1,4 @@
+label: Show Dots
+$type: checkBoxField
+defaultValue: true
+buttonLabel: yes/no

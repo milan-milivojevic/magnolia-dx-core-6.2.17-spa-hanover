@@ -1,0 +1,11 @@
+label: Title
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  headlineFontSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml
+  headlineLineHeight: !include:/standard-template-kit/includes/dialogs/text/includes/lineHeight.yaml
+  headlineColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+  headlineLetterSpacing: !include:/standard-template-kit/includes/dialogs/text/includes/letterSpacing.yaml

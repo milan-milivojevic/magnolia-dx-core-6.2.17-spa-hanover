@@ -1,0 +1,34 @@
+label: Target
+i18n: true
+$type: switchableField
+field:
+  name: type
+  $type: radioButtonGroupField
+  defaultValue: asset
+  datasource:
+    $type: optionListDatasource
+    options:
+      asset:
+        value: asset
+        label: Internal
+        i18n: true
+      embed:
+        value: embed
+        label: External
+        i18n: true
+itemProvider:
+  $type: currentItemProvider
+forms:
+  embed:
+    properties:
+      embeds:
+        label: "Add embed code"
+        $type: textField
+        required: true
+        rows: 5
+  asset:
+    properties:
+      image: !include:/standard-template-kit/includes/dialogs/image.yaml
+        label: "Select asset (video):"
+        required: yes
+      mediaOptions: !include:/standard-template-kit/includes/dialogs/mediaOptions.yaml

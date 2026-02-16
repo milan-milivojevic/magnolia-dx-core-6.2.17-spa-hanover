@@ -1,0 +1,17 @@
+title: Search Page - Global Search
+
+# baseUrl: http://localhost:3000 
+# routeTemplate: '/{language}{{@path}}'
+templateScript: /standard-template-kit/webresources/build/index.html
+
+dialog: standard-template-kit:pages/search/globalSearch
+
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+
+areas:
+  globalSearchArea:
+    title: Global Search Area
+    availableComponents:
+      globalSearch:
+        id: standard-template-kit:components/search/globalSearch

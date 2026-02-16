@@ -1,0 +1,10 @@
+label: Top Border
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  topBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  topBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  topBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml

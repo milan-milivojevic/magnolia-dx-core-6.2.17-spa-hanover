@@ -1,0 +1,119 @@
+label: Home Component
+wide: true
+form:
+  properties:
+    image1: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 1
+    image1hover: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 1 - Hover
+    linkType1: !include:/standard-template-kit/includes/dialogs/homeComponent/type1.yaml
+      label: Link 1
+    image2: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 2
+    image2hover: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 2 - Hover  
+    linkType2: !include:/standard-template-kit/includes/dialogs/homeComponent/type2.yaml
+      label: Link 2
+    image3: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 3
+    image3hover: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 3 - Hover
+    linkType3: !include:/standard-template-kit/includes/dialogs/homeComponent/type3.yaml
+      label: Link 3
+    image4: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 4
+    image4hover: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 4 - Hover
+    linkType4: !include:/standard-template-kit/includes/dialogs/homeComponent/type4.yaml
+      label: Link 4
+    image5: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 5
+    image5hover: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 5 - Hover  
+    linkType5: !include:/standard-template-kit/includes/dialogs/homeComponent/type5.yaml
+      label: Link 5
+    image6: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 6
+    image6hover: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 6 - Hover
+    linkType6: !include:/standard-template-kit/includes/dialogs/homeComponent/type6.yaml
+      label: Link 6
+    image7: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 7
+    image7hover: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 7 - Hover 
+    linkType7: !include:/standard-template-kit/includes/dialogs/homeComponent/type7.yaml
+      label: Link 7
+    image8: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 8
+    image8hover: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 8 - Hover
+    linkType8: !include:/standard-template-kit/includes/dialogs/homeComponent/type8.yaml
+      label: Link 8
+    image9: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 9
+    image9hover: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 9 - Hover
+    linkType9: !include:/standard-template-kit/includes/dialogs/homeComponent/type9.yaml
+      label: Link 9
+    image10: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 10
+    image10hover: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 10 - Hover
+    linkType10: !include:/standard-template-kit/includes/dialogs/homeComponent/type10.yaml
+      label: Link 10
+    image11: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 11
+    image11hover: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Image 11 - Hover
+    linkType11: !include:/standard-template-kit/includes/dialogs/homeComponent/type11.yaml
+      label: Link 11
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: Images 1-3
+      - label: Images 1-3
+        fields:
+          - name: image1
+          - name: image1hover
+          - name: linkType1
+          - name: image2
+          - name: image2hover
+          - name: linkType2
+          - name: image3
+          - name: image3hover
+          - name: linkType3
+      - name: Images 4-6
+      - label: Images 4-6
+        fields:          
+          - name: image4
+          - name: image4hover
+          - name: linkType4
+          - name: image5
+          - name: image5hover
+          - name: linkType5
+          - name: image6
+          - name: image6hover
+          - name: linkType6
+      - name: Images 7-9
+      - label: Images 7-9
+        fields:          
+          - name: image7
+          - name: image7hover
+          - name: linkType7
+          - name: image8
+          - name: image8hover
+          - name: linkType8
+          - name: image9
+          - name: image9hover
+          - name: linkType9
+      - name: Images 10-11
+      - label: Images 10-11
+        fields:
+          - name: image10
+          - name: image10hover
+          - name: linkType10
+          - name: image11
+          - name: image11hover
+          - name: linkType11

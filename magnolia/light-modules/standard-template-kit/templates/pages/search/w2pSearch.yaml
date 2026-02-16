@@ -1,0 +1,27 @@
+title: Search Page - W2P Search
+
+# baseUrl: http://localhost:3000 
+# routeTemplate: '/{language}{{@path}}'
+templateScript: /standard-template-kit/webresources/build/index.html
+
+dialog: standard-template-kit:pages/search/w2pSearch
+
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+
+areas:
+  w2pSearchArea:
+    title: W2P Search Area
+    availableComponents:
+      w2pTemplatesList:
+        id: standard-template-kit:components/w2p/w2pTemplatesList
+      w2pTemplatesCarousel:
+        id: standard-template-kit:components/w2p/w2pTemplatesCarousel
+      w2pTemplatesSearch:
+        id: standard-template-kit:components/search/w2pTemplatesSearch
+      w2pCustomTemplatesSearch:
+        id: standard-template-kit:components/w2p/w2pCustomTemplatesSearch
+      w2pDocumentsSearch:
+        id: standard-template-kit:components/search/w2pDocumentsSearch
+      w2pDocumentsByStatus:
+        id: standard-template-kit:components/w2p/w2pDocumentsByStatus

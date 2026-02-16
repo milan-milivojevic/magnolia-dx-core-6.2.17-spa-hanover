@@ -1,0 +1,10 @@
+label: Separation Border
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  l1SeparationBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  l1SeparationBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  l1SeparationBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml

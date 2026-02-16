@@ -1,0 +1,15 @@
+label: Text Align
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: left
+  options:
+    - name: left
+      value: left
+      label: Left
+    - name: center
+      value: center
+      label: Center
+    - name: right
+      value: right
+      label: Right

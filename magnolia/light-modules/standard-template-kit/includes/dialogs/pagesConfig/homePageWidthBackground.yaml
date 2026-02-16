@@ -1,0 +1,12 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  bodyBackColor: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+    label: Body Background Color
+  homePageWidth: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+  homePageBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+    label: Page Background Color

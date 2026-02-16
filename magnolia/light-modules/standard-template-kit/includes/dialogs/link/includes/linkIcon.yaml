@@ -1,0 +1,21 @@
+label: Link Icon
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  options:    
+    - name: "" 
+      label: None
+      value: ""
+    - name: chevron 
+      label: Chevron
+      value: "BsChevronRight"
+    - name: arrowRight
+      label: Arrow Right
+      value: "BsArrowRight"
+    - name: download
+      label: Download
+      value: "TfiDownload"
+    - name: unset  
+      label: Unset
+      value: null
+      

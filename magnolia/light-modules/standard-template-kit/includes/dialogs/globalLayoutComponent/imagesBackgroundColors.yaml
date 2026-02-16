@@ -1,0 +1,15 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  image1DefaultBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+    label: Image/Video 1 Back Color
+  image1HoverBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
+    label: Image/Video 1 Hover Back Color
+  image2DefaultBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+    label: Image/Video 2 Back Color
+  image2HoverBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
+    label: Image/Video 2 Hover Back Color

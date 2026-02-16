@@ -1,0 +1,12 @@
+label: Component
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  componentBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  componentBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  componentBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
+  componentBorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml
+  

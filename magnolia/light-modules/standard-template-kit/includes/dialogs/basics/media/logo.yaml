@@ -1,0 +1,4 @@
+label: Logo
+$type: damLinkField
+textInputAllowed: true
+i18n: true

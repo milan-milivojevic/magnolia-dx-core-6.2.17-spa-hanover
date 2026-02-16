@@ -1,0 +1,42 @@
+label: Corporate Identity Colors Configuration
+wide: true
+form:
+  properties:
+    multi: 
+      label: Color Modes
+      $type: jcrMultiField
+      maxItems: 6
+      minItems: 2
+      field:
+        label: ""
+        $type: compositeField
+        properties:    
+          colorName: !include:/standard-template-kit/includes/dialogs/corporateColors/colorName.yaml
+          previewSettings: !include:/standard-template-kit/includes/dialogs/corporateColors/previewSettings.yaml
+          colorModes: !include:/standard-template-kit/includes/dialogs/corporateColors/colorModes.yaml
+
+    nameFontStyles: !include:/standard-template-kit/includes/dialogs/corporateColors/nameFontStyles.yaml
+    namePadding: !include:/standard-template-kit/includes/dialogs/corporateColors/namePadding.yaml
+    previewStyles: !include:/standard-template-kit/includes/dialogs/corporateColors/previewStyles.yaml
+    styleWithCheckbox: !include:/standard-template-kit/includes/dialogs/shared/styleWithCheckbox.yaml
+
+    componentSettings: !include:/standard-template-kit/includes/dialogs/corporateColors/componentSettings.yaml
+    componentPaddings: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperPadding.yaml
+      label: Component
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: Colors
+      - label: Colors 
+        fields:
+          - name: multi
+      - name: Styles
+      - label: Styles
+        fields:
+          - name: styleWithCheckbox
+          - name: nameFontStyles          
+          - name: namePadding
+          - name: previewStyles
+          - name: componentSettings
+          - name: componentPaddings

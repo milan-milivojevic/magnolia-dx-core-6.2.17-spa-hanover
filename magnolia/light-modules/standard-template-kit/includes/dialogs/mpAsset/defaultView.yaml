@@ -1,0 +1,12 @@
+label: Default View
+$type: radioButtonGroupField
+defaultValue: grid
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: grid
+      value: grid
+      label: Vertical
+    - name: list
+      value: list
+      label: Horizontal

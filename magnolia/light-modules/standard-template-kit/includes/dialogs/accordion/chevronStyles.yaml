@@ -1,0 +1,11 @@
+label: Chevron
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  chevronColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/color.yaml
+  chevronHoverColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/hoverColor.yaml
+  chevronFontSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml
+    placeholder: 28px

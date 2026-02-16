@@ -1,0 +1,78 @@
+label: Corporate Icons Configuration
+wide: true
+form:
+  properties:
+
+    title: !include:/standard-template-kit/includes/dialogs/text/headline.yaml
+      label: Title
+    subtitle: !include:/standard-template-kit/includes/dialogs/text/headline.yaml
+      label: Subtitle
+    linkDefault: !include:/standard-template-kit/includes/dialogs/corporateIcons/linkDefault.yaml
+    divider: !include:/standard-template-kit/includes/dialogs/separators/divider.yaml
+    
+    image1: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Icon Small
+    image2: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Icon Medium
+    image3: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      label: Icon Large
+
+    linkSmall: !include:/standard-template-kit/includes/dialogs/corporateIcons/linkSmall.yaml
+    linkMedium: !include:/standard-template-kit/includes/dialogs/corporateIcons/linkMedium.yaml
+    linkLarge: !include:/standard-template-kit/includes/dialogs/corporateIcons/linkLarge.yaml
+
+    styleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+    dividerStyleWithCheckbox: !include:/standard-template-kit/includes/dialogs/separators/dividerStyleWithCheckbox.yaml
+
+    titleDropdowns: !include:/standard-template-kit/includes/dialogs/corporateIcons/titleDropdowns.yaml
+    titleDropdowns1: !include:/standard-template-kit/includes/dialogs/corporateIcons/titleDropdowns1.yaml
+    titleTextStyles: !include:/standard-template-kit/includes/dialogs/corporateIcons/titleTextStyles.yaml
+    titlePadding: !include:/standard-template-kit/includes/dialogs/corporateIcons/titlePadding.yaml
+
+    subtitleDropdowns: !include:/standard-template-kit/includes/dialogs/corporateIcons/subtitleDropdowns.yaml
+    subtitleDropdowns1: !include:/standard-template-kit/includes/dialogs/corporateIcons/subtitleDropdowns1.yaml
+    subtitleTextStyles: !include:/standard-template-kit/includes/dialogs/corporateIcons/subtitleTextStyles.yaml
+    subtitlePadding: !include:/standard-template-kit/includes/dialogs/corporateIcons/subtitlePadding.yaml
+    
+    
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: data
+      - label: Data 
+        fields:
+          - name: title
+          - name: subtitle
+          - name: linkDefault
+          - name: divider
+      - name: icons
+      - label: Icons
+        fields:
+          - name: image1
+          - name: image2
+          - name: image3    
+      - name: iconLinks
+      - label: Icon Links
+        fields:
+          - name: linkSmall
+          - name: linkMedium
+          - name: linkLarge  
+      - name: config
+      - label: Config Styles
+        fields:
+          - name: styleName
+          - name: dividerStyleWithCheckbox
+      - name: titleStyles
+      - label: Title Styles
+        fields:
+          - name: titleDropdowns
+          - name: titleDropdowns1
+          - name: titleTextStyles         
+          - name: titlePadding
+      - name: subtitleStyles
+      - label: Subtitle Styles
+        fields:
+          - name: subtitleDropdowns
+          - name: subtitleDropdowns1
+          - name: subtitleTextStyles         
+          - name: subtitlePadding

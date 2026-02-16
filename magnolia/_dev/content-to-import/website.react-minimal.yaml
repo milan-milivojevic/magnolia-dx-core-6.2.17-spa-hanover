@@ -1,0 +1,332 @@
+'react-minimal':
+  'jcr:mixinTypes': ['mgnl:hasVersion']
+  'jcr:primaryType': 'mgnl:page'
+  'jcr:uuid': '066761ae-f69b-4029-9900-496259837d2d'
+  'mgnl:activationStatus': true
+  'mgnl:created': 2020-02-01T13:45:49.952+07:00
+  'mgnl:createdBy': 'superuser'
+  'mgnl:lastActivated': 2020-05-15T21:01:38.950+07:00
+  'mgnl:lastActivatedBy': 'superuser'
+  'mgnl:lastModified': 2021-08-16T08:10:13.650+07:00
+  'mgnl:lastModifiedBy': 'superuser'
+  'mgnl:template': 'react-minimal-lm:pages/basic'
+  'title': 'React Minimal'
+  'main':
+    'jcr:primaryType': 'mgnl:area'
+    'jcr:uuid': '1f38220d-7a22-4f1c-916c-9371798feea2'
+    'mgnl:activationStatus': true
+    'mgnl:created': 2020-02-01T13:45:52.917+07:00
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastActivated': 2020-05-15T21:01:38.951+07:00
+    'mgnl:lastActivatedBy': 'superuser'
+    'mgnl:lastModified': 2020-05-12T12:41:24.291+07:00
+    'mgnl:lastModifiedBy': 'superuser'
+    '00':
+      'image': 'jcr:090eb9c4-b35b-4869-a12f-6ea80292cba4'
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': '4593caf4-1add-4b29-9793-cb4efa8dfad4'
+      'mgnl:activationStatus': true
+      'mgnl:created': 2020-02-01T14:13:33.412+07:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastActivated': 2020-05-15T21:01:38.951+07:00
+      'mgnl:lastActivatedBy': 'superuser'
+      'mgnl:lastModified': 2020-02-17T22:27:36.033+07:00
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'spa-lm:components/image'
+    '01':
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': 'bb5f8114-352e-48e6-a299-2d0ffd6047ee'
+      'mgnl:activationStatus': true
+      'mgnl:created': 2020-02-01T14:15:20.892+07:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastActivated': 2020-05-15T21:01:38.951+07:00
+      'mgnl:lastActivatedBy': 'superuser'
+      'mgnl:lastModified': 2020-05-12T12:41:24.291+07:00
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'spa-lm:components/paragraph'
+      'richText': '<p>Ahhhhh, <strong><em>springtime</em></strong>.</p>
+
+
+        <p>Throw wide the windows, and let the cool breeze sweep through the apartment
+        and chase away the winter blues.</p>
+
+        '
+      'richText_de': '<p>Ahhhhh, <em><strong>Fr&uuml;hlingszeit.</strong></em></p>
+
+
+        <p>Werft die Fenster weit auf und lasst die k&uuml;hle Brise durch die Wohnung
+        str&ouml;men und die Bedr&uuml;cktheit des Winters vertreiben.</p>
+
+
+        <p>&nbsp;</p>
+
+        '
+  'contact':
+    'jcr:mixinTypes': ['mgnl:hasVersion']
+    'jcr:primaryType': 'mgnl:page'
+    'jcr:uuid': 'c7c11927-7eca-4ac0-99e4-e1c02db22c74'
+    'mgnl:activationStatus': true
+    'mgnl:created': 2020-02-01T14:16:19.204+07:00
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastActivated': 2020-05-15T21:01:39.118+07:00
+    'mgnl:lastActivatedBy': 'superuser'
+    'mgnl:lastModified': 2020-05-12T13:21:23.579+07:00
+    'mgnl:lastModifiedBy': 'superuser'
+    'mgnl:template': 'react-minimal-lm:pages/contact'
+    'title': 'Contact'
+    'title_de': 'Kontakt'
+    'main':
+      'jcr:primaryType': 'mgnl:area'
+      'jcr:uuid': 'bbbe6c79-011e-48e4-964c-ffdf0c125eed'
+      'mgnl:activationStatus': true
+      'mgnl:created': 2020-02-01T14:16:21.311+07:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastActivated': 2020-05-15T21:01:39.118+07:00
+      'mgnl:lastActivatedBy': 'superuser'
+      'mgnl:lastModified': 2020-05-12T13:21:23.579+07:00
+      'mgnl:lastModifiedBy': 'superuser'
+      '00':
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': 'c65a9644-2a14-4502-8efd-618f6720a1a3'
+        'mgnl:activationStatus': true
+        'mgnl:created': 2020-03-19T20:38:29.377+07:00
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastActivated': 2020-05-15T21:01:39.118+07:00
+        'mgnl:lastActivatedBy': 'superuser'
+        'mgnl:lastModified': 2020-05-12T13:21:13.261+07:00
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'spa-lm:components/paragraph'
+        'richText': '<p><strong>Contact Sales</strong></p>
+
+          '
+        'richText_de': '<p><strong>Kontakt Verkauf</strong></p>
+
+          '
+      '0':
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': 'de70c3a3-93d0-41ab-977a-9e62a19045bb'
+        'mgnl:activationStatus': true
+        'mgnl:created': 2020-02-01T14:16:29.423+07:00
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastActivated': 2020-05-15T21:01:39.118+07:00
+        'mgnl:lastActivatedBy': 'superuser'
+        'mgnl:lastModified': 2020-05-12T12:52:38.680+07:00
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'spa-lm:components/expander'
+        'expanderItems':
+          'jcr:primaryType': 'mgnl:area'
+          'jcr:uuid': '96c40b85-4037-4450-b906-dcad64d058bc'
+          'mgnl:activationStatus': true
+          'mgnl:created': 2020-02-01T14:16:29.475+07:00
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastActivated': 2020-05-15T21:01:39.118+07:00
+          'mgnl:lastActivatedBy': 'superuser'
+          'mgnl:lastModified': 2020-05-12T12:52:38.680+07:00
+          'mgnl:lastModifiedBy': 'superuser'
+          '00':
+            'jcr:primaryType': 'mgnl:component'
+            'jcr:uuid': 'e47270ba-6a16-4e41-9883-caf0fc1e709d'
+            'mgnl:activationStatus': true
+            'mgnl:created': 2020-02-01T14:18:39.895+07:00
+            'mgnl:createdBy': 'superuser'
+            'mgnl:lastActivated': 2020-05-15T21:01:39.119+07:00
+            'mgnl:lastActivatedBy': 'superuser'
+            'mgnl:lastModified': 2020-05-12T12:52:38.680+07:00
+            'mgnl:lastModifiedBy': 'superuser'
+            'mgnl:template': 'spa-lm:components/paragraph'
+            'richText': '<p>Reach out to us anytime, 24/7. Really. Go ahead, just
+              call us! <em>Please?</em></p>
+
+
+              <p>sales@minimal-spa-demo.com</p>
+
+
+              <p>+41 12 34 567 89 00</p>
+
+              '
+            'richText_de': '<p>Kontaktiert uns jederzeit, 24/7. Ernsthaft. Kommt schon,
+              ruft uns einfach an! <em>Bitte?</em></p>
+
+
+              <p>sales@minimal-spa-demo.com</p>
+
+
+              <p>+41 12 34 567 89 00</p>
+
+
+              <p>&nbsp;</p>
+
+              '
+      '01':
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': '1f1c0fc8-ae33-43d1-bbcd-d7c8906ffb53'
+        'mgnl:activationStatus': true
+        'mgnl:created': 2020-03-27T00:15:57.625+07:00
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastActivated': 2020-05-15T21:01:39.119+07:00
+        'mgnl:lastActivatedBy': 'superuser'
+        'mgnl:lastModified': 2020-05-12T13:21:23.579+07:00
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'spa-lm:components/paragraph'
+        'richText': '<p><strong>Contact Support</strong></p>
+
+          '
+        'richText_de': '<p><strong>Kontakt Support</strong></p>
+
+          '
+      '02':
+        'jcr:primaryType': 'mgnl:component'
+        'jcr:uuid': 'a2bb2e7f-2f2f-4c77-a455-732725aab6c6'
+        'mgnl:activationStatus': true
+        'mgnl:created': 2020-03-27T00:16:05.388+07:00
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastActivated': 2020-05-15T21:01:39.119+07:00
+        'mgnl:lastActivatedBy': 'superuser'
+        'mgnl:lastModified': 2020-05-12T12:57:02.963+07:00
+        'mgnl:lastModifiedBy': 'superuser'
+        'mgnl:template': 'spa-lm:components/expander'
+        'expanderItems':
+          'jcr:primaryType': 'mgnl:area'
+          'jcr:uuid': '16ce0b44-aef5-4d1c-b65f-e485b13dab25'
+          'mgnl:activationStatus': true
+          'mgnl:created': 2020-03-27T00:16:05.388+07:00
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastActivated': 2020-05-15T21:01:39.119+07:00
+          'mgnl:lastActivatedBy': 'superuser'
+          'mgnl:lastModified': 2020-05-12T12:57:02.963+07:00
+          'mgnl:lastModifiedBy': 'superuser'
+          '00':
+            'jcr:primaryType': 'mgnl:component'
+            'jcr:uuid': '560558a1-b38b-4cd0-b9be-8f4e9ed42ab2'
+            'mgnl:activationStatus': true
+            'mgnl:created': 2020-03-27T00:16:05.388+07:00
+            'mgnl:createdBy': 'superuser'
+            'mgnl:lastActivated': 2020-05-15T21:01:39.119+07:00
+            'mgnl:lastActivatedBy': 'superuser'
+            'mgnl:lastModified': 2020-05-12T12:57:02.963+07:00
+            'mgnl:lastModifiedBy': 'superuser'
+            'mgnl:template': 'spa-lm:components/paragraph'
+            'richText': '<p>Available from 3:00 - 3:25. Every 2nd Tuesday of the month.</p>
+
+
+              <p>support@minimal-spa-demo.com</p>
+
+
+              <p>+41 98 765 43 21 00</p>
+
+              '
+            'richText_de': '<p>Erreichbar von 15:00 - 15:25. Jeden 2. Dienstag des
+              Monats.</p>
+
+
+              <p>support@minimal-spa-demo.com</p>
+
+
+              <p>+41 98 765 43 21 00</p>
+
+
+              <p><br />
+
+              &nbsp;</p>
+
+              '
+  'extras':
+    'jcr:primaryType': 'mgnl:area'
+    'jcr:uuid': 'a826c0dc-eb44-4184-9048-332c5f790789'
+    'mgnl:activationStatus': true
+    'mgnl:created': 2020-02-03T15:27:45.964+07:00
+    'mgnl:createdBy': 'superuser'
+    'mgnl:lastActivated': 2020-05-15T21:01:38.952+07:00
+    'mgnl:lastActivatedBy': 'superuser'
+    'mgnl:lastModified': 2020-05-12T12:46:00.748+07:00
+    'mgnl:lastModifiedBy': 'superuser'
+    '0':
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': 'a5951aea-7976-4e5d-bad4-26dc8299895d'
+      'mgnl:activationStatus': true
+      'mgnl:created': 2020-03-27T21:09:26.529+07:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastActivated': 2020-05-15T21:01:38.952+07:00
+      'mgnl:lastActivatedBy': 'superuser'
+      'mgnl:lastModified': 2020-05-12T12:42:39.710+07:00
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'spa-lm:components/headline'
+      'text': 'Spring Essentials'
+      'text_de': 'Essential für den Fruhling'
+    '00':
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': '390d5dba-c945-42b5-bf05-a7ac20ace6b1'
+      'mgnl:activationStatus': true
+      'mgnl:created': 2020-03-27T00:12:27.371+07:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastActivated': 2020-05-15T21:01:38.952+07:00
+      'mgnl:lastActivatedBy': 'superuser'
+      'mgnl:lastModified': 2020-05-12T12:44:57.152+07:00
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'spa-lm:components/list'
+      'items':
+        'jcr:primaryType': 'mgnl:area'
+        'jcr:uuid': '234a19ae-3f3d-4ccd-96b6-f21c06272ae2'
+        'mgnl:activationStatus': true
+        'mgnl:created': 2020-03-27T00:12:27.422+07:00
+        'mgnl:createdBy': 'superuser'
+        'mgnl:lastActivated': 2020-05-15T21:01:38.952+07:00
+        'mgnl:lastActivatedBy': 'superuser'
+        'mgnl:lastModified': 2020-05-12T12:44:57.152+07:00
+        'mgnl:lastModifiedBy': 'superuser'
+        '0':
+          'jcr:primaryType': 'mgnl:component'
+          'jcr:uuid': 'f111e008-e637-415b-af2e-f91c3eb215bb'
+          'mgnl:activationStatus': true
+          'mgnl:created': 2020-03-27T00:12:57.165+07:00
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastActivated': 2020-05-15T21:01:38.952+07:00
+          'mgnl:lastActivatedBy': 'superuser'
+          'mgnl:lastModified': 2020-05-12T12:43:32.033+07:00
+          'mgnl:lastModifiedBy': 'superuser'
+          'mgnl:template': 'spa-lm:components/listItem'
+          'text': 'Put ski''s in storage'
+          'text_de': 'Räumt die Skier weg'
+        '00':
+          'jcr:primaryType': 'mgnl:component'
+          'jcr:uuid': 'cdd66d4c-299b-426d-8c9b-e90b817cd09b'
+          'mgnl:activationStatus': true
+          'mgnl:created': 2020-03-27T00:13:08.740+07:00
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastActivated': 2020-05-15T21:01:38.952+07:00
+          'mgnl:lastActivatedBy': 'superuser'
+          'mgnl:lastModified': 2020-05-12T12:44:15.965+07:00
+          'mgnl:lastModifiedBy': 'superuser'
+          'mgnl:template': 'spa-lm:components/listItem'
+          'text': 'Get grill on balcony'
+          'text_de': 'Macht den Grill auf den Balkon'
+        '01':
+          'jcr:primaryType': 'mgnl:component'
+          'jcr:uuid': 'e7fa9edb-a237-4b85-8da2-884a378bdb87'
+          'mgnl:activationStatus': true
+          'mgnl:created': 2020-03-27T00:13:18.792+07:00
+          'mgnl:createdBy': 'superuser'
+          'mgnl:lastActivated': 2020-05-15T21:01:38.953+07:00
+          'mgnl:lastActivatedBy': 'superuser'
+          'mgnl:lastModified': 2020-05-12T12:44:57.152+07:00
+          'mgnl:lastModifiedBy': 'superuser'
+          'mgnl:template': 'spa-lm:components/listItem'
+          'text': 'Buy beer'
+          'text_de': 'Kauft Bier'
+    '01':
+      'jcr:primaryType': 'mgnl:component'
+      'jcr:uuid': 'd4031c21-9c75-4261-aa00-3b62eb3c9ae9'
+      'mgnl:activationStatus': true
+      'mgnl:created': 2020-03-27T00:13:35.883+07:00
+      'mgnl:createdBy': 'superuser'
+      'mgnl:lastActivated': 2020-05-15T21:01:38.953+07:00
+      'mgnl:lastActivatedBy': 'superuser'
+      'mgnl:lastModified': 2020-05-12T12:46:00.748+07:00
+      'mgnl:lastModifiedBy': 'superuser'
+      'mgnl:template': 'spa-lm:components/paragraph'
+      'richText': '<p>It&#39;s all about <em>priorities</em>.</p>
+
+        '
+      'richText_de': '<p>Es geht alles um die Priorit&auml;ten</p>
+
+        '

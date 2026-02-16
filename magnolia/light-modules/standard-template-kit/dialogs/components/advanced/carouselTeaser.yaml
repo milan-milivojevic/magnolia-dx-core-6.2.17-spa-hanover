@@ -1,0 +1,117 @@
+label: Carousel Teaser
+wide: true
+
+form:
+  properties:
+
+    multi:
+      label: Carousel Teaser Data
+      $type: jcrMultiField
+      maxItems: 20
+      minItems: 2
+      field:
+        label: SECTION - DATA FIELDS
+        $type: compositeField
+        properties:
+          image: !include:/standard-template-kit/includes/dialogs/image/imageRequired.yaml          
+          linkType: !include:/standard-template-kit/includes/dialogs/teasersShared/carouselTeaser/linkType.yaml
+          linkLabel: !include:/standard-template-kit/includes/dialogs/link/label.yaml
+          textColorBackground: !include:/standard-template-kit/includes/dialogs/teasersShared/carouselTeaser/textColorBackground.yaml
+          headline: !include:/standard-template-kit/includes/dialogs/text/headline.yaml
+          description: !include:/standard-template-kit/includes/dialogs/text/description.yaml   
+    
+    headlineDropdowns: !include:/standard-template-kit/includes/dialogs/teasersShared/carouselTeaser/headlineDropdowns.yaml
+    headlineDropdowns1: !include:/standard-template-kit/includes/dialogs/teasersShared/headlineDropdowns1.yaml
+    headlineTextStyles: !include:/standard-template-kit/includes/dialogs/text/headlineTextStyles.yaml
+    headlinePadding: !include:/standard-template-kit/includes/dialogs/text/headlinePadding.yaml
+    headlineMargin: !include:/standard-template-kit/includes/dialogs/teasersShared/imageTeaser/headlineMargin.yaml
+    
+    descriptionStyle: !include:/standard-template-kit/includes/dialogs/teasersShared/descriptionStyle.yaml
+    descriptionPadding: !include:/standard-template-kit/includes/dialogs/text/descriptionPadding.yaml
+    descriptionBorder: !include:/standard-template-kit/includes/dialogs/text/descriptionBorder.yaml
+
+    linkLabelStyles: !include:/standard-template-kit/includes/dialogs/link/labelStyles.yaml
+    linkLabelDropdowns: !include:/standard-template-kit/includes/dialogs/link/linkLabelDropdowns.yaml
+    labelPadding: !include:/standard-template-kit/includes/dialogs/link/labelPadding.yaml
+    chevronStyles: !include:/standard-template-kit/includes/dialogs/link/chevronStyles.yaml
+    linkLocationIconWidthHeight: !include:/standard-template-kit/includes/dialogs/teasersShared/carouselTeaser/linkLocationIconWidthHeight.yaml
+    linkBackground: !include:/standard-template-kit/includes/dialogs/link/linkBackground.yaml
+    linkPadding: !include:/standard-template-kit/includes/dialogs/link/padding.yaml
+    linkBorder: !include:/standard-template-kit/includes/dialogs/link/border.yaml
+
+    carouselWidthHeightPositionClickable: !include:/standard-template-kit/includes/dialogs/teasersShared/carouselTeaser/widthHeightPositionClickable.yaml
+    carouselBorder: !include:/standard-template-kit/includes/dialogs/carousel/border.yaml
+    carouselArrowStyles: !include:/standard-template-kit/includes/dialogs/carousel/arrowStyles.yaml
+    carouselIndicatorStyles: !include:/standard-template-kit/includes/dialogs/carousel/indicatorStyles.yaml
+    carouselIndicatorColorsGap: !include:/standard-template-kit/includes/dialogs/carousel/indicatorColorsGap.yaml
+    carouselIndicatorBorder: !include:/standard-template-kit/includes/dialogs/carousel/indicatorBorder.yaml
+    carouselInnerPadding: !include:/standard-template-kit/includes/dialogs/carousel/innerPadding.yaml
+    carouselOuterMargin: !include:/standard-template-kit/includes/dialogs/carousel/outerMargin.yaml    
+    
+    teaserLayout: !include:/standard-template-kit/includes/dialogs/teasersShared/teaserLayout.yaml
+    descLinkLayout: !include:/standard-template-kit/includes/dialogs/teasersShared/descLinkLayout.yaml
+    descLinkSettings: !include:/standard-template-kit/includes/dialogs/teasersShared/descLinkSettings.yaml
+    linkPositions: !include:/standard-template-kit/includes/dialogs/teasersShared/linkPositions.yaml
+
+    linkStyleWithCheckbox: !include:/standard-template-kit/includes/dialogs/teasersShared/styleWithCheckbox/link.yaml
+    styleWithCheckbox: !include:/standard-template-kit/includes/dialogs/shared/styleWithCheckbox.yaml
+    
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: Data
+      - label: Data
+        fields:          
+          - name: multi
+      - name: configStyles
+      - label: Config Styles
+        fields:
+          - name: styleWithCheckbox
+          - name: linkStyleWithCheckbox
+      - name: carouselSettings
+      - label: Carousel Settings
+        fields:
+          - name: carouselWidthHeightPositionClickable          
+          - name: carouselArrowStyles
+          - name: carouselIndicatorStyles
+          - name: carouselIndicatorColorsGap
+          - name: carouselIndicatorBorder
+          - name: carouselBorder
+          - name: carouselInnerPadding
+          - name: carouselOuterMargin      
+      - name: layout
+      - label: Layout
+        fields:
+          - name: teaserLayout          
+          - name: descLinkLayout
+          - name: descLinkSettings
+          - name: linkPositions     
+      - name: headlineStyles
+      - label: Headline Styles
+        fields:
+          - name: headlineDropdowns
+          - name: headlineDropdowns1
+          - name: headlineTextStyles         
+          - name: headlinePadding
+          - name: headlineMargin
+      - name: descriptionStyles
+      - label: Description Styles
+        fields:
+          - name: descriptionStyle
+          - name: descriptionPadding
+          - name: descriptionBorder
+      - name: linkStyles
+      - label: Link Styles
+        fields:                  
+          - name: linkLabelDropdowns
+          - name: linkLabelStyles     
+          - name: labelPadding     
+          - name: linkLocationIconWidthHeight
+          - name: chevronStyles     
+          - name: linkBorder  
+          - name: linkBackground
+          - name: linkStyles                      
+          - name: linkPadding  
+         
+        

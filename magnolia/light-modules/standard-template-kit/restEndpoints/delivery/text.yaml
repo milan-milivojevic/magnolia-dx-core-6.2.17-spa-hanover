@@ -1,0 +1,15 @@
+class: info.magnolia.rest.delivery.jcr.v2.JcrDeliveryEndpointDefinition
+workspace: website
+depth: 10
+personalized: true
+bypassWorkspaceAcls: true
+systemProperties:
+  - mgnl:createdBy
+nodeTypes:
+  - mgnl:page
+  - mgnl:area
+  - mgnl:component
+childNodeTypes:
+  - mgnl:area
+  - mgnl:component
+  - mgnl:contentNode

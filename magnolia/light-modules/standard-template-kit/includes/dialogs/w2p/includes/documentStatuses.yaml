@@ -1,0 +1,23 @@
+label: Document Statuses 
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: myDocuments
+      value: my
+      label: "My Documents"
+    - name: inWork
+      value: "in-work"
+      label: "In Work"
+    - name: finalized
+      value: finalized
+      label: "Finalized"
+    - name: inApproval
+      value: "in-approval"
+      label: "In Approval"    
+    - name: rejected
+      value: rejected
+      label: "Rejected"
+    - name: archived
+      value: archived
+      label: "Archived"

@@ -1,0 +1,12 @@
+label: ""
+$type: compositeField
+layout:
+  $type: stacked
+itemProvider:
+  $type: currentItemProvider
+properties:
+  documentStatuses: !include:/standard-template-kit/includes/dialogs/w2p/includes/documentStatuses.yaml
+  sortOrderDocuments: !include:/standard-template-kit/includes/dialogs/w2p/includes/sortOrderDocuments.yaml
+  cardsLimit: !include:/standard-template-kit/includes/dialogs/mpSearch/includes/cardsLimit.yaml
+  perRow: !include:/standard-template-kit/includes/dialogs/mpSearch/includes/perRow.yaml
+  defaultView: !include:/standard-template-kit/includes/dialogs/mpSearch/includes/defaultView.yaml

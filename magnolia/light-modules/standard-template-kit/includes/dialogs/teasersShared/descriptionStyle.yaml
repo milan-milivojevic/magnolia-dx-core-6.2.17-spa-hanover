@@ -1,0 +1,9 @@
+label: Description
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  descriptionStyle: !include:/standard-template-kit/includes/dialogs/text/includes/descriptionType.yaml
+  descriptionAlign: !include:/standard-template-kit/includes/dialogs/text/includes/textAlign.yaml

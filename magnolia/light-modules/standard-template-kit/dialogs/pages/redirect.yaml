@@ -1,0 +1,41 @@
+label: Redirect Page
+form:
+  properties:
+    title:
+      label: Title
+      $type: textField
+    hide: 
+      label: Hide in Navigation
+      buttonLabel: yes/no
+      $type: checkBoxField
+    linkType: 
+      $type: switchableField
+      propertyNameDecorator: info.magnolia.ui.field.NoopNameDecorator
+      itemProvider:
+        $type: currentItemProvider
+      field:
+        name: linkType
+        $type: radioButtonGroupField
+        defaultValue: page
+        datasource:
+          $type: optionListDatasource
+          options:
+            - name: page
+              value: page
+            - name: external
+              value: external
+      forms:
+        page:
+          properties:
+            - name: page
+              $type: pageLinkField
+              converterClass: info.magnolia.ui.editor.converter.JcrNodeToPathConverter
+              textInputAllowed: true
+              i18n: true
+              showOptions: true
+              filteringMode: CONTAINS
+        external:
+          properties:
+            - name: external
+              $type: textField
+              i18n: true

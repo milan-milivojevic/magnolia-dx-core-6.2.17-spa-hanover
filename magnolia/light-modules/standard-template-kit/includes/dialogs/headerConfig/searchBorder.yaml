@@ -1,0 +1,11 @@
+label: Border
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  searchBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  searchBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  searchBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
+  searchBorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml

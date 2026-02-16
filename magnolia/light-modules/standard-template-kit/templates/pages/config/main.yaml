@@ -1,0 +1,47 @@
+title: Main Configuration Page
+
+# baseUrl: http://localhost:3000
+# routeTemplate: '/{language}{{@path}}'
+templateScript: /standard-template-kit/webresources/build/index.html
+
+dialog: standard-template-kit:pages/config/main
+
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+areas:
+  pagesConfigComponent:
+    title: Pages Configuration Component
+    availableComponents:  
+      pagesConfig:
+        id: standard-template-kit:components/mainConfig/pagesConfig  
+  headerConfigComponent:
+    title: Header Configuration Component
+    availableComponents:  
+      headerConfig:
+        id: standard-template-kit:components/mainConfig/headerConfig  
+  topNavConfigComponent:
+    title: Navigation Configuration Component
+    availableComponents:  
+      topNavConfig:
+        id: standard-template-kit:components/mainConfig/topNavConfig
+  leftNavConfigComponent:
+    title: Navigation Configuration Component
+    availableComponents:  
+      leftNavConfig:
+        id: standard-template-kit:components/mainConfig/leftNavConfig
+  navLevelsConfigComponent:
+    title: Navigation Levels Configuration Component
+    availableComponents:  
+      navLevelsConfig:
+        id: standard-template-kit:components/mainConfig/navLevelsConfig
+  headlinesConfigComponent:
+    title: Headlines Configuration Component
+    availableComponents:      
+      headlinesConfig:
+        id: standard-template-kit:components/mainConfig/headlinesConfig
+  paragraphsConfigComponent:
+    title: Paragraphs Configuration Component
+    availableComponents:      
+      paragraphsConfig:
+        id: standard-template-kit:components/mainConfig/paragraphsConfig
+

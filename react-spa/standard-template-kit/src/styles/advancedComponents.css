@@ -1,0 +1,355 @@
+/* Common Teaser Styles */
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.descriptionLinkWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.borderTeaserComponent.flex {
+  height: 100%;
+}
+
+.imageTeaserComponent,
+.carouselTeaserWrapper {
+  max-width: 100%;
+}
+
+.imageTeaserComponent img,
+.carouselTeaserWrapper img {
+  object-fit: cover;
+  object-position: top left;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.imageTeaser,
+.carouselTeaser {
+  position: absolute;
+}
+
+.imageTeaser,
+.carouselTeaser {
+  background-size: cover;
+}
+.imageTeaser .light,
+.carouselTeaser .light {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+}
+.imageTeaser .dark,
+.carouselTeaser .dark {
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.45) 100%
+  );
+}
+
+.carouselTeaserComponent {
+  width: 100%;
+}
+
+/* Card Teaser Component */
+
+.cardTeaserComponent .image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.cardTeaserComponent {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 0px 3px 1px rgba(0,0,0,0.12)
+}
+
+.cardTeaserComponent .image.cursorPointer:hover {
+  opacity: 0.85;
+}
+
+.cardTeaser {
+  height: 100%;
+  border-top: none;
+}
+
+.cardTeaser.allBorders {
+  border-style: solid !important;
+}
+
+.cardTeaser.hideAllBorders {
+  border-style: none !important;
+}
+
+.cardTeaser.topBorderOnly {
+  border-style: solid none none none !important;
+}
+
+.cardTeaser.hideTopBorder {
+  border-style: none solid solid solid !important;
+}
+
+/* Carousel Teaser Component */
+
+.carouselTeaser .link {
+ z-index: 999;
+}
+
+
+/* Carousel Component */
+
+.carouselComponent {
+  display: flex;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel .rightArrowStyles {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 40px;
+  font-size: 40px;
+  color: #ffffffe6;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/*custom*/
+.carousel .rightArrowStyles svg {
+  border: 10px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+  stroke-width: 2px;
+  padding-left: 3px;
+}
+.carousel .rightArrowStyles:hover {
+  color: #ab0032;
+}
+
+.carousel .leftArrowStyles {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 40px;
+  font-size: 40px;
+  color: #ffffffe6;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+
+/*custom*/
+.carousel .leftArrowStyles:hover {
+  color: #ab0032;
+}
+.carousel .leftArrowStyles svg {
+  border: 10px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+  stroke-width: 2px;
+  padding-right: 3px;
+}
+
+.carousel .leftArrowStyles:has(.leftArrow) {
+  transform: translate(0, -50%) rotate(180deg);
+}
+
+.carousel .carouselImage {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.carousel .indicatorsWrapper {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  /* transform: translate(0, -50%); */
+  font-size: 45px;
+  color: #ffffffe6;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.carousel .indicatorsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.carousel .indicator {
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+
+.carousel .indicator:has(.lineIndicator) {
+  width: 36px;
+  height: 6px;
+}
+
+/*custom*/
+.indicator svg {
+  height: 7px;
+}
+
+/*custom*/
+.carousel .descriptionLinkWrapper.flex {
+  background-color: #ffffffcc;
+}
+
+/* Carousel Divided Component */
+
+.carouselDividedImages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel .carouselDividedImages .carouselImage {
+  width: 50%;
+  max-width: 50%;
+}
+
+
+/* Global Layout Component */
+
+.globalLayoutComponentWrapper.configComponents {
+  padding: 40px 0;
+  border-bottom: 2px dashed #414141;
+}
+
+.globalLayoutComponent {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.globalLayoutComponent .imageComponentWrapper > div {
+  max-width: 100%;
+}
+
+.globalLayoutComponent .linkComponent {
+  width: fit-content;
+}
+
+.globalLayoutComponent.layout2 .headline,
+.globalLayoutComponent.layout1 .headline,
+.globalLayoutComponent.layout2 .imageComponentWrapper,
+.globalLayoutComponent.layout1 .imageComponentWrapper  {
+  grid-column: 1 / 3;
+}
+
+.globalLayoutComponent .headline {
+  order: 1;
+}
+
+.globalLayoutComponent.layout1 .imageComponentWrapper {
+  order: 2;
+}
+.globalLayoutComponent.layout1 .descriptionLinkWrapper {
+  order: 3;
+}
+
+.globalLayoutComponent.layout2 .imageComponentWrapper {
+  order: 3;
+}
+.globalLayoutComponent.layout2 .descriptionLinkWrapper {
+  order: 2;
+}
+
+.globalLayoutComponent.layout3 .headline {
+  order: 2;
+}
+
+.globalLayoutComponent.layout3 .imageComponentWrapper {
+  order: 1;
+}
+.globalLayoutComponent.layout3 .descriptionLinkWrapper {
+  order: 3;
+}
+
+.globalLayoutComponent.layout4 .imageComponentWrapper {
+  order: 3;
+}
+.globalLayoutComponent.layout4 .description {
+  order: 2;
+}
+.globalLayoutComponent.layout4 .linkComponent {
+  order: 4;
+}
+
+/* Special Layout Component */
+
+.specialLayoutComponent {
+  display: grid;
+}
+
+.specialLayoutComponent.layout1 .specialLayouts {
+  display: flex;
+  flex-direction: row;
+}
+.specialLayoutComponent.layout2 .specialLayouts {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.specialLayoutComponent .descLinkWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.specialLayoutComponent .linkComponent {
+  height: auto;
+  width: 100%;
+  display: grid;
+}
+
+
+/* Accordion */
+
+.accordionWrapper .accordion {
+  display: flex;
+}
+
+/* Corporate Identity Colors */
+
+.corporateIdentityColors {
+  display: grid;
+}
+
+.corporateIdentityColors.layout1 {
+  grid-template-columns: 1fr;
+}
+
+.corporateIdentityColors.layout2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.corporateIdentityColors.layout3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.corporateIdentityColors.layout4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.corporateIdentityColors.layout5 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.corporateIdentityColors.layout6 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.corporateIdentityColors .previewColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,16 @@
+label: Link Location
+placeholder: New Window
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: [_blank]
+  options:
+    - name: New Window
+      value: _blank
+      label: New Window
+    - name: Same Window
+      value: _self
+      label: Same Window
+    - name: iFrame
+      value: iFrame
+      label: Open in iFrame

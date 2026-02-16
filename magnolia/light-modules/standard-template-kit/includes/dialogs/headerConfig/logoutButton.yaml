@@ -1,0 +1,15 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  logoutColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/color.yaml
+  logoutHoverColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/hoverColor.yaml
+  logoutBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  logoutBackHoverColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
+  showLogout: 
+    label: Show Logout Button
+    $type: checkBoxField
+    buttonLabel: yes/no

@@ -1,0 +1,16 @@
+label: Component as Link
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: start
+  options:
+    - name: unset  
+      label: Unset
+      value: null
+    - name: "yes"
+      label: "Yes"
+      value: true
+    - name: "no"
+      label: "No"
+      value: false
+      

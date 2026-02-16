@@ -1,0 +1,5 @@
+label: Image Test
+wide: true
+form:
+  properties:
+    image: !include:/standard-template-kit/includes/dialogs/image/image.yaml

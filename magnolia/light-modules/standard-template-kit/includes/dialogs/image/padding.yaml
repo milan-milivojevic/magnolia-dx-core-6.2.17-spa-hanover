@@ -1,0 +1,12 @@
+label: Image
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  imagePaddingTop: !include:/standard-template-kit/includes/dialogs/basics/padding/top.yaml
+  imagePaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
+  imagePaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
+  imagePaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
+  

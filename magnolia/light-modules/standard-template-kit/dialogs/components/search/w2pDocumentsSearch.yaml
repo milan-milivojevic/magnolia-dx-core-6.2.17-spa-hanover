@@ -1,0 +1,19 @@
+label: W2P Documents Search
+wide: true
+form:
+  properties:
+    
+    documentsSearchConfig: !include:/standard-template-kit/includes/dialogs/w2p/search/documentsSearchConfig.yaml  
+    documentActions: !include:/standard-template-kit/includes/dialogs/w2p/documentActions.yaml
+      
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: searchConfig
+      - label: Search Config
+        fields:
+          - name: documentsSearchConfig
+      - name: actions
+      - label: Actions
+        fields:
+          - name: documentActions

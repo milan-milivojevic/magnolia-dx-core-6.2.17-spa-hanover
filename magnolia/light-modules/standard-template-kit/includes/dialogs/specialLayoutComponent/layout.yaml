@@ -1,0 +1,11 @@
+label: Layout
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: layout1
+      value: layout1
+      label: Layout 1 - Image Left
+    - name: layout2
+      value: layout2
+      label: Layout 2 - Image Right

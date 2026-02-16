@@ -1,0 +1,10 @@
+label: Link Icon
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  chevronDefaultColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/color.yaml
+  chevronHoverColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/hoverColor.yaml
+  

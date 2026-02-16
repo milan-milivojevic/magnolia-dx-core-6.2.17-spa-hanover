@@ -1,0 +1,19 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  titleColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+    label: Title Font Color
+  titleBackground: !include:/standard-template-kit/includes/dialogs/teasersShared/includes/titleBackground.yaml
+    label: Title Background Color
+  addArrows: !include:/standard-template-kit/includes/dialogs/text/includes/addArrows.yaml
+    label: Title Arrows
+  arrowsHeight: !include:/standard-template-kit/includes/dialogs/text/includes/arrowsHeight.yaml
+    label: Title Arrows Height
+  descBackground: !include:/standard-template-kit/includes/dialogs/teasersShared/includes/descriptionBackground.yaml
+    label: Description Background Color
+  
+  

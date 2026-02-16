@@ -1,0 +1,4 @@
+label: Video
+$type: damLinkField
+textInputAllowed: true
+i18n: true

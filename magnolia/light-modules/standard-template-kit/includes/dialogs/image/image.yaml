@@ -1,0 +1,5 @@
+label: Image
+$type: damLinkField
+showOptions: true            
+textInputAllowed: true
+i18n: true

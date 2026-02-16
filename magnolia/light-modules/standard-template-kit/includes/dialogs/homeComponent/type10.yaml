@@ -1,0 +1,40 @@
+label: Link Type
+$type: switchableField
+propertyNameDecorator: info.magnolia.ui.field.NoopNameDecorator
+itemProvider:
+  $type: currentItemProvider
+field:
+  name: linkType10
+  $type: radioButtonGroupField
+  defaultValue: page10
+  datasource:
+    $type: optionListDatasource
+    options:
+      - name: page10
+        value: page10
+        label: Page
+      - name: external10
+        value: external10
+        label: External
+      - name: download10
+        value: download10
+        label: Download
+forms:
+  page10:
+    properties:
+      - name: page10
+        label: Page
+        $type: pageLinkField
+        converterClass: info.magnolia.ui.editor.converter.JcrNodeToPathConverter
+        textInputAllowed: true
+  external10:
+    properties:
+      - name: external10
+        label: External URL
+        $type: textField
+  download10:
+    properties:
+      - name: download10
+        label: Asset
+        $type: damLinkField
+        textInputAllowed: true

@@ -1,0 +1,13 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  wrapperMarginTop: !include:/standard-template-kit/includes/dialogs/basics/margin/top.yaml
+  wrapperMarginRight: !include:/standard-template-kit/includes/dialogs/basics/margin/right.yaml
+  wrapperMarginBottom: !include:/standard-template-kit/includes/dialogs/basics/margin/bottom.yaml
+  wrapperMarginLeft: !include:/standard-template-kit/includes/dialogs/basics/margin/left.yaml
+    
+  

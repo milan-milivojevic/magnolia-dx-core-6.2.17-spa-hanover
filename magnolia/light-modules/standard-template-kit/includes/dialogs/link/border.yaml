@@ -1,0 +1,12 @@
+label: Link
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  linkBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  linkBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  linkBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
+  linkBorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml
+  

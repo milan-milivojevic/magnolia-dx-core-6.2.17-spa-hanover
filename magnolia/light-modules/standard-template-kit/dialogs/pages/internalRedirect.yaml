@@ -1,0 +1,13 @@
+label: Internal Redirect Page
+form:
+  properties:
+    title:
+      label: Title
+      $type: textField
+    componentId:
+      label: id
+      $type: textField
+    hide: 
+      label: Hide in Navigation
+      buttonLabel: yes/no
+      $type: checkBoxField

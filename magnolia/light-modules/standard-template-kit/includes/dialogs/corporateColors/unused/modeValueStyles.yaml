@@ -1,0 +1,11 @@
+label: Mode Value
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  modeValueFontFamily: !include:/standard-template-kit/includes/dialogs/text/includes/fontFamily.yaml
+  modeValueFontSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml  
+  modeValueColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+  modeValueBold: !include:/standard-template-kit/includes/dialogs/text/includes/bold.yaml

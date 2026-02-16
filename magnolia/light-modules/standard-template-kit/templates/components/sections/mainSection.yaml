@@ -1,0 +1,91 @@
+title: Main Section
+dialog: standard-template-kit:components/sections/mainSection
+areas:
+  column1: &column1
+    title: All Components
+    availableComponents:      
+      accordion:
+        id: standard-template-kit:components/advanced/accordion
+      accordionList:
+        id: standard-template-kit:components/grouping/accordionList
+      audio:
+        id: standard-template-kit:components/basic/audio      
+      borderTeaser:
+        id: standard-template-kit:components/advanced/borderTeaser
+      borderTeaserList:
+        id: standard-template-kit:components/grouping/borderTeaserList
+      cardTeaser:
+        id: standard-template-kit:components/advanced/cardTeaser
+      cardTeaserList:
+        id: standard-template-kit:components/grouping/cardTeaserList
+      carousel:
+        id: standard-template-kit:components/advanced/carousel
+      carouselDivided:
+        id: standard-template-kit:components/advanced/carouselDivided
+      carouselTeaser:
+        id: standard-template-kit:components/advanced/carouselTeaser
+      corporateFonts:
+        id: standard-template-kit:components/advanced/corporateFonts
+      corporateIcons:
+        id: standard-template-kit:components/advanced/corporateIcons
+      corporateIdentityColors:
+        id: standard-template-kit:components/advanced/corporateIdentityColors
+      divider:
+        id: standard-template-kit:components/basic/divider
+      globalLayoutComponent:
+        id: standard-template-kit:components/advanced/globalLayoutComponent
+      html:
+        id: standard-template-kit:components/basic/html
+      iframe:
+        id: standard-template-kit:components/basic/iframe
+      image:
+        id: standard-template-kit:components/basic/image      
+      imageTest:
+        id: standard-template-kit:components/basic/imageTest          
+      imageGallery:
+        id: standard-template-kit:components/grouping/imageGallery
+      imageTeaser:
+        id: standard-template-kit:components/advanced/imageTeaser
+      imageTeaserList:
+        id: standard-template-kit:components/grouping/imageTeaserList
+      innerSection:
+        id: standard-template-kit:components/sections/innerSection
+      link:
+        id: standard-template-kit:components/basic/link
+      linkList:
+        id: standard-template-kit:components/grouping/linkList
+      separationBlock:
+        id: standard-template-kit:components/basic/separationBlock
+      spacer:
+        id: standard-template-kit:components/basic/spacer
+      specialLayoutComponent:
+        id: standard-template-kit:components/advanced/specialLayoutComponent
+      tabs:
+        id: standard-template-kit:components/grouping/tabs
+      text:
+        id: standard-template-kit:components/basic/text
+      textLink:
+        id: standard-template-kit:components/advanced/textLink
+      textLinkList:
+        id: standard-template-kit:components/grouping/textLinkList
+      video:
+        id: standard-template-kit:components/basic/video
+      mpAssetsList:
+        id: standard-template-kit:components/mediaPool/mpAssetsList
+      mpCarousel:
+        id: standard-template-kit:components/mediaPool/mpCarousel
+      mpCustomSearch:
+        id: standard-template-kit:components/mediaPool/mpCustomSearch
+      w2pTemplatesList:
+        id: standard-template-kit:components/w2p/w2pTemplatesList
+      w2pTemplatesCarousel:
+        id: standard-template-kit:components/w2p/w2pTemplatesCarousel
+      w2pCustomTemplatesSearch:
+        id: standard-template-kit:components/w2p/w2pCustomTemplatesSearch
+      w2pDocumentsByStatus:
+        id: standard-template-kit:components/w2p/w2pDocumentsByStatus
+  column2: *column1
+  column3: *column1
+  column4: *column1
+  column5: *column1
+  column6: *column1

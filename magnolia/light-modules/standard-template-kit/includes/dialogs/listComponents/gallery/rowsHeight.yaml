@@ -1,0 +1,11 @@
+label: Rows Height  
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: sameSize
+      value: 1fr
+      label: Same Size
+    - name: fitContent
+      value: unset
+      label: Fit Content

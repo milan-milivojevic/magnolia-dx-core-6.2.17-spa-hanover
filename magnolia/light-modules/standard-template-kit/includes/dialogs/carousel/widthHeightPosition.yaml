@@ -1,0 +1,11 @@
+label: Carousel
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  carouselWidth: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+  carouselHeight: !include:/standard-template-kit/includes/dialogs/basics/height.yaml
+  carouselPosition: !include:/standard-template-kit/includes/dialogs/basics/positions/horizontalPosition.yaml
+  carouselAutoplay: !include:/standard-template-kit/includes/dialogs/carousel/autoplay.yaml

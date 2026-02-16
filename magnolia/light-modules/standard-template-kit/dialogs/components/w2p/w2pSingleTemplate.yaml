@@ -1,0 +1,32 @@
+label: W2P Single Template
+wide: true
+form:
+  properties:
+    
+    templateId: !include:/standard-template-kit/includes/dialogs/w2p/templateId.yaml
+    defaultView: !include:/standard-template-kit/includes/dialogs/mpAsset/defaultView.yaml
+
+    templateActions: !include:/standard-template-kit/includes/dialogs/w2p/templateActions.yaml
+
+    title: !include:/standard-template-kit/includes/dialogs/mpAsset/title.yaml
+    titleStyles: !include:/standard-template-kit/includes/dialogs/mpAsset/titleStyles.yaml
+    titlePaddings: !include:/standard-template-kit/includes/dialogs/mpAsset/titlePaddings.yaml
+      
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: templateId
+      - label: Template ID
+        fields:
+          - name: templateId 
+          - name: defaultView  
+      - name: title
+      - label: Title
+        fields:
+          - name: title
+          - name: titleStyles   
+          - name: titlePaddings  
+      - name: actions
+      - label: Actions
+        fields:
+          - name: templateActions

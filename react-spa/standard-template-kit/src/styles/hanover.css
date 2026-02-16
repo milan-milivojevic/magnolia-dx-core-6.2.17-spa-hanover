@@ -1,0 +1,172 @@
+/* .pageContainer {
+    top: 167px;
+    min-height: calc(100vh - 167px);
+} */
+/* header {
+    height: 112px;
+} */
+
+.staticSearch .headerSearch input.searchInput {
+    width: 250px;
+  }
+
+
+.staticSearch {
+    /* align-items: center; */
+    padding: 100px 40px;
+}
+
+.staticSearch mark {
+    background-color: #7ca940;
+    color: white;
+    padding: 2px;
+}
+  
+.staticSearch .list {
+    padding: 20px;
+    font-size: 20px;
+    list-style: none;
+}
+.staticSearch .page {
+    padding-bottom: 5px;
+}
+.staticSearch .page a {
+    text-decoration: none;
+    color: #7ca940;
+    font-size: 24px;  
+    display: flex;
+    gap: 15px;  
+}
+.staticSearch .page a svg {
+    width: 24px;
+    height: 24px;
+}
+.staticSearch .title {
+    padding: 20px 10px 10px 10px;
+}
+.staticSearch .description {
+    padding: 0 10px;
+}
+
+/* .topNav {
+    height: 55px;
+    top: 112px;
+} */
+/* .leftHandNav {
+    min-height: calc(100vh - 311px);
+} */
+.leftHandNav > .menus {
+  height: fit-content;
+}
+
+.leftHandNav li button a {
+    width: 242px;
+}
+
+/* Privremeno resenje za LHN internal lvl2 navigation */
+
+/* li.level-1.active > button > a {
+    color: #0e7bba;
+}
+li.level-2.active > button > a {
+    color: #fff;
+}
+li.level-2.active > button > a:hover {
+    color: #0e7bba;
+} */
+
+/* .rightMainContent {
+    min-height: calc(100vh - 311px);
+} */
+
+
+
+.logoSticky {
+  position: sticky;
+  top: 167px;
+  background-color: #f5f5f5;
+}
+
+.editMode .logoSticky {
+  position: unset;
+}
+
+/* Corporate Icons */
+
+.corporateIcons .divider {
+    border-bottom: 5px solid rgb(154, 154, 156);
+}
+.corporateIcons .title {
+    font-family: MuseoSans500;
+    font-size: 22px;
+    line-height: 33px;
+    color: rgb(65, 65, 65);
+    padding-top: 20px;
+    font-weight: normal;
+}
+
+.corporateIcons .subtitle {
+    font-family: MuseoSans300;
+    font-size: 22px;
+    line-height: 33px;
+    color: rgb(65, 65, 65);    
+    padding-bottom: 40px;
+    font-weight: normal;
+}
+
+/* Spinner.css */
+.loadingSpinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .loadingSpinner .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #7ca940;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .description table {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    -webkit-border-horizontal-spacing: 1px;
+    -webkit-border-vertical-spacing: 1px;
+    display: table;
+    border-collapse: separate;
+    border-color: grey;
+    background-color: transparent;
+}
+
+.description table tr {
+    background-color: #ebebeb;
+    color: #716f73;
+}
+
+.description table td, .description table th {
+    padding: 8px;
+}
+
+.description ul {
+    padding: 0 0 20px 20px;
+    list-style-position: outside;
+}
+
+.description li {
+    padding-left: 8px;
+}

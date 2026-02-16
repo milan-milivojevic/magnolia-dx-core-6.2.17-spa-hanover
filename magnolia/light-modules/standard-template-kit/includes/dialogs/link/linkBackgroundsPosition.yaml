@@ -1,0 +1,12 @@
+label: Link
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  linkHorizontalPosition: !include:/standard-template-kit/includes/dialogs/basics/positions/horizontalPosition.yaml
+  linkDefaultBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  linkHoverBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
+  linkBorderHoverColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
+    label: Hover Border Color

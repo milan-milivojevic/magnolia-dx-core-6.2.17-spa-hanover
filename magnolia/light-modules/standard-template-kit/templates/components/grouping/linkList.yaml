@@ -1,0 +1,8 @@
+title: Link List
+dialog: standard-template-kit:components/grouping/linkList
+areas:
+  column1: &column1
+    title: Links
+    availableComponents:
+      textLink:
+        id: standard-template-kit:components/basic/link

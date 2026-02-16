@@ -1,0 +1,25 @@
+label: Options
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  autoplay2:
+    $type: checkBoxField
+    label: Autoplay
+    buttonLabel: "yes/no"
+  loop2:
+    $type: checkBoxField
+    label: Loop
+    buttonLabel: "yes/no"
+  muted2:
+    $type: checkBoxField
+    label: Muted
+    buttonLabel: "yes/no"
+  controls2:
+    $type: checkBoxField
+    defaultValue: true
+    label: Controls
+    buttonLabel: "yes/no"
+  

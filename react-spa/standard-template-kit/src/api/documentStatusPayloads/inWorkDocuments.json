@@ -1,0 +1,11 @@
+{
+    "searchText": "",
+    "propertySelections": {},
+    "searchOwnInstances": true,
+    "showArchived": false,
+    "validityConstraint": 2,
+    "statuses": [
+        1
+    ],
+    "filter": "in-work"
+}

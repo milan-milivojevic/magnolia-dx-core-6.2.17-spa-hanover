@@ -1,0 +1,61 @@
+label: Divided Carousel Configuration
+wide: true
+
+form:
+  properties:
+
+    multiLeft:
+      label: Left Carousel Images
+      $type: jcrMultiField
+      maxItems: 10
+      minItems: 2
+      field:
+        label: ""
+        $type: compositeField
+        properties:
+          image: !include:/standard-template-kit/includes/dialogs/image/imageRequired.yaml
+    
+    multiRight:
+      label: Right Carousel Images
+      $type: jcrMultiField
+      maxItems: 10
+      minItems: 2
+      field:
+        label: ""
+        $type: compositeField
+        properties:
+          image: !include:/standard-template-kit/includes/dialogs/image/imageRequired.yaml
+    
+    carouselWidthHeightPosition: !include:/standard-template-kit/includes/dialogs/carousel/widthHeightPosition.yaml
+    carouselBorder: !include:/standard-template-kit/includes/dialogs/carousel/border.yaml
+    carouselOuterMargin: !include:/standard-template-kit/includes/dialogs/carousel/outerMargin.yaml    
+    carouselArrowStyles: !include:/standard-template-kit/includes/dialogs/carousel/arrowStyles.yaml    
+    carouselIndicatorStyles: !include:/standard-template-kit/includes/dialogs/carousel/indicatorStyles.yaml
+    carouselIndicatorColorsGap: !include:/standard-template-kit/includes/dialogs/carousel/indicatorColorsGap.yaml
+    carouselIndicatorBorder: !include:/standard-template-kit/includes/dialogs/carousel/indicatorBorder.yaml
+    styleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: leftImages
+      - label: Left Images
+        fields:          
+          - name: multiLeft 
+      - name: rightImages
+      - label: Right Images
+        fields:          
+          - name: multiRight 
+      - name: carouselSettings
+      - label: Carousel Settings
+        fields:
+          - name: styleName
+          - name: carouselWidthHeightPosition  
+          - name: carouselBorder            
+          - name: carouselOuterMargin     
+          - name: carouselArrowStyles          
+          - name: carouselIndicatorStyles
+          - name: carouselIndicatorColorsGap
+          - name: carouselIndicatorBorder
+         
+        

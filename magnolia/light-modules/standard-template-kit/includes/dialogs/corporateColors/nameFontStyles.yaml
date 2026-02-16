@@ -1,0 +1,12 @@
+label: Color Name
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  nameFontSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml
+  nameColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+  nameFontFamily: !include:/standard-template-kit/includes/dialogs/text/includes/fontFamily.yaml
+  nameBold: !include:/standard-template-kit/includes/dialogs/text/includes/bold.yaml
+  namePosition: !include:/standard-template-kit/includes/dialogs/basics/positions/horizontalPosition.yaml

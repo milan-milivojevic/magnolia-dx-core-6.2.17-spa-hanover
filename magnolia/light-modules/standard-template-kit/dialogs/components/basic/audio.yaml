@@ -1,0 +1,31 @@
+label: Audio
+wide: true
+form:
+  properties:
+    
+    audio: !include:/standard-template-kit/includes/dialogs/audio/audio.yaml
+    mediaOptions: !include:/standard-template-kit/includes/dialogs/shared/mediaOptions.yaml
+
+    styleWithCheckbox: !include:/standard-template-kit/includes/dialogs/shared/styleWithCheckbox.yaml
+    margin: !include:/standard-template-kit/includes/dialogs/shared/padding.yaml
+      label: Component
+    border: !include:/standard-template-kit/includes/dialogs/shared/border.yaml
+      label: Component
+    widthPosition: !include:/standard-template-kit/includes/dialogs/audio/widthPosition.yaml
+      label: Component
+        
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: data
+      - label: Data
+        fields:
+          - name: audio
+          - name: mediaOptions
+      - name: audioSettings
+      - label: Audio Settings
+        fields:
+          - name: styleWithCheckbox
+          - name: widthPosition
+          - name: margin      
+          - name: border

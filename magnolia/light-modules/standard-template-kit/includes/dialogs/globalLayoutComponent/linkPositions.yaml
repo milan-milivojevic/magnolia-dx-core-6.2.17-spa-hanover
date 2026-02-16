@@ -1,0 +1,10 @@
+label: Link
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  linkHorizontalPosition: !include:/standard-template-kit/includes/dialogs/basics/positions/horizontalPosition.yaml    
+  linkVerticalPosition: !include:/standard-template-kit/includes/dialogs/basics/positions/verticalPosition.yaml   
+      

@@ -1,0 +1,12 @@
+label: Paddings
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  l4PaddingTop: !include:/standard-template-kit/includes/dialogs/basics/padding/top.yaml
+  l4PaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
+  l4PaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
+  l4PaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
+  

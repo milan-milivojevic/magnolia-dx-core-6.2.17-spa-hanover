@@ -1,0 +1,10 @@
+class: info.magnolia.rest.delivery.jcr.v2.JcrDeliveryEndpointDefinition
+workspace: usergroups
+depth: 150
+includeSystemProperties: false
+bypassWorkspaceAcls: true
+limit: 200
+nodeTypes:
+  - mgnl:group
+childNodeTypes: 
+  - mgnl:contentNode

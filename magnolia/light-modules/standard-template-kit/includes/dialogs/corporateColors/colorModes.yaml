@@ -1,0 +1,5 @@
+label: Color Modes
+$type: richTextField
+i18n: true
+height: 350
+configJsFile: /.resources/standard-template-kit/webresources/ckeditor.js

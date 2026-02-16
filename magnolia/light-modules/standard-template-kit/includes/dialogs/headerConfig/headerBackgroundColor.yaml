@@ -1,0 +1,9 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  headerBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  headerGradientBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/linearGradient.yaml

@@ -1,0 +1,4 @@
+$type: checkBoxField
+label: Hide Component
+buttonLabel: yes/no
+defaultValue: false

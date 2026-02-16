@@ -1,0 +1,13 @@
+label: Content with Left Hand Navigation Page
+form:
+  properties:
+    title:
+      label: Title
+      $type: textField
+    componentId:
+      label: Component ID
+      $type: textField
+    hide: 
+      label: Hide in Navigation
+      buttonLabel: yes/no
+      $type: checkBoxField

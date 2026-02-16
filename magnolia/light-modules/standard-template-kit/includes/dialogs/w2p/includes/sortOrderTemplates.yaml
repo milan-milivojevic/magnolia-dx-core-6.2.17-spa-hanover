@@ -1,0 +1,26 @@
+label: Select Order
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: notSelected
+      value: creationDate,desc
+      label: "Not selected"
+    - name: newestFirst
+      value: creationDate,desc
+      label: "Newest first"
+    - name: oldestFirst
+      value: creationDate,asc
+      label: "Oldest first"
+    # - name: lastUpdated
+    #   value: modificationDate,desc
+    #   label: "Last updated first"
+    # - name: oldestUpdated
+    #   value: modificationDate,asc
+    #   label: "Oldest updated first"
+    - name: nameAsc
+      value: title,asc
+      label: "Title A-Z"
+    - name: nameDesc
+      value: title,desc
+      label: "Title Z-A"

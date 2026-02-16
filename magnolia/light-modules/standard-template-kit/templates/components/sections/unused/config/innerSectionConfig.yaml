@@ -1,0 +1,57 @@
+title: Inner Section Configuration
+dialog: standard-template-kit:components/sections/config/innerSectionConfig
+areas:
+  column1: &column1
+    title: Inner Components
+    availableComponents:
+      audio:
+        id: standard-template-kit:components/basic/audio
+      borderTeaser:
+        id: standard-template-kit:components/advanced/borderTeaser
+      cardTeaser:
+        id: standard-template-kit:components/advanced/cardTeaser
+      carousel:
+        id: standard-template-kit:components/advanced/carousel
+      carouselDivided:
+        id: standard-template-kit:components/advanced/carouselDivided
+      carouselTeaser:
+        id: standard-template-kit:components/advanced/carouselTeaser
+      corporateFonts:
+        id: standard-template-kit:components/advanced/corporateFonts
+      corporateIcons:
+        id: standard-template-kit:components/advanced/corporateIcons
+      corporateIdentityColors:
+        id: standard-template-kit:components/advanced/corporateIdentityColors
+      divider:
+        id: standard-template-kit:components/basic/divider
+      globalLayoutComponent:
+        id: standard-template-kit:components/advanced/globalLayoutComponent
+      html:
+        id: standard-template-kit:components/basic/html
+      iframe:
+        id: standard-template-kit:components/basic/iframe
+      image:
+        id: standard-template-kit:components/basic/image
+      imageTeaser:
+        id: standard-template-kit:components/advanced/imageTeaser
+      link:
+        id: standard-template-kit:components/basic/link
+      separationBlock:
+        id: standard-template-kit:components/advanced/separationBlock
+      spacer:
+        id: standard-template-kit:components/basic/spacer
+      text:
+        id: standard-template-kit:components/basic/text
+      textLink:
+        id: standard-template-kit:components/advanced/textLink
+      textLinkList:
+        id: standard-template-kit:components/grouping/textLinkList
+      video:
+        id: standard-template-kit:components/basic/video
+      youtube:
+        id: standard-template-kit:components/basic/youtube
+  column2: *column1
+  column3: *column1
+  column4: *column1
+  column5: *column1
+  column6: *column1

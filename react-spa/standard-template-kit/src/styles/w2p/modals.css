@@ -1,0 +1,182 @@
+/*w2p Card */
+
+button.isFavourite svg {
+    fill: #7ca940;
+}
+
+button.isFavourite:hover svg {    
+    fill: #fff;
+}
+
+button.notFavourite svg {
+    fill: #fff;
+}
+
+button.notFavourite:hover svg {    
+    fill: #7ca940;
+}
+
+
+/* Detail modal */
+
+.closeButtonWrapper.w2p {
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+.closeButtonWrapper.w2p .titleId {
+    color: #2d3748;
+    font-size: 20px;
+    font-weight: 400;
+    height: 30px;
+    letter-spacing: 0;
+    line-height: 30px;
+    max-height: 30px;
+    padding: 0;
+}
+
+.detailsModal.w2p {
+    padding: 0;
+}
+
+.detailsModal.w2p iframe.detailsIframe {
+    width: 100%;
+    height: calc(100% - 30px);
+    border: 0;
+}
+
+/* Detail modal */
+
+.createModal.w2p {
+    display: flex;
+    gap: 40px;
+    height: calc(100% - 71px);
+    padding: 20px;
+}
+
+.createModal.w2p iframe.createTemplateIframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.createModal.emailModal.w2p,
+.createModal.downloadModal.w2p {
+    padding: 0px;
+}
+
+/* W2P Search */
+
+.searchFilter .css-fvipm8.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #7ca940;
+}
+
+.searchFilter .css-1ald77x.Mui-focused {
+    color: #7ca940;
+}
+
+.searchFilter .css-qiwgdb.css-qiwgdb.css-qiwgdb {
+    padding: 8px 24px 8px 16px;
+    font-family: MuseoSans500;;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.searchFilter .css-tzsjye {
+    width: 250px;
+}
+
+.searchFilter .css-1ald77x {
+    font-family: MuseoSans500;;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.w2p .flex.headerSearch {
+    height: 38px;
+}
+
+.w2p .flex.headerSearch button {
+    font-size: 21px;
+    padding: 7px;
+}
+
+.MuiMenuItem-root.css-1km1ehz {
+    font-family: MuseoSans500;;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.MuiPopover-paper.MuiMenu-paper.css-pwxzbm {
+    max-height: calc(95vh - 350px);
+}
+
+@media only screen and (max-width: 1440px) {
+    .MuiPopover-paper.MuiMenu-paper.css-pwxzbm {
+        max-height: calc(95vh - 292px);
+    }
+}
+
+/*Delete Modal*/
+
+.deleteModalWrapper.w2p {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    height: calc(200px);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 400px;
+}
+
+.deleteModal.w2p {
+    padding: 24px;
+}
+
+.deleteModal .deleteText {
+    font-size: 18px;
+    font-family: 'MuseoSans500;';
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+
+.deleteModal .actionButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.deleteModal button {
+    background-color: #7ca940;
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+    font-family: MuseoSans500;;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.deleteModal button.deleteButton {
+    background-color: #e62154;
+}
+
+.deleteModal button.cancelDelete {
+    background-color: #ededed;
+    color: #000;
+}
+
+.deleteModal button:hover {
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.5) 0px 0px 0px 1px;
+ }
+
+ @media only screen and (max-width: 1440px) {
+    .w2p .documentsByStatus {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+  }

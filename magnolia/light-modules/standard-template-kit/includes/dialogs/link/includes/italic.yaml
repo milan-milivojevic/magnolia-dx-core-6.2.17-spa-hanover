@@ -1,0 +1,12 @@
+label: Italic
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: none
+  options:
+    - name: normal
+      value: normal
+      label: normal
+    - name: italic
+      value: italic
+      label: italic

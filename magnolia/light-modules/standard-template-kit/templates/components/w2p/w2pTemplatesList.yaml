@@ -1,0 +1,8 @@
+title: W2P List of Templates
+dialog: standard-template-kit:components/w2p/w2pTemplatesList
+areas:
+  column1: &column1
+    title: W2P Single Template Components
+    availableComponents:
+      w2pSingleTemplate:
+        id: standard-template-kit:components/w2p/w2pSingleTemplate

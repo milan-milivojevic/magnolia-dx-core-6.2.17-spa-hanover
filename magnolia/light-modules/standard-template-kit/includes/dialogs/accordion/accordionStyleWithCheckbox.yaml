@@ -1,0 +1,13 @@
+$type: compositeField
+label: "Accordion Config Style"
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  accordionStyleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+  accordionNoStyles:
+    $type: checkBoxField
+    label: Without Config Styles
+    buttonLabel: "yes/no"
+    defaultValue: false

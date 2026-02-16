@@ -1,0 +1,38 @@
+label: Select Order
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: notSelected
+      value: "uploadDate,false"
+      label: "Not selected"
+    - name: mostRelevantFirst
+      value: relevance,false
+      label: "Most relevant first"
+    - name: leastRelevantFirst
+      value: relevance,true
+      label: "Least relevant first"
+    - name: lastUpdatedFirst
+      value: lastUpdatedTime,false
+      label: "Last updated first"
+    - name: oldestUpdatedFirst
+      value: lastUpdatedTime,true
+      label: "Oldest updated first"
+    - name: mostDownloadedFirst
+      value: popularity,false
+      label: "Most downloaded first"
+    - name: leastDownloadedFirst
+      value: popularity,true
+      label: "Least downloaded first"
+    - name: nameAZ
+      value: title_multi,true
+      label: "Name (A-Z)"
+    - name: nameZA
+      value: title_multi,false
+      label: "Name (Z-A)"
+    - name: newestFirst
+      value: uploadDate,false
+      label: "Newest first"
+    - name: oldestFirst
+      value: uploadDate,true
+      label: "Oldest first"

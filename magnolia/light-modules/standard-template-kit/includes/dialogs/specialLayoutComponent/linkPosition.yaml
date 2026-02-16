@@ -1,0 +1,19 @@
+label: Link Horizontal Position
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: start
+  options:
+    - name: unset  
+      label: Unset
+      value: null
+    - name: left 
+      label: Left
+      value: left
+    - name: center
+      label: Center
+      value: center
+    - name: right
+      label: Right
+      value: right
+      

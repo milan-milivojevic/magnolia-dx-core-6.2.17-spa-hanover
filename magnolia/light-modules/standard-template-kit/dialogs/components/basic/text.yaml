@@ -1,0 +1,65 @@
+label: Text (Title & Description)
+wide: true
+form:
+  properties:
+
+    headline: !include:/standard-template-kit/includes/dialogs/text/headline.yaml
+    headlineDropdowns: !include:/standard-template-kit/includes/dialogs/text/headlineDropdowns.yaml
+    headlineDropdowns1: !include:/standard-template-kit/includes/dialogs/text/headlineDropdowns1.yaml
+    headlineTextStyles: !include:/standard-template-kit/includes/dialogs/text/headlineTextStyles.yaml
+    headlinePadding: !include:/standard-template-kit/includes/dialogs/text/headlinePadding.yaml
+
+    description: !include:/standard-template-kit/includes/dialogs/text/description.yaml   
+    descriptionStyle: !include:/standard-template-kit/includes/dialogs/text/descriptionStyle.yaml
+    descriptionPadding: !include:/standard-template-kit/includes/dialogs/text/descriptionPadding.yaml
+    descriptionBorder: !include:/standard-template-kit/includes/dialogs/text/descriptionBorder.yaml
+    
+    wrapperPadding: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperPadding.yaml
+      label: Component
+    wrapperBackgroundColors: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperBackgroundColors.yaml
+      label: Component
+    wrapperBorder: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperBorder.yaml
+      label: Component
+    wrapperWidthHeightMarginPosition: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperWidthHeightMarginPosition.yaml
+      label: Component
+
+    styleWithCheckbox: !include:/standard-template-kit/includes/dialogs/shared/styleWithCheckbox.yaml
+
+    acl: !include:/standard-template-kit/includes/dialogs/acl/acl.yaml
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: data
+      - label: Data
+        fields:          
+          - name: headline          
+          - name: description
+      - name: headlineStyles
+      - label: Config Style
+        fields:
+          - name: styleWithCheckbox
+      - name: headlineStyles
+      - label: Title Styles
+        fields:
+          - name: headlineDropdowns
+          - name: headlineDropdowns1
+          - name: headlineTextStyles         
+          - name: headlinePadding
+      - name: descriptionStyles
+      - label: Description Styles
+        fields:
+          - name: descriptionStyle
+          - name: descriptionPadding
+          - name: descriptionBorder
+      - name: componentStyles
+      - label: Component Styles
+        fields:                  
+          - name: wrapperWidthHeightMarginPosition             
+          - name: wrapperPadding          
+          - name: wrapperBorder
+          - name: wrapperBackgroundColors
+      - name: acl
+      - label: Audience Control
+        fields:
+          - name: acl

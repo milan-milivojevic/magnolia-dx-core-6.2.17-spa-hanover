@@ -1,0 +1,12 @@
+label: Bottom Indicator
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  indicatorColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/color.yaml
+  indicatorActiveColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/color.yaml
+    label: Active Color
+  indicatorGap: !include:/standard-template-kit/includes/dialogs/listComponents/includes/gap.yaml
+  

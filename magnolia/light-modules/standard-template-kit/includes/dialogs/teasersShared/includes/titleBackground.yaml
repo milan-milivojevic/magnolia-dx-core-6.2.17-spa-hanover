@@ -1,0 +1,14 @@
+label: Background Color
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: none
+      value: unset
+      label: None
+    - name: light
+      value: light
+      label: Light
+    - name: dark
+      value: dark
+      label: Dark

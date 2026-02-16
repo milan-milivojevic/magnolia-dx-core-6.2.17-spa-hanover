@@ -1,0 +1,12 @@
+label: Add Arrows
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: false
+  options:
+    - name: yes
+      value: true
+      label: yes
+    - name: no
+      value: false
+      label: no

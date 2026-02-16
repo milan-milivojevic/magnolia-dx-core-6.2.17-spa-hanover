@@ -1,0 +1,23 @@
+title: Search Page - MP Search
+
+# baseUrl: http://localhost:3000 
+# routeTemplate: '/{language}{{@path}}'
+templateScript: /standard-template-kit/webresources/build/index.html
+
+dialog: standard-template-kit:pages/search/mpSearch
+
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+
+areas:
+  mpSearchArea:
+    title: MP Search Area
+    availableComponents:
+      mpSearch:
+        id: standard-template-kit:components/search/mpSearch
+      mpAssetsList:
+        id: standard-template-kit:components/mediaPool/mpAssetsList
+      mpCarousel:
+        id: standard-template-kit:components/mediaPool/mpCarousel
+      mpCustomSearch:
+        id: standard-template-kit:components/mediaPool/mpCustomSearch

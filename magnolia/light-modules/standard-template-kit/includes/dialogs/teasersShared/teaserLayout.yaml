@@ -1,0 +1,21 @@
+label: Teaser Layout
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: start
+  options:
+    - name: unset  
+      label: Unset
+      value: null
+    - name: top  
+      label: Top
+      value: flex-start
+    - name: center  
+      label: Center
+      value: center
+    - name: bottom  
+      label: Bottom
+      value: flex-end
+    - name: between
+      label: Space Between
+      value: "space-between"

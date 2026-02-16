@@ -1,0 +1,11 @@
+label: Component
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  imageWrapperBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  imageWrapperBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  imageWrapperBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
+  imageWrapperBorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml

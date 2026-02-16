@@ -1,0 +1,10 @@
+label: Color Modes
+$type: jcrMultiField
+maxItems: 10
+minItems: 2
+field:
+  label: ""
+  $type: compositeField
+  properties:    
+    colorMode: !include:/standard-template-kit/includes/dialogs/corporateColors/colorMode.yaml  
+    colorValue: !include:/standard-template-kit/includes/dialogs/corporateColors/colorValue.yaml  

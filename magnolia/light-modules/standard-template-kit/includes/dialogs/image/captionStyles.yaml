@@ -1,0 +1,11 @@
+label: Caption Styles
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  imageCaptionFontSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml
+  imageCaptionLineHeight: !include:/standard-template-kit/includes/dialogs/text/includes/lineHeight.yaml
+  imageCaptionColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+  imageCaptionPosition: !include:/standard-template-kit/includes/dialogs/basics/positions/horizontalPosition.yaml

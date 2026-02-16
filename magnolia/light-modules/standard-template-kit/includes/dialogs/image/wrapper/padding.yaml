@@ -1,0 +1,11 @@
+label: Component
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  imageWrapperPaddingTop: !include:/standard-template-kit/includes/dialogs/basics/padding/top.yaml
+  imageWrapperPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
+  imageWrapperPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
+  imageWrapperPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml

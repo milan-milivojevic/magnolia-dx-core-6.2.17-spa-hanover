@@ -1,0 +1,9 @@
+label: Tabs Group
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  groupWidth: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+  groupPosition: !include:/standard-template-kit/includes/dialogs/basics/positions/marginPosition.yaml  

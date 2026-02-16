@@ -1,0 +1,11 @@
+label: Font Styles
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  l4FontSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml  
+  l4FontFamily: !include:/standard-template-kit/includes/dialogs/text/includes/fontFamily.yaml
+  l4TextTransform: !include:/standard-template-kit/includes/dialogs/text/includes/textTransform.yaml
+  l4TextAlign: !include:/standard-template-kit/includes/dialogs/text/includes/textAlign.yaml

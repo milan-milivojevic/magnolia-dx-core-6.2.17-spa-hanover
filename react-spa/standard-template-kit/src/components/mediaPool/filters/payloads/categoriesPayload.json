@@ -1,0 +1,107 @@
+{
+    "searchSchemaId": "asset",
+    "lang": "EN",
+    "output": {
+        "items": {
+            "fields": [
+                "id"
+            ]
+        },
+        "paging": {
+            "@type": "offset",
+            "offset": 0,
+            "limit": 1
+        },
+        "aggregates": {
+            "categories": {
+                "@type": "object_set",
+                "field": "themes",
+                "subAggs": {
+                    "id": {
+                        "@type": "groups",
+                        "field": "id",
+                        "maxGroups": 0,
+                        "orderAsc": false,
+                        "orderByGroup": false
+                    }
+                }
+            }
+        }
+    },
+    "criteria": {
+        "@type": "and",
+        "subs": [
+            {
+                "@type": "match",
+                "fields": [
+                    "itemDescription_multi",
+                    "customAttribute_27.value",
+                    "customAttribute_28.value",
+                    "customAttribute_30.value",
+                    "customAttribute_34.value",
+                    "customAttribute_37",
+                    "customAttribute_38.value",
+                    "customAttribute_39.value",
+                    "customAttribute_40",
+                    "colorSpace.type",
+                    "countries.id",
+                    "countries.name_multi",
+                    "documentDimensions.unit",
+                    "isins",
+                    "itemNumber",
+                    "keywords_multi",
+                    "language.code",
+                    "language.name_multi",
+                    "persons",
+                    "extension",
+                    "structuredKeywords.name_multi",
+                    "affiliateNumber",
+                    "id",
+                    "licenseHolderName",
+                    "licenseData.license",
+                    "channelPublications.channelId",
+                    "division.name",
+                    "owner.name",
+                    "themes.name_multi",
+                    "themes.pathIds",
+                    "title_multi",
+                    "vdb.name_multi",
+                    "w2pClassification"
+                ],
+                "value": ""
+            },
+            {
+                "@type": "and",
+                "subs": [
+                    {
+                        "@type": false,
+                        "fields": [
+                            "isVariant"
+                        ]
+                    },
+                    {
+                        "@type": "not",
+                        "criteria": {
+                            "@type": "eq",
+                            "fields": [
+                                "vdb.id"
+                            ],
+                            "long_value": 3
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "in",
+                "fields": [
+                    "customAttribute_34.id"
+                ],
+                "long_value": [
+                    "104",
+                    "106"
+                ],
+                "any": true
+            }
+        ]
+    }
+}

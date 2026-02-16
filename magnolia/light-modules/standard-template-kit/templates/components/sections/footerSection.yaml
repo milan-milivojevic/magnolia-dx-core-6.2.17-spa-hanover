@@ -1,0 +1,15 @@
+title: Footer Section
+dialog: standard-template-kit:components/sections/footerSection
+areas:
+  column1: &column1
+    title: Footer Components
+    availableComponents:
+      linkList:
+        id: standard-template-kit:components/grouping/linkList
+      textLinkList:
+        id: standard-template-kit:components/grouping/textLinkList
+  column2: *column1
+  column3: *column1
+  column4: *column1
+  column5: *column1
+  column6: *column1

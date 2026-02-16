@@ -1,0 +1,53 @@
+label: Image Gallery Configuration
+wide: true
+form:
+  properties:
+
+    multi:
+        label: Gallery Images
+        $type: jcrMultiField
+        maxItems: 20
+        minItems: 2
+        field:
+          label: ""
+          $type: compositeField
+          properties:
+            image: !include:/standard-template-kit/includes/dialogs/image/imageRequired.yaml   
+
+    layout: !include:/standard-template-kit/includes/dialogs/listComponents/gallery/layout.yaml      
+    customLayout: !include:/standard-template-kit/includes/dialogs/listComponents/customLayout.yaml
+    gapsWidthPosition: !include:/standard-template-kit/includes/dialogs/listComponents/gallery/gapsWidthPosition.yaml
+      label: Gallery
+    galleryPadding: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperPadding.yaml
+      label: Gallery
+    galleryBorder: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperBorder.yaml
+      label: Gallery
+    imageBorder: !include:/standard-template-kit/includes/dialogs/image/border.yaml
+      label: Image
+    positionFitHeight: !include:/standard-template-kit/includes/dialogs/listComponents/gallery/positionFitHeight.yaml
+    styleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+    
+    
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: images
+      - label: Images
+        fields:
+          - name: multi
+      - name: gallerySetting
+      - label: Gallery Settings
+        fields:
+          - name: styleName
+          - name: layout  
+          - name: customLayout        
+      - name: galleryStyles
+      - label: Gallery Styles
+        fields:       
+          - name: gapsWidthPosition
+          - name: galleryPadding
+          - name: galleryBorder
+          - name: imageBorder
+          - name: positionFitHeight
+         
+        

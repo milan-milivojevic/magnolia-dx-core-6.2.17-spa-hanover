@@ -1,0 +1,65 @@
+title: Configuration Page (Basic Components)
+
+# baseUrl: http://localhost:3000
+# routeTemplate: '/{language}{{@path}}'
+templateScript: /standard-template-kit/webresources/build/index.html
+
+dialog: standard-template-kit:pages/config/basicComponents
+
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+
+areas:
+  textComponents:
+    title: Text Configuration Components Area
+    availableComponents:      
+      textConfig:
+        id: standard-template-kit:components/basic/config/textConfig
+  linkComponents:
+    title: Link Configuration Components Area
+    availableComponents:      
+      linkConfig:
+        id: standard-template-kit:components/basic/config/linkConfig
+  imageComponents:
+    title: Image Configuration Components Area
+    availableComponents:      
+      imageConfig:
+        id: standard-template-kit:components/basic/config/imageConfig
+  videoComponents:
+    title: Video Configuration Components Area
+    availableComponents:      
+      videoConfig:
+        id: standard-template-kit:components/basic/config/videoConfig
+  audioComponents:
+    title: Audio Configuration Components Area
+    availableComponents:      
+      audioConfig:
+        id: standard-template-kit:components/basic/config/audioConfig
+  iframeComponents:
+    title: Iframe Configuration Components Area
+    availableComponents:      
+      iframeConfig:
+        id: standard-template-kit:components/basic/config/iframeConfig
+  spacerComponents:
+    title: Spacer Configuration Components Area
+    availableComponents:      
+      spacerConfig:
+        id: standard-template-kit:components/basic/config/spacerConfig 
+  dividerComponents:
+    title: Divider Configuration Components Area
+    availableComponents:      
+      dividerConfig:
+        id: standard-template-kit:components/basic/config/dividerConfig       
+  separationBlockComponents:
+    title: Separation Block Configuration Components Area
+    availableComponents:      
+      separationBlockConfig:
+        id: standard-template-kit:components/basic/config/separationBlockConfig
+  youtubeComponents:
+    title: Youtube Configuration Components Area
+    availableComponents:      
+      youtubeConfig:
+        id: standard-template-kit:components/basic/config/youtubeConfig
+  
+
+

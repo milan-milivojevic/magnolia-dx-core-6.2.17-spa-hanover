@@ -1,0 +1,37 @@
+label: Video
+wide: true
+form:
+  properties:
+    videoType: !include:/standard-template-kit/includes/dialogs/video/videoType.yaml
+    
+    styleWithCheckbox: !include:/standard-template-kit/includes/dialogs/shared/styleWithCheckbox.yaml
+    padding: !include:/standard-template-kit/includes/dialogs/shared/padding.yaml
+      label: Component
+    backgroundColors: !include:/standard-template-kit/includes/dialogs/shared/backgroundColors.yaml
+      label: Component
+    border: !include:/standard-template-kit/includes/dialogs/shared/border.yaml
+      label: Component
+    widthHeightPosition: !include:/standard-template-kit/includes/dialogs/shared/widthHeightPosition.yaml
+      label: Component
+
+    acl: !include:/standard-template-kit/includes/dialogs/acl/acl.yaml
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: data
+      - label: Data
+        fields:
+          - name: videoType
+      - name: videoSettings
+      - label: Video Settings
+        fields:
+          - name: styleWithCheckbox
+          - name: widthHeightPosition
+          - name: padding                      
+          - name: border  
+          - name: backgroundColors  
+      - label: Audience Control
+        fields:
+          - name: acl
+          

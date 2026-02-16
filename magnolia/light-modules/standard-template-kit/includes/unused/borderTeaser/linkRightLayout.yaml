@@ -1,0 +1,22 @@
+label: Layout 2 - Width Config
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: start
+  options:
+    - name: unset  
+      label: Unset
+      value: null
+    - name: auto 
+      label: auto auto
+      value: auto auto
+    - name: "5050"
+      label: 50% 50%
+      value: 1fr 1fr
+    - name: "6633"
+      label: 66% 33%
+      value: 2fr 1fr
+    - name: "7525"
+      label: 75% 25%
+      value: 3fr 1fr
+      

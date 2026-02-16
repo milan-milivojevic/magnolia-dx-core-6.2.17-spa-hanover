@@ -1,0 +1,15 @@
+label: Position
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: start
+  options:
+    - name: start  
+      label: Left
+      value: start
+    - name: center
+      label: Center
+      value: center
+    - name: end
+      label: Right
+      value: end

@@ -1,0 +1,28 @@
+label: Main Section
+wide: true
+form:
+  properties:
+    layout: !include:/standard-template-kit/includes/dialogs/listComponents/layout.yaml  
+    headline: !include:/standard-template-kit/includes/dialogs/text/headline.yaml
+    gap: !include:/standard-template-kit/includes/dialogs/listComponents/includes/gap.yaml
+    padding: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperPadding.yaml
+    headlineDropdowns: !include:/standard-template-kit/includes/dialogs/text/headlineDropdowns.yaml
+    headlineTextStyles: !include:/standard-template-kit/includes/dialogs/text/headlineTextStyles.yaml
+    headlinePadding: !include:/standard-template-kit/includes/dialogs/text/headlinePadding.yaml    
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: headlineStyles
+      - label: Section Settings
+        fields:
+          - name: layout
+          - name: gap
+          - name: headline
+          - name: padding
+      - name: headlineStyles
+      - label: Title Styles
+        fields:
+          - name: headlineDropdowns
+          - name: headlineTextStyles
+          - name: headlinePadding    

@@ -1,0 +1,11 @@
+label: Desc & Link Wrapper Settings
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  descLinkPadding: !include:/standard-template-kit/includes/dialogs/teasersShared/includes/padding.yaml
+  descLinkMargin: !include:/standard-template-kit/includes/dialogs/teasersShared/includes/margin.yaml
+  descLinkBackColor: !include:/standard-template-kit/includes/dialogs/teasersShared/includes/backgroundColor.yaml
+  descLinkMinHeight: !include:/standard-template-kit/includes/dialogs/teasersShared/includes/minHeight.yaml

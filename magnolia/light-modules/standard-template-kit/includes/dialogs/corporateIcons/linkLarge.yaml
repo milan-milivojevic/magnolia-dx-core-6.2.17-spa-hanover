@@ -1,0 +1,32 @@
+$type: switchableField
+label: Large Icon Link
+propertyNameDecorator: info.magnolia.ui.field.NoopNameDecorator
+itemProvider:
+  $type: currentItemProvider
+field:
+  name: largeIconLink
+  $type: radioButtonGroupField
+  defaultValue: download
+  datasource:
+    $type: optionListDatasource
+    options:
+      - name: external
+        value: external
+        label: External
+      - name: download
+        value: download
+        label: Download
+forms:
+  external:
+    properties:
+      - name: external3
+        label: External Link
+        $type: textField
+        i18n: true
+  download:
+    properties:
+      - name: download3
+        label: Icon for Download
+        $type: damLinkField
+        textInputAllowed: true
+        i18n: true

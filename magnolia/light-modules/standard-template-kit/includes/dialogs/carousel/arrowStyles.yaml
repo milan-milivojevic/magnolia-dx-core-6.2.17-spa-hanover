@@ -1,0 +1,32 @@
+label: Navigation
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  arrowType:
+    label: Type
+    $type: comboBoxField
+    datasource:
+      $type: optionListDatasource
+      options:
+        - name: none
+          value: "unset"
+          label: None
+        - name: Arrow
+          value: arrow
+          label: Arrow
+        - name: Chevron
+          value: chevron
+          label: Chevron
+  arrowColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/color.yaml
+  arrowFontSize: 
+    label: Size
+    placeholder: 40px
+    $type: textField
+  arrowIndent: 
+    label: Indent
+    placeholder: 50px
+    $type: textField
+  

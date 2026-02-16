@@ -1,0 +1,60 @@
+label: W2P Custom Templates Search
+wide: true
+form:
+  properties:
+    
+    # templateIds:
+    #   label: Templates ID's
+    #   $type: jcrMultiField
+    #   maxItems: 20
+    #   minItems: 0
+    #   field:
+    #     label: ""
+    #     $type: compositeField
+    #     properties:
+    #       templateId: !include:/standard-template-kit/includes/dialogs/w2p/templateId.yaml
+
+    templateIds: !include:/standard-template-kit/includes/dialogs/w2p/templateId.yaml
+    
+    templateActions: !include:/standard-template-kit/includes/dialogs/w2p/templateActions.yaml
+    templatesSearchConfig: !include:/standard-template-kit/includes/dialogs/w2p/templatesSearchConfig.yaml  
+
+    linkToSearchResult: !include:/standard-template-kit/includes/dialogs/mpCarousel/linkToSearchResult.yaml
+
+    title: !include:/standard-template-kit/includes/dialogs/mpAsset/title.yaml
+    titleStyles: !include:/standard-template-kit/includes/dialogs/mpAsset/titleStyles.yaml
+    titlePaddings: !include:/standard-template-kit/includes/dialogs/mpAsset/titlePaddings.yaml
+    navigationId: !include:/standard-template-kit/includes/dialogs/text/includes/navigationId.yaml
+
+    acl: !include:/standard-template-kit/includes/dialogs/acl/acl.yaml
+      
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: title
+      - label: Title
+        fields:
+          - name: title
+          - name: titleStyles   
+          - name: titlePaddings  
+          - name: navigationId
+      - name: searchConfig
+      - label: Search Config
+        fields:
+          - name: templatesSearchConfig        
+      - name: templateIds
+      - label: Templates ID's
+        fields:
+          - name: templateIds
+      - name: searchLink
+      - label: Search Link
+        fields:
+          - name: linkToSearchResult            
+      - name: actions
+      - label: Actions
+        fields:
+          - name: templateActions
+      - name: acl
+      - label: Audience Control
+        fields:
+          - name: acl

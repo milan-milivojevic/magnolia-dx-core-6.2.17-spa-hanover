@@ -1,0 +1,13 @@
+$type: compositeField
+label: "Image Teaser Config Style"
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  imageTeaserStyleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+  imageTeaserNoStyles:
+    $type: checkBoxField
+    label: Without Config Styles
+    buttonLabel: "yes/no"
+    defaultValue: false

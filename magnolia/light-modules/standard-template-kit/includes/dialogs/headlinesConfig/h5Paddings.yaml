@@ -1,0 +1,24 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  h5PaddingTop:
+    label: Padding Top
+    placeholder: 10px
+    $type: textField
+  h5PaddingRight:
+    label: Padding Right
+    placeholder: 10px
+    $type: textField
+  h5PaddingBottom:
+    label: Padding Bottom
+    placeholder: 10px
+    $type: textField
+  h5PaddingLeft:
+    label: Padding Left
+    placeholder: 10px
+    $type: textField
+  

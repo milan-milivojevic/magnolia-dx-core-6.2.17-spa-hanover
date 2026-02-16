@@ -1,0 +1,12 @@
+label: Subtitle
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  subtitlePaddingTop: !include:/standard-template-kit/includes/dialogs/basics/padding/top.yaml
+  subtitlePaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
+  subtitlePaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
+  subtitlePaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
+  

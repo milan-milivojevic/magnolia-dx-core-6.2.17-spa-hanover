@@ -1,0 +1,34 @@
+label: Tabs
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  tabsWidth:
+    label: Width  
+    $type: comboBoxField
+    datasource:
+      $type: optionListDatasource
+      options:
+        - name: sameSize
+          value: auto
+          label: Same Size
+        - name: titlePadding
+          value: none
+          label: Fit Content
+  tabsGap:
+    label: Gap
+    placeholder: 20px
+    $type: textField
+  # tabsLayout:
+  #   label: Layout   
+  #   $type: comboBoxField
+  #   datasource:
+  #     $type: optionListDatasource
+  #     options:
+  #       - name: default
+  #         value: default
+  #         label: Default
+  
+  

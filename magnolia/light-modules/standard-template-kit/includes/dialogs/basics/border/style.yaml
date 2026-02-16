@@ -1,0 +1,32 @@
+label: Border Style    
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: none
+      value: none
+      label: None
+    - name: solid
+      value: solid
+      label: Solid
+    - name: dotted
+      value: dotted
+      label: Dotted        
+    - name: dashed
+      value: dashed
+      label: Dashed        
+    - name: double
+      value: double
+      label: Double
+    - name: groove
+      value: groove
+      label: Groove
+    - name: ridge
+      value: ridge
+      label: Ridge
+    - name: inset
+      value: inset
+      label: Inset
+    - name: outset
+      value: outset
+      label: Outset

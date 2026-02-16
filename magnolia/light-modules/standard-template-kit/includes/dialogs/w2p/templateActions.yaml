@@ -1,0 +1,27 @@
+label: ""
+$type: compositeField
+layout:
+  $type: stacked
+itemProvider:
+  $type: currentItemProvider
+properties:
+  detailsButton:
+    $type: checkBoxField
+    defaultValue: true
+    label: ""
+    buttonLabel: Show Details Button
+  favouritesButton:
+    $type: checkBoxField
+    defaultValue: true
+    label: ""
+    buttonLabel: Show Add to Favourites Button
+  createDocumentButton:
+    $type: checkBoxField
+    defaultValue: true
+    label: ""
+    buttonLabel: Show Create Document Button
+  copyLinkButton:
+    $type: checkBoxField
+    defaultValue: true
+    label: ""
+    buttonLabel: Show Copy Link Button

@@ -1,0 +1,18 @@
+label: Fit
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: left
+  options:
+    - name: unset
+      label: Unset
+      value: unset
+    - name: cover
+      label: Cover
+      value: cover
+    - name: contain
+      label: Contain
+      value: contain
+    - name: fill
+      label: Fill
+      value: fill

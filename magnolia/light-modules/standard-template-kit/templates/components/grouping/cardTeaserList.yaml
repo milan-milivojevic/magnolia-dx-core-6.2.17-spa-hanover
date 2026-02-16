@@ -1,0 +1,8 @@
+title: Card Teaser List
+dialog: standard-template-kit:components/grouping/cardTeaserList
+areas:
+  column1: &column1
+    title: Card Teasers
+    availableComponents:
+      textLink:
+        id: standard-template-kit:components/advanced/cardTeaser

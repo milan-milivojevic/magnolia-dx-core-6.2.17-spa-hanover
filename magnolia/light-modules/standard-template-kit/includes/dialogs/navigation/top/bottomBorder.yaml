@@ -1,0 +1,10 @@
+label: Bottom Border
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  bottomBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  bottomBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  bottomBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml

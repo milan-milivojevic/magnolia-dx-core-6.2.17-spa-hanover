@@ -1,0 +1,13 @@
+label: User Links
+$type: compositeField
+itemProvider:
+  $type: currentItemProvider
+properties:
+  adminLink:
+    label: Admin Link
+    placeholder: URL
+    $type: textField
+  userLink:
+    label: User Link
+    placeholder: URL
+    $type: textField

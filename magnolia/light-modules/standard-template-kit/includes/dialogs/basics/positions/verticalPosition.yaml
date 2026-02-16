@@ -1,0 +1,18 @@
+label: Vertical Position
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: start
+  options:
+    - name: unset
+      label: Unset
+      value: unset
+    - name: start  
+      label: Top
+      value: flex-start
+    - name: center
+      label: Middle
+      value: center
+    - name: end
+      label: Bottom
+      value: flex-end

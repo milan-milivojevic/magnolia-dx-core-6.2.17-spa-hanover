@@ -1,0 +1,12 @@
+label: Title
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  headlinePaddingTop: !include:/standard-template-kit/includes/dialogs/basics/padding/top.yaml
+  headlinePaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
+  headlinePaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
+  headlinePaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
+  

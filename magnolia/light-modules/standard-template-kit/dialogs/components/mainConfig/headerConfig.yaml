@@ -1,0 +1,62 @@
+label: Header Configuration
+wide: true
+form:
+  properties:
+
+    logo: !include:/standard-template-kit/includes/dialogs/basics/media/logo.yaml
+      required: true
+    logoPageLink: !include:/standard-template-kit/includes/dialogs/headerConfig/logoPageLink.yaml    
+    logoStyles: !include:/standard-template-kit/includes/dialogs/headerConfig/logoStyles.yaml    
+
+    headerWidthHeight: !include:/standard-template-kit/includes/dialogs/headerConfig/headerWidthHeight.yaml
+    headerPadding: !include:/standard-template-kit/includes/dialogs/headerConfig/headerPadding.yaml
+    headerBackgroundColor: !include:/standard-template-kit/includes/dialogs/headerConfig/headerBackgroundColor.yaml
+
+    searchOptions: !include:/standard-template-kit/includes/dialogs/headerConfig/searchOptions.yaml    
+    searchBorder: !include:/standard-template-kit/includes/dialogs/headerConfig/searchBorder.yaml
+    inputColors: !include:/standard-template-kit/includes/dialogs/headerConfig/inputColors.yaml
+    searchIcon: !include:/standard-template-kit/includes/dialogs/headerConfig/searchIcon.yaml
+
+    logoutButton: !include:/standard-template-kit/includes/dialogs/headerConfig/logoutButton.yaml
+    logoutBorder: !include:/standard-template-kit/includes/dialogs/headerConfig/logoutBorder.yaml
+
+    userLinks: !include:/standard-template-kit/includes/dialogs/headerConfig/userLinks.yaml
+    userSettings: !include:/standard-template-kit/includes/dialogs/headerConfig/userSettings.yaml
+    userStyles: !include:/standard-template-kit/includes/dialogs/headerConfig/userStyles.yaml
+    languageStyles: !include:/standard-template-kit/includes/dialogs/headerConfig/languageStyles.yaml
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: header
+      - label: Header Styles
+        fields:
+          - name: headerWidthHeight
+          - name: headerPadding
+          - name: headerBackgroundColor
+      - name: logo
+      - label: Logo
+        fields:
+          - name: logo
+          - name: logoPageLink
+          - name: logoStyles
+      - name: Search
+      - label: Search
+        fields:
+          - name: searchOptions
+          - name: searchBorder
+          - name: inputColors      
+          - name: searchIcon
+      - name: logout
+      - label: Logout Button
+        fields:
+          - name: logoutButton
+          - name: logoutBorder
+      - name: logout
+      - label: User & Language
+        fields:          
+          - name: userLinks
+          - name: userSettings
+          - name: userStyles
+          - name: languageStyles
+          

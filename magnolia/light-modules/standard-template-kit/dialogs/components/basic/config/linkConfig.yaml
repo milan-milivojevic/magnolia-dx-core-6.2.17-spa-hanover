@@ -1,0 +1,43 @@
+label: Link Configuration
+wide: true
+form:
+  properties:    
+    linkType: !include:/standard-template-kit/includes/dialogs/link/typeRequired.yaml
+    linkLabel: !include:/standard-template-kit/includes/dialogs/link/label.yaml
+    linkLocationIcon: !include:/standard-template-kit/includes/dialogs/link/locationIcon.yaml
+    
+    styleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+    linkLabelStyles: !include:/standard-template-kit/includes/dialogs/link/labelStyles.yaml
+    linkLabelDropdowns: !include:/standard-template-kit/includes/dialogs/link/linkLabelDropdowns.yaml
+    labelPadding: !include:/standard-template-kit/includes/dialogs/link/labelPadding.yaml
+    chevronStyles: !include:/standard-template-kit/includes/dialogs/link/chevronStyles.yaml
+    linkStyles: !include:/standard-template-kit/includes/dialogs/link/linkStyles.yaml
+    linkBackgroundsPosition: !include:/standard-template-kit/includes/dialogs/link/linkBackgroundsPosition.yaml
+    linkPadding: !include:/standard-template-kit/includes/dialogs/link/padding.yaml
+    linkBorder: !include:/standard-template-kit/includes/dialogs/link/border.yaml
+    
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: linkConfig
+      - label: Link configuration
+        fields:
+          - name: linkType          
+          - name: linkLabel
+          - name: linkLocationIcon          
+      - name: linkSettings
+      - label: Link Settings
+        fields:        
+          - name: styleName
+          - name: linkStyles
+          - name: linkBorder 
+          - name: linkBackgroundsPosition             
+          - name: linkPadding  
+      - name: labelStyles
+      - label: Label Styles
+        fields:              
+          - name: linkLabelDropdowns
+          - name: linkLabelStyles     
+          - name: labelPadding  
+          - name: chevronStyles   

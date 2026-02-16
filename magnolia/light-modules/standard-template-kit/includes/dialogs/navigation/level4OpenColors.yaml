@@ -1,0 +1,11 @@
+label: Open Colors
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:    
+  l4OpenColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml
+  l4OpenHoverColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontHoverColor.yaml
+  l4OpenDefBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  l4OpenHoverBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml

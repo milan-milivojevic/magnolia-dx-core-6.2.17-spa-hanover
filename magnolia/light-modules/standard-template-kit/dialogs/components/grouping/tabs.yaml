@@ -1,0 +1,58 @@
+label: Tabs Group
+wide: true
+form:
+  properties:
+    
+    multi:
+      label: Tabs Group Titles
+      $type: jcrMultiField
+      maxItems: 10
+      minItems: 1
+      field:
+        label: ""
+        $type: compositeField
+        properties:
+          title: !include:/standard-template-kit/includes/dialogs/tabs/title.yaml
+            required: true
+
+   
+    titleDropdowns: !include:/standard-template-kit/includes/dialogs/tabs/titleDropdowns.yaml
+    titleStyles: !include:/standard-template-kit/includes/dialogs/tabs/titleStyles.yaml
+    titleColors: !include:/standard-template-kit/includes/dialogs/tabs/titleColors.yaml
+    titlePadding: !include:/standard-template-kit/includes/dialogs/tabs/titlePadding.yaml
+
+    styleWithCheckbox: !include:/standard-template-kit/includes/dialogs/shared/styleWithCheckbox.yaml
+    tabsStyles: !include:/standard-template-kit/includes/dialogs/tabs/tabsStyles.yaml
+    tabsBackgrounds: !include:/standard-template-kit/includes/dialogs/tabs/tabsBackgrounds.yaml   
+    tabsBorder: !include:/standard-template-kit/includes/dialogs/tabs/border.yaml
+    groupWidthPosition: !include:/standard-template-kit/includes/dialogs/tabs/groupWidthPosition.yaml
+    groupPaddings: !include:/standard-template-kit/includes/dialogs/tabs/groupPaddings.yaml
+    
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: titles
+      - label: Titles
+        fields:
+          - name: multi
+      - name: titleStyles
+      - label: Title Styles
+        fields:          
+          - name: titleDropdowns
+          - name: titleStyles
+          - name: titleColors
+          - name: titlePadding
+      - name: tabsSettings
+      - label: Tabs Settings
+        fields:          
+          - name: styleWithCheckbox          
+          - name: tabsBorder
+          - name: tabsStyles
+          - name: tabsBackgrounds
+          - name: groupWidthPosition
+          - name: groupPaddings
+          
+          
+          
+        

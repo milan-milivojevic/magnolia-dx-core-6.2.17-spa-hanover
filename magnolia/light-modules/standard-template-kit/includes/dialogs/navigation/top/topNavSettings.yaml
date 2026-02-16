@@ -1,0 +1,19 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  topNavAligment: !include:/standard-template-kit/includes/dialogs/basics/positions/justifyContent.yaml
+  topNavWidth: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+  topNavBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  bottomShadow: 
+    label: Bottom Shadow
+    placeholder: "0 9px 8px -12px #111;"
+    $type: textField
+  showOnlyFirstLevel: 
+    label: Show First Level Only
+    buttonLabel: yes/no
+    $type: checkBoxField
+    

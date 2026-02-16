@@ -1,0 +1,31 @@
+label: Bottom Indicator
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  indicatorType:
+    label: Type
+    $type: comboBoxField
+    datasource:
+      $type: optionListDatasource
+      options:  
+        - name: Dots
+          value: dot
+          label: Dots
+        - name: Squares
+          value: squares
+          label: Squares
+        - name: Lines
+          value: lines
+          label: Lines  
+  indicatorFontSize: 
+    label: Size
+    placeholder: 40px
+    $type: textField
+  indicatorIndent:
+    label: Indent
+    placeholder: 25px
+    $type: textField
+  

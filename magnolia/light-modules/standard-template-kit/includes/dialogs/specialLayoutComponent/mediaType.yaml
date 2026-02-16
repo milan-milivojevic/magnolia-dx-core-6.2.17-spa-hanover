@@ -1,0 +1,38 @@
+label: Media
+$type: switchableField
+propertyNameDecorator: info.magnolia.ui.field.NoopNameDecorator
+itemProvider:
+  $type: currentItemProvider
+field:
+  name: mediaType
+  $type: radioButtonGroupField
+  defaultValue: image
+  datasource:
+    $type: optionListDatasource
+    options:
+      - name: image
+        value: image
+        label: Image
+      - name: video
+        value: video
+        label: Video
+      - name: embed
+        value: embed
+        label: Embed Video
+forms:
+  - name: image
+    properties:
+      image: !include:/standard-template-kit/includes/dialogs/image/image.yaml
+      imageCaption: !include:/standard-template-kit/includes/dialogs/image/caption.yaml
+      imageCaptionStyles: !include:/standard-template-kit/includes/dialogs/image/captionStyles.yaml
+  - name: video
+    properties:
+      video: !include:/standard-template-kit/includes/dialogs/video/video.yaml
+        required: false
+      mediaOptions: !include:/standard-template-kit/includes/dialogs/shared/mediaOptions.yaml
+  - name: embed
+    properties:
+      embed:
+        label: Embed code
+        $type: codeField
+        language: html

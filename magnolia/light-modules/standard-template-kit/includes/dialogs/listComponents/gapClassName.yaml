@@ -1,0 +1,12 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  gap: !include:/standard-template-kit/includes/dialogs/listComponents/includes/gap.yaml
+  columnsAlignment: !include:/standard-template-kit/includes/dialogs/basics/positions/verticalAlignment.yaml
+    label: Columns Vertical Alignment
+  className: !include:/standard-template-kit/includes/dialogs/listComponents/includes/className.yaml
+  

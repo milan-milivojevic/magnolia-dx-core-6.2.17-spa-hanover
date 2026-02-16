@@ -1,0 +1,10 @@
+label: Input Colors
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  inputBackColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+  inputTextColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/text.yaml
+  inputPlaceholderColor: !include:/standard-template-kit/includes/dialogs/basics/textColors/placeholder.yaml

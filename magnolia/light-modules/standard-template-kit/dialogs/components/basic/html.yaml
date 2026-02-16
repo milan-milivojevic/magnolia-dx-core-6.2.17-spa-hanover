@@ -1,0 +1,6 @@
+form:
+  properties:
+    editHTML:
+      $type: codeField
+      language: html
+      required: true

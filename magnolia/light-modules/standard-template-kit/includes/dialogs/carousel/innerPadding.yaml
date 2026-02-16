@@ -1,0 +1,12 @@
+label: Carousel Inner
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  carouselPaddingTop: !include:/standard-template-kit/includes/dialogs/basics/padding/top.yaml
+  carouselPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
+  carouselPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
+  carouselPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
+  

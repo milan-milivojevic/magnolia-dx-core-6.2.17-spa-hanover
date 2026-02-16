@@ -1,0 +1,13 @@
+label: Custom Layout
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  col1width: !include:/standard-template-kit/includes/dialogs/listComponents/includes/col1width.yaml
+  col2width: !include:/standard-template-kit/includes/dialogs/listComponents/includes/col2width.yaml
+  col3width: !include:/standard-template-kit/includes/dialogs/listComponents/includes/col3width.yaml
+  col4width: !include:/standard-template-kit/includes/dialogs/listComponents/includes/col4width.yaml
+  col5width: !include:/standard-template-kit/includes/dialogs/listComponents/includes/col5width.yaml
+  col6width: !include:/standard-template-kit/includes/dialogs/listComponents/includes/col6width.yaml

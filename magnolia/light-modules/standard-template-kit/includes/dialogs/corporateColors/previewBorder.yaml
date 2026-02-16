@@ -1,0 +1,19 @@
+label: Border Type
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: unset
+  options:
+    - name: unset
+      value: unset
+      label: Unset
+    - name: solid1
+      value: "solid 1px"
+      label: "solid 1px"
+    - name: solid2
+      value: "solid 2px"
+      label: "solid 2px"
+    - name: solid3
+      value: "solid 3px"
+      label: "solid 3px"
+    

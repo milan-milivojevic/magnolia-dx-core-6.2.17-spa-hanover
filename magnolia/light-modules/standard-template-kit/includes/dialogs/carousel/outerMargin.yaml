@@ -1,0 +1,13 @@
+label: Carousel Outer
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  carouselMarginTop: !include:/standard-template-kit/includes/dialogs/basics/margin/top.yaml
+  carouselMarginRight: !include:/standard-template-kit/includes/dialogs/basics/margin/right.yaml
+  carouselMarginBottom: !include:/standard-template-kit/includes/dialogs/basics/margin/bottom.yaml
+  carouselMarginLeft: !include:/standard-template-kit/includes/dialogs/basics/margin/left.yaml
+    
+  

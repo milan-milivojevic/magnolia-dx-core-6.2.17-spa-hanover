@@ -1,0 +1,5 @@
+label: Spacer Configuration
+form:
+  properties:
+    styleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+    spacer: !include:/standard-template-kit/includes/dialogs/separators/spacer.yaml

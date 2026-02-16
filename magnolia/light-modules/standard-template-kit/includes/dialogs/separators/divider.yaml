@@ -1,0 +1,10 @@
+label: Divider
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  borderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  borderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  borderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml

@@ -1,0 +1,12 @@
+label: Accordion Padding
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  accordionPaddingTop: !include:/standard-template-kit/includes/dialogs/basics/padding/top.yaml
+  accordionPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
+  accordionPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
+  accordionPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
+  

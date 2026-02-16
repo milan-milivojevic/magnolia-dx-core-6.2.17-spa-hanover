@@ -1,0 +1,10 @@
+label: Subtitle
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  subtitleLevel: !include:/standard-template-kit/includes/dialogs/text/includes/headlineLevel.yaml
+  subtitlePosition: !include:/standard-template-kit/includes/dialogs/basics/positionLRC.yaml
+  subtitleFontFamily: !include:/standard-template-kit/includes/dialogs/text/includes/fontFamily.yaml

@@ -1,0 +1,731 @@
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: MuseoSans700,"Helvetica Neue",Helvetica,Arial,Tahoma,Geneva,sans-serif;
+}
+
+.assetCard {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.18), rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;    
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    position: relative;
+}
+
+/* .mpAssetWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+} */
+
+.mpAssetWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.mpAssetWrapper .assetCard, 
+.list.mpAssetWrapper .assetCard {
+    width: 100%;
+    height: 100%;
+    /* max-height: 360px; */
+}
+
+.editMode .mpAssetWrapper .assetCard, 
+.editMode .list.mpAssetWrapper .assetCard {
+    height: unset;
+}
+
+.mpAssetWrapper .assetCard.w2p, 
+.list.mpAssetWrapper .assetCard.w2p {
+    max-height: 279px;
+}
+
+.assetImageButtons:hover {
+    filter: blur(1px) brightness(0.9);
+    -webkit-filter: blur(1px) brightness(0.9);
+    cursor: pointer;
+    position: relative;
+}
+
+.assetImage {
+    /* border-top-left-radius: 4px; */
+    /* border-top-right-radius: 4px; */
+    height: 160px;
+    border-bottom: 1px solid #eaeaea;
+    object-fit: contain;
+}
+
+.assetTitle {
+    font-family: MuseoSans700;
+    font-size: 20px;
+    color: #333333;
+    font-weight: normal;
+    letter-spacing: 0;
+    /* line-height: 24px; */
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    line-height: 30px;
+    max-height: 60px;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.assetTitle.w2p {
+    font-size: 13px;
+    line-height: 16px;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;    
+    height: 48px;
+    font-family: MuseoSans500;
+}
+
+.assetCard .assetActionButtons {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: -1px;
+    background-color: #ffffffe6;
+    box-shadow: -1px 5px 15px 0 rgb(37 44 97 / 10%), 0px 0 15px 0 rgb(37 44 97 / 5%), -1px 2px 4px 0 rgb(93 100 148 / 10%), 0px -4px 16px 0 rgb(93 100 148 / 3%)
+}
+
+.assetCard .assetActionButtons.show {
+    display:flex;
+}
+
+.assetCardPreview {
+    height: 160px;
+    background-color: #f3f3f3;
+}
+
+.assetCardPreview div:not(.assetActionButtons) {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.assetCardPreview .assetImageWrapper:hover {
+    -webkit-filter: blur(1px) brightness(0.9);
+    filter: blur(1px) brightness(0.9);
+    cursor: pointer;
+}
+
+.assetActionButtons button {
+    padding: 6px 9px 6px 9px;
+    background-color: transparent;
+    color: #7ca940;
+    border-radius: 0;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.assetActionButtons button:hover {
+    background-color: #7ca940;
+    color: #fff;
+}
+
+.assetActionButtons svg {
+    width: 22px;
+    height: 22px;
+}
+
+.assetActionButtons svg path {
+    stroke: #7ca940;
+}
+
+.assetActionButtons button:hover svg path {
+    stroke: #fff;
+}
+
+.assetCardContent {
+    padding: 18px 14px 18px 14px;
+    height: calc(100% - 160px);
+    display: flex;
+    flex-direction: column;
+}
+
+.assetCardContent.w2p {
+    padding: 10px 8px;
+}
+
+.assetCardContent p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #2d3748;
+}
+
+.assetCardContent.w2p p {
+    font-size: 13px;
+    line-height: 16px;
+    padding-bottom: 0px;
+    margin-top: auto;
+}
+
+.assetCardContent p span {
+    color: #718096;
+}
+
+.assetCardContent .documentUpdateDate {
+    display: flex;
+    padding-top: 6px;
+}
+
+.assetCardContent .documentUpdateDate span {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.assetCardContent .documentUpdateDate svg{
+    font-size: 16px;
+}
+
+.socialMediaLinks {
+    display: block;
+    padding: 4px 0;
+}
+
+.fileFormat {
+    background-color: #003150;
+    border-radius: 4px;
+    color: #fff;
+    font-family: MuseoSans500;;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 12px;
+    padding: 6px 12px 7px 12px;
+}
+
+.fileFormatWrapper {
+    display: flex;
+    justify-content: left;
+    padding-top: 10px;
+    margin-top: auto;
+}
+
+/*MP Search*/
+
+.mpSearchContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.docsMatches {
+    font-size: 14px;
+    color: #333333;
+    font-family: 'MuseoSans500';
+    padding: 10px 0 0;
+    display: block;
+}
+
+.noDocuments {
+    font-size: 14px;
+    color: #333333;
+    font-family: 'MuseoSans500';
+    padding: 40px 0 80px 0;
+    display: block;
+    width: 100%;
+}
+
+.searchActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    color: #2d3748;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: MuseoSans500;;
+}
+
+.searchActions .searchResult {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.searchActions .sortingView {
+    display: flex;
+    gap: 20px;
+}
+
+.searchActions .sortingOptions {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill=%27green%27 height=%2724%27 viewBox=%270 0 24 24%27 width=%2724%27 xmlns=%27http://www.w3.org/2000/svg%27><path d=%27M7 10l5 5 5-5z%27/><path d=%27M0 0h24v24H0z%27 fill=%27none%27/></svg>");
+    background-position-x: calc(100% - 2px);
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+    border: 1px solid #aeaeae;
+    border-radius: 2px;
+    border-radius: 4px;
+    color: #718096;
+    font-family: MuseoSans500;;
+    font-size: 13px;
+    height: 36px;
+    line-height: 22px;
+    margin-left: 5px;
+    outline: 0;
+    padding-left: 10px;
+    min-width: 170px;
+}
+
+.searchActions .sortingOptions option {
+    color: #2d3748;
+}
+
+.viewButtons {
+    display: flex;
+    gap: 5px;
+}
+
+.searchActions .viewButtons button {
+    background-color: #fff;
+    color: #7ca940;
+    padding: 9px 9px 6px;
+    border: 1px solid #7ca940;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.searchActions .viewButtons button svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+.searchActions .viewButtons .gridView.grid {
+    background-color: #7ca940;
+    color: #fff;
+}
+
+.searchActions .viewButtons .listView.list {
+    background-color: #7ca940;
+    color: #fff;
+}
+
+.searchActions .viewButtons button:hover {
+    background-color: #f7f7f7;
+}
+
+.searchActions .viewButtons .gridView.grid:hover {
+    background-color: #7ca940;
+}
+
+.searchActions .viewButtons .listView.list:hover {
+    background-color: #7ca940;
+}
+
+/* Load More Button */
+
+.loadMoreItems {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.loadMoreItems button {
+    padding: 10px 20px;
+    background-color: #7ca940;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'MuseoSans500;';
+    cursor: pointer;
+}
+
+.loadMoreItems button:hover {
+    border: 1px solid #7ca940;
+}
+
+
+.staticSearch.mpSearch {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.mpSearch .flex.headerSearch {
+    position: fixed;
+    top: 86px;
+    right: 92px;
+    z-index: 99999;
+}
+
+.flex.headerSearch.searchInputWrapper {
+    position: absolute;
+}
+
+.mpSearch.staticSearch .headerSearch input.searchInput {
+    background-color: #fff;
+    width: 160px;
+    border-radius: 0;
+    /* border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; */
+}
+
+.mpSearch.staticSearch .headerSearch button {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.searchFilters {
+    display: flex;
+    gap: 20px;
+}
+
+/* FILTERS */
+
+.searchFilter > button {
+    border: #7ca940 1px solid;
+    color: #7ca940;
+    width: 170px;
+    font-family: 'MuseoSans500;';
+    font-size: 14px;
+}
+
+
+.searchFilter > button:hover {
+    border-color: #7ca940;
+}
+
+.filterDropdown {
+    position: absolute;
+    z-index: 99999999;
+    border-radius: 5px;
+    background-color: #fff;
+    height: calc(80vh - 200px);
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.keywords .filterDropdown,
+.vdb .filterDropdown,
+.filterDropdown .filterDropdown {
+    right: 0;
+}
+
+.searchFilter {
+    position: relative;
+}
+
+.filterOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.filterHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 15px;
+    border-bottom: 1px solid #ccc;
+    z-index: 1;
+}
+
+.filterName {
+    font-size: 16px;
+    font-family: MuseoSans500;;
+}
+
+.searchFilter > button {
+    border: 1px solid #aeaeae;
+    color: #2d3748;
+    font-family: MuseoSans500;;
+    font-size: 14px;
+    width: fit-content;
+    padding: 6px 20px;
+    line-height: 21px;
+}
+
+.searchFilter button:hover {
+    border-color: #aeaeae;
+    background-color: #f7f7f7;
+}
+
+.closeFilter {
+    background: 0;
+    border: 0;
+    color: #7ca940;
+    width: 19px;
+    height: 19px;
+}
+
+.closeFilter svg {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.filtersFilter {
+    display: flex;
+    width: 50%;
+}
+
+.filtersFilter input {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #414141;
+    outline: 0;
+}
+
+.filtersFilter input::placeholder {
+    color: #949699;
+    font-family: MuseoSans500;;
+}
+
+.filterDropdown > .checkboxFormWrapper {
+    height: calc(100% - 107px);
+    overflow-y: auto;
+    padding: 10px 0 0 20px;
+    z-index: 1;
+}
+
+.keywords .filterDropdown > .checkboxFormWrapper {
+    height: calc(100% - 119px);
+}
+
+.filterDropdown .checkboxFormWrapper .fixedSizeList {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.filterActionButtons {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 8px;
+    z-index: 1;
+}
+
+.filterActionButtons button {
+    background: #fff;
+    border: 0;
+    font-size: 15px;
+    font-family: MuseoSans500;;
+    padding: 8px 12px;
+    line-height: 15px;
+    cursor: pointer;
+}
+
+.filterActionButtons button:hover {
+    background-color: #f3f3f3;
+    border-radius: 4px;
+}
+
+.filterActionButtons button.applyButton {
+    color: #7ca940;
+}
+
+.checkboxWrapper span {
+    padding: 0px 6px 0 0;
+    font-family: MuseoSans500;;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+}
+
+.checkboxWrapper {
+    padding: 4px 0;
+    width: 100%;
+    display: flex;
+}
+
+.checkboxWrapper label {
+    margin: 0;
+}
+
+.filtersChevron {
+    height: 24px;
+    width: 24px;
+}
+
+.filtersChevron svg {
+    height: 24px;
+    width: 24px;
+}
+
+.checkboxFormWrapper.child {
+    flex-direction: column;
+    padding-left: 24px;
+}
+
+.suffixes .checkboxFormWrapper.child {
+    padding-left: 45px;
+}
+
+.checkboxFormWrapper.subchild {
+    flex-direction: column;
+    padding-left: 24px;
+}
+
+.checkboxFormWrapper.grandchild {
+    flex-direction: column;
+    padding-left: 44px;
+}
+
+.noSublevels {
+    width: 24px;
+}
+
+/* List view Asset */
+
+.mpSearchContainer.list {
+    grid-template-columns: 1fr !important;
+}
+
+.list .assetCard {
+    display: flex;
+    gap: 20px;
+    min-height: 230px;
+    max-height: 330px;
+}
+
+.list .assetCardPreview {
+    width: 40%;
+    height: 100%;
+}
+
+.list .assetCardContent {
+    width: 60%;
+    padding: 20px 80px 20px 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.list .assetActionButtons {
+    box-shadow: unset;
+    display: flex;
+    gap: 10px;
+    right: 0px;
+    top: 0px;
+    position: relative;
+    padding: 20px 20px 20px 0;
+}
+
+.w2p.documents .list .assetActionButtons {
+    flex-direction: row;
+    top: 170px;
+    height: 40px;
+    width: fit-content;
+}
+
+.list .assetActionButtons button {
+    border: 1px solid #7ca940;
+    border-radius: 4px;
+    padding: 8px 6px;
+}
+
+.list .assetCardPreview div:not(.assetActionButtons) {
+    height: 100%;
+}
+
+.list img.assetImage {
+    height: 100%;
+    border-bottom: 0;
+    border-right: 1px solid #eaeaea;
+}
+
+/* .list .fileFormatWrapper {
+    align-self: flex-end;
+    position: absolute;
+    bottom: 20px;
+    left: calc(40% + 10px);
+} */
+
+/*Copy link to Search Result*/
+
+a.copyLinkToResult {
+    color: #2d3748;
+    display: flex;
+    font-family: MuseoSans500;;
+    font-size: 14px;
+    line-height: 22px;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+a.copyLinkToResult svg {
+    font-size: 20px;
+}
+
+a.copyLinkToResult:hover {
+    background-color: #f7f7f7;
+    border-radius: 4px;
+}
+
+/* Global Search */
+
+.globalSearch,
+.mpSearchComponent {
+    position: relative;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.globalSearchButtons {
+    position: absolute;
+    /* top: 96px; */
+    top: 121px;
+    left: calc(50% - 151px);
+    display: flex;
+    gap: 10px;
+}
+
+.globalSearchButtons button.active {
+    background-color: #7ca940;
+    color: white;
+}
+
+.globalSearchButtons button {
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 9px 9px;
+    width: fit-content;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #7ca940;
+    color: #7ca940;
+    font-family: MuseoSans500;;
+}
+
+.globalSearchButtons button:hover {    
+    background-color: #f7f7f7;
+}
+
+.globalSearchButtons button.active:hover {
+    background-color: #7ca940;
+}

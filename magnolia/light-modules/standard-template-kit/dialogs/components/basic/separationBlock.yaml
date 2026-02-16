@@ -1,0 +1,31 @@
+label: Separation Block
+form:
+  properties:
+
+    styleWithCheckbox: !include:/standard-template-kit/includes/dialogs/shared/styleWithCheckbox.yaml
+    spaceTopStyleWithCheckbox: !include:/standard-template-kit/includes/dialogs/separators/spaceTopStyleWithCheckbox.yaml
+    dividerStyleWithCheckbox: !include:/standard-template-kit/includes/dialogs/separators/dividerStyleWithCheckbox.yaml
+    spaceBottomStyleWithCheckbox: !include:/standard-template-kit/includes/dialogs/separators/spaceBottomStyleWithCheckbox.yaml
+
+    divider: !include:/standard-template-kit/includes/dialogs/separators/divider.yaml
+    spaceBottom: !include:/standard-template-kit/includes/dialogs/separators/spacer.yaml
+      label: Space Bottom
+    spaceTop: !include:/standard-template-kit/includes/dialogs/separators/spacer.yaml
+      label: Space Top
+    
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: divider
+      - label: Separator Setup
+        fields:
+          - name: spaceTop
+          - name: divider
+          - name: spaceBottom
+      - name: configStyles
+      - label: Config Styles
+        fields:
+          - name: styleWithCheckbox
+          - name: spaceTopStyleWithCheckbox
+          - name: dividerStyleWithCheckbox
+          - name: spaceBottomStyleWithCheckbox

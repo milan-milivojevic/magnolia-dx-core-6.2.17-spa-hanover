@@ -1,0 +1,10 @@
+label: Static Content Search Page
+form:
+  properties:
+    title:
+      label: Title
+      $type: textField
+    hide: 
+      label: Hide in Navigation
+      buttonLabel: yes/no
+      $type: checkBoxField

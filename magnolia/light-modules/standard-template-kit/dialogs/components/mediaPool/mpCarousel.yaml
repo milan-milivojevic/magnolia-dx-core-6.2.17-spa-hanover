@@ -1,0 +1,66 @@
+label: MP Carousel
+wide: true
+form:
+  properties:
+    
+    # assetIds:
+    #   label: Assets ID's
+    #   $type: jcrMultiField
+    #   maxItems: 20
+    #   minItems: 0
+    #   field:
+    #     label: ""
+    #     $type: compositeField
+    #     properties:
+    #       assetId: !include:/standard-template-kit/includes/dialogs/mpAsset/assetId.yaml
+
+    assetIds: !include:/standard-template-kit/includes/dialogs/mpAsset/assetId.yaml
+    
+    actions: !include:/standard-template-kit/includes/dialogs/mpSearch/actions.yaml
+
+    linkToSearchResult: !include:/standard-template-kit/includes/dialogs/mpCarousel/linkToSearchResult.yaml
+    sortOrder: !include:/standard-template-kit/includes/dialogs/mpCarousel/sortOrder.yaml
+    cardsLimit: !include:/standard-template-kit/includes/dialogs/mpSearch/includes/cardsLimit.yaml
+      label: Limit - max 40 (default 20)
+
+    carouselSettings: !include:/standard-template-kit/includes/dialogs/mpCarousel/carouselSettings.yaml
+    
+    title: !include:/standard-template-kit/includes/dialogs/mpAsset/title.yaml
+    titleStyles: !include:/standard-template-kit/includes/dialogs/mpAsset/titleStyles.yaml
+    titlePaddings: !include:/standard-template-kit/includes/dialogs/mpAsset/titlePaddings.yaml
+    navigationId: !include:/standard-template-kit/includes/dialogs/text/includes/navigationId.yaml
+
+    acl: !include:/standard-template-kit/includes/dialogs/acl/acl.yaml
+      
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: title
+      - label: Title
+        fields:
+          - name: title
+          - name: titleStyles   
+          - name: titlePaddings   
+          - name: navigationId   
+      - name: assetsIds
+      - label: Assets ID's
+        fields:
+          - name: assetIds      
+      - name: searchLink
+      - label: Search Link
+        fields:
+          - name: linkToSearchResult        
+      - name: config
+      - label: Configuration
+        fields:
+          - name: sortOrder
+          - name: cardsLimit
+          - name: carouselSettings
+      - name: actions
+      - label: Actions
+        fields:
+          - name: actions
+      - name: acl
+      - label: Audience Control
+        fields:
+          - name: acl

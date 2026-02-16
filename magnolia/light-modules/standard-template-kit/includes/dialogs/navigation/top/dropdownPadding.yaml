@@ -1,0 +1,12 @@
+label: Dropdown Paddings
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  dropdownPaddingTop: !include:/standard-template-kit/includes/dialogs/basics/padding/top.yaml
+  dropdownPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
+  dropdownPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
+  dropdownPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
+  

@@ -1,0 +1,17 @@
+label: Style
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: default
+      value: default
+      label: default
+    - name: Small
+      value: small
+      label: Small
+    - name: Normal
+      value: normal
+      label: Normal
+    - name: Big
+      value: big
+      label: Big

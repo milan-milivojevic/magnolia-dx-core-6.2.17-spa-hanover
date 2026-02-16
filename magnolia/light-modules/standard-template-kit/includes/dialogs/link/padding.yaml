@@ -1,0 +1,13 @@
+label: Link
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  linkPaddingTop: !include:/standard-template-kit/includes/dialogs/basics/padding/top.yaml
+  linkPaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
+  linkPaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
+  linkPaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
+    
+  

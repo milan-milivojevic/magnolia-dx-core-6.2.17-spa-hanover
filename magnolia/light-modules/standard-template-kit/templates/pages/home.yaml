@@ -1,0 +1,39 @@
+title: Home Page
+
+# baseUrl: http://localhost:3000
+# routeTemplate: '/{language}{{@path}}'
+templateScript: /standard-template-kit/webresources/build/index.html
+
+dialog: standard-template-kit:pages/home
+
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+areas:
+  bannerSection:
+    title: Banner Area
+    availableComponents:
+      carousel:
+        id: standard-template-kit:components/advanced/carousel
+      carouselTeaser:
+        id: standard-template-kit:components/advanced/carouselTeaser
+      image:
+        id: standard-template-kit:components/basic/image
+      imageTeaser:
+        id: standard-template-kit:components/advanced/imageTeaser
+      imageGallery:
+        id: standard-template-kit:components/grouping/imageGallery
+      video:
+        id: standard-template-kit:components/basic/video
+  mainSection:
+    title: Main Area
+    availableComponents:      
+      mainSection:
+        id: standard-template-kit:components/sections/mainSection
+  footerSection:
+    title: Footer Area
+    availableComponents:      
+      footerSection:
+          id: standard-template-kit:components/sections/footerSection
+
+
+

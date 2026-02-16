@@ -1,0 +1,12 @@
+label: Carousel Settings
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  slidesToShow: !include:/standard-template-kit/includes/dialogs/mpCarousel/includes/slidesToShow.yaml
+  slidesToScroll: !include:/standard-template-kit/includes/dialogs/mpCarousel/includes/slidesToScroll.yaml
+  autoplay: !include:/standard-template-kit/includes/dialogs/mpCarousel/includes/autoplay.yaml
+  loop: !include:/standard-template-kit/includes/dialogs/mpCarousel/includes/loop.yaml
+  showDots: !include:/standard-template-kit/includes/dialogs/mpCarousel/includes/showDots.yaml

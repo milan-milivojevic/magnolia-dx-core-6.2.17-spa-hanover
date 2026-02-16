@@ -1,0 +1,12 @@
+label: Image
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  imageWidth: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+  imageHeight: !include:/standard-template-kit/includes/dialogs/basics/height.yaml
+  imageFit: !include:/standard-template-kit/includes/dialogs/image/includes/fit.yaml
+  imagePosition: !include:/standard-template-kit/includes/dialogs/image/includes/position.yaml  
+  

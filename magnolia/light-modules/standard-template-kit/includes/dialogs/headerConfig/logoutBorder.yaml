@@ -1,0 +1,11 @@
+label: Border
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  logoutBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  logoutBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  logoutBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
+  logoutBorderRadius: !include:/standard-template-kit/includes/dialogs/basics/border/radius.yaml

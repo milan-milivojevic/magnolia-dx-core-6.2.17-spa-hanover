@@ -1,0 +1,3 @@
+label: Mode Name
+placeholder: CMYK, RGB, HEX...
+$type: textField

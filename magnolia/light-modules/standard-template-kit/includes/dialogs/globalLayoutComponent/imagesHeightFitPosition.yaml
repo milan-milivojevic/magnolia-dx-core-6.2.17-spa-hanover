@@ -1,0 +1,13 @@
+label: Images
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  imagesGap: !include:/standard-template-kit/includes/dialogs/listComponents/includes/gap.yaml
+    label: Images Gap
+  imagesHeight: !include:/standard-template-kit/includes/dialogs/basics/height.yaml
+  imagesFit: !include:/standard-template-kit/includes/dialogs/image/includes/fit.yaml
+  imagesPosition: !include:/standard-template-kit/includes/dialogs/image/includes/position.yaml  
+      

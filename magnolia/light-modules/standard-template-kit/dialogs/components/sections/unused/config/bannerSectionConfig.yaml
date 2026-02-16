@@ -1,0 +1,5 @@
+label: Banner Section Configuration
+wide: true
+form:
+  properties:
+    padding: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperPadding.yaml

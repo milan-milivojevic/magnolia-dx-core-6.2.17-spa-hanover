@@ -1,0 +1,14 @@
+label: Label
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  linkLabelFontSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml
+  linkLabelLineHeight: !include:/standard-template-kit/includes/dialogs/text/includes/lineHeight.yaml
+  labelDefaultColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/default.yaml
+    label: Default Label Color
+  labelHoverColor: !include:/standard-template-kit/includes/dialogs/basics/backgroundColors/hover.yaml
+    label: Hover Label Color
+  

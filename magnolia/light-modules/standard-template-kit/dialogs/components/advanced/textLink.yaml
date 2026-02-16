@@ -1,0 +1,98 @@
+label: Text & Link
+wide: true
+form:
+  properties:
+
+    headline: !include:/standard-template-kit/includes/dialogs/text/headline.yaml
+    headlineDropdowns: !include:/standard-template-kit/includes/dialogs/text/headlineDropdowns.yaml
+    headlineDropdowns1: !include:/standard-template-kit/includes/dialogs/text/headlineDropdowns1.yaml
+    headlineTextStyles: !include:/standard-template-kit/includes/dialogs/text/headlineTextStyles.yaml
+    headlinePadding: !include:/standard-template-kit/includes/dialogs/text/headlinePadding.yaml
+
+    description: !include:/standard-template-kit/includes/dialogs/text/description.yaml   
+    descriptionStyle: !include:/standard-template-kit/includes/dialogs/text/descriptionStyle.yaml
+    descriptionPadding: !include:/standard-template-kit/includes/dialogs/text/descriptionPadding.yaml
+    descriptionBorder: !include:/standard-template-kit/includes/dialogs/text/descriptionBorder.yaml
+
+    linkType: !include:/standard-template-kit/includes/dialogs/link/typeRequired.yaml
+    linkLabel: !include:/standard-template-kit/includes/dialogs/link/label.yaml
+    linkLocationIcon: !include:/standard-template-kit/includes/dialogs/link/locationIcon.yaml
+    
+    linkLabelStyles: !include:/standard-template-kit/includes/dialogs/link/labelStyles.yaml
+    linkLabelDropdowns: !include:/standard-template-kit/includes/dialogs/link/linkLabelDropdowns.yaml
+    labelPadding: !include:/standard-template-kit/includes/dialogs/link/labelPadding.yaml
+    chevronStyles: !include:/standard-template-kit/includes/dialogs/link/chevronStyles.yaml
+    linkStyles: !include:/standard-template-kit/includes/dialogs/link/linkStyles.yaml
+    linkBackground: !include:/standard-template-kit/includes/dialogs/link/linkBackground.yaml
+    linkPadding: !include:/standard-template-kit/includes/dialogs/link/padding.yaml
+    linkBorder: !include:/standard-template-kit/includes/dialogs/link/border.yaml
+
+    wrapperPadding: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperPadding.yaml
+      label: Component
+    wrapperBorder: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperBorder.yaml
+      label: Component
+    wrapperBackgroundColors: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperBackgroundColors.yaml
+      label: Component
+
+    descLinkLayout: !include:/standard-template-kit/includes/dialogs/teasersShared/descLinkLayout.yaml
+    descLinkSettings: !include:/standard-template-kit/includes/dialogs/teasersShared/descLinkSettings.yaml
+    linkPosition: !include:/standard-template-kit/includes/dialogs/teasersShared/textLink/linkPosition.yaml
+
+    linkStyleWithCheckbox: !include:/standard-template-kit/includes/dialogs/teasersShared/styleWithCheckbox/link.yaml
+    styleWithCheckbox: !include:/standard-template-kit/includes/dialogs/shared/styleWithCheckbox.yaml
+    
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: text
+      - label: Text 
+        fields:
+          - name: headline
+          - name: description
+      - name: linkSetup
+      - label: Link Setup
+        fields:
+          - name: linkType          
+          - name: linkLabel
+          - name: linkLocationIcon 
+      - name: configStyles
+      - label: Config Styles
+        fields:
+          - name: styleWithCheckbox
+          - name: linkStyleWithCheckbox
+      - name: layout
+      - label: Layout
+        fields:
+          - name: descLinkLayout
+          - name: descLinkSettings
+          - name: linkPosition
+      - name: headlineStyles
+      - label: Headline Styles
+        fields:
+          - name: headlineDropdowns
+          - name: headlineDropdowns1
+          - name: headlineTextStyles         
+          - name: headlinePadding
+      - name: descriptionStyles
+      - label: Description Styles
+        fields:
+          - name: descriptionStyle
+          - name: descriptionPadding
+          - name: descriptionBorder
+      - name: linkStyles
+      - label: Link Styles
+        fields:        
+          - name: linkLabelDropdowns
+          - name: linkLabelStyles     
+          - name: labelPadding   
+          - name: chevronStyles  
+          - name: linkStyles
+          - name: linkBorder  
+          - name: linkBackground 
+          - name: linkPadding  
+      - name: componentStyles
+      - label: Component Styles
+        fields:              
+          - name: wrapperPadding          
+          - name: wrapperBorder
+          - name: wrapperBackgroundColors

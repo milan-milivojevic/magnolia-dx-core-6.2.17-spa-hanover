@@ -1,0 +1,182 @@
+/* Accordion List Component */
+
+.accordionList {
+  display: flex;
+  flex-direction: column;
+}
+.accordionItemWrapper {
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.accordion {
+  width: 100%;
+}
+.accordion .item > .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 12px 24px 12px 12px;
+  border-top: 1px solid rgb(18, 74, 126);
+  font-size: 23px;
+  line-height: 30px;
+  color: rgb(18, 74, 126);
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.accordion .item .content.show {
+  display: block;
+}
+.accordion .item .content.hide {
+  display: none;
+}
+
+/* Tabs Group Component */
+
+.tabsGroup {
+  max-width: 100%;
+}
+.tabTitles {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  background-color: #cbcbcb;
+  padding: 35px 10px 0px;
+}
+.tabTitles .tab {
+  flex: 1 1 0;
+  text-transform: uppercase;
+  /* width: 200px; */
+}
+.tabContent {
+  display: none;
+}
+.tabContent.tabActiveContent {
+  display: block;
+}
+
+/* Image Gallery Component */
+
+.imageGalleryComponent {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  max-width: 100%;
+}
+.imageGalleryComponent .galleryImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.imageGalleryComponent.layout2 {
+  grid-template-columns: 0.5fr 0.5fr;
+}
+.imageGalleryComponent.layout21 {
+  grid-template-columns: 0.75fr 0.25fr;
+}
+.imageGalleryComponent.layout22 {
+  grid-template-columns: 0.25fr 0.75fr;
+}
+.imageGalleryComponent.layout23 {
+  grid-template-columns: 0.33fr 0.67fr;
+}
+.imageGalleryComponent.layout24 {
+  grid-template-columns: 0.67fr 0.33fr;
+}
+
+.imageGalleryComponent.layout3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.imageGalleryComponent.layout31 {
+  grid-template-columns: 0.5fr 0.25fr 0.25fr;
+}
+.imageGalleryComponent.layout32 {
+  grid-template-columns: 0.25fr 0.5fr 0.25fr;
+}
+.imageGalleryComponent.layout33 { 
+  grid-template-columns: 0.25fr 0.25fr 0.5fr;
+}
+
+.imageGalleryComponent.layout4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.imageGalleryComponent.layout5 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.imageGalleryComponent.layout6 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.imageGalleryComponent.layouts21 {
+  grid-template-columns: 1fr 1fr;
+}
+.imageGalleryComponent.layouts21 img:nth-child(3n+1) {
+  grid-column: 1 / 3;
+}
+.imageGalleryComponent.layoutss12 {
+  grid-template-columns: 1fr 1fr;
+}
+.imageGalleryComponent.layouts12 img:nth-child(3n+3) {
+  grid-column: 1 / 3;
+}
+
+/* List Components */
+
+.listComponents {
+  display: grid;
+  gap: inherit;
+}
+/* v-webkit is class from body tag only in edit mode */
+.editMode .listComponents :first-child,
+.editMode .listComponents :last-child {
+  grid-column: 1 / -1;
+}
+
+.listComponents.layout1 {
+  grid-template-columns: 1fr;
+}
+
+.listComponents.layout2 {
+  grid-template-columns: 1fr 1fr;
+}
+.listComponents.layout21 {
+  grid-template-columns: 0.75fr 0.25fr;
+}
+.listComponents.layout22 {
+  grid-template-columns: 0.25fr 0.75fr;
+}
+.listComponents.layout23 {
+  grid-template-columns: 0.33fr 0.67fr;
+}
+.listComponents.layout24 {
+  grid-template-columns: 0.67fr 0.33fr; 
+}
+
+.listComponents.layout3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.listComponents.layout31 {
+  grid-template-columns: 0.5fr 0.25fr 0.25fr;
+}
+.listComponents.layout32 {
+  grid-template-columns: 0.25fr 0.5fr 0.25fr;
+}
+.listComponents.layout33 { 
+  grid-template-columns: 0.25fr 0.25fr 0.5fr;
+}
+
+.listComponents.layout4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.listComponents.layout5 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.listComponents.layout6 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+

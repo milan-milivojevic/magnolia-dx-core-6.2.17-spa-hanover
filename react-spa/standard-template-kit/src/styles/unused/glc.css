@@ -1,0 +1,215 @@
+/* Global Layout Component */
+
+.globalLayoutComponentWrapper.configComponents {
+    padding: 40px 0;
+    border-bottom: 2px dashed #414141;
+  }
+  
+  .globalLayoutComponent {
+    display: grid;
+  }
+  
+  .globalLayoutComponent .linkComponent {
+    width: fit-content;
+  }
+  
+  .globalLayoutComponent.layout2 .headline,
+  .globalLayoutComponent.layout4 .headline,
+  .globalLayoutComponent.layout2 .imageComponent,
+  .globalLayoutComponent.layout4 .imageComponent  {
+    grid-column: 1 / 3;
+  }
+  .globalLayoutComponent .headline {
+    order: 1;
+  }
+  
+  .globalLayoutComponent.layout1 .imageComponent,
+  .globalLayoutComponent.layout2 .imageComponent {
+    order: 2;
+  }
+  .globalLayoutComponent.layout1 .description,
+  .globalLayoutComponent.layout2 .description {
+    order: 3;
+  }
+  .globalLayoutComponent.layout1 .linkComponent,
+  .globalLayoutComponent.layout2 .linkComponent {
+    order: 4;
+  }
+  
+  .globalLayoutComponent.layout3 .imageComponent,
+  .globalLayoutComponent.layout4 .imageComponent {
+    order: 4;
+  }
+  .globalLayoutComponent.layout3 .description,
+  .globalLayoutComponent.layout4 .description {
+    order: 2;
+  }
+  .globalLayoutComponent.layout3 .linkComponent,
+  .globalLayoutComponent.layout4 .linkComponent {
+    order: 3;
+  }
+  
+  .globalLayoutComponent.layout5 .imageComponent {
+    order: 3;
+  }
+  .globalLayoutComponent.layout5 .description {
+    order: 2;
+  }
+  .globalLayoutComponent.layout5 .linkComponent {
+    order: 4;
+  }
+  
+  .globalLayoutComponent .headline {
+    order: unset;
+  }
+  
+  .globalLayoutComponent.layout6 .specialLayouts {
+    display: flex;
+    flex-direction: row;
+  }
+  .globalLayoutComponent.layout7 .specialLayouts {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .globalLayoutComponent.layout6 .descLinkWrapper,
+  .globalLayoutComponent.layout7 .descLinkWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .globalLayoutComponent.layout6 .linkComponent,
+  .globalLayoutComponent.layout7 .linkComponent {
+    height: 100%;
+    width: 100%;
+    display: grid;
+  }
+  
+  .globalLayoutComponent.layout2.top_left .linkComponent,
+  .globalLayoutComponent.layout4.top_left .linkComponent,
+  .globalLayoutComponent.layout6.top_left .linkComponent .link,
+  .globalLayoutComponent.layout7.top_left .linkComponent .link {
+    justify-self: left;
+    align-self: flex-start;
+  }
+  .globalLayoutComponent.layout2.top_center .linkComponent,
+  .globalLayoutComponent.layout4.top_center .linkComponent,
+  .globalLayoutComponent.layout6.top_center .linkComponent .link,
+  .globalLayoutComponent.layout7.top_center .linkComponent .link {
+    justify-self: center;
+    align-self: flex-start;
+  }
+  .globalLayoutComponent.layout2.top_right .linkComponent,
+  .globalLayoutComponent.layout4.top_right .linkComponent,
+  .globalLayoutComponent.layout6.top_right .linkComponent .link,
+  .globalLayoutComponent.layout7.top_right .linkComponent .link {
+    justify-self: right;
+    align-self: flex-start;
+  }
+  .globalLayoutComponent.layout2.center_left .linkComponent,
+  .globalLayoutComponent.layout4.center_left .linkComponent,
+  .globalLayoutComponent.layout6.center_left .linkComponent .link,
+  .globalLayoutComponent.layout7.center_left .linkComponent .link {
+    justify-self: left;
+    align-self: center;
+  }
+  .globalLayoutComponent.layout2.center .linkComponent,
+  .globalLayoutComponent.layout4.center .linkComponent,
+  .globalLayoutComponent.layout6.center .linkComponent .link,
+  .globalLayoutComponent.layout7.center .linkComponent .link{
+    justify-self: center;
+    align-self: center;
+  }
+  .globalLayoutComponent.layout2.center_right .linkComponent,
+  .globalLayoutComponent.layout4.center_right .linkComponent,
+  .globalLayoutComponent.layout6.center_right .linkComponent .link,
+  .globalLayoutComponent.layout7.center_right .linkComponent .link{
+    justify-self: right;
+    align-self: center;
+  }
+  .globalLayoutComponent.layout2.bottom_left .linkComponent,
+  .globalLayoutComponent.layout4.bottom_left .linkComponent,
+  .globalLayoutComponent.layout6.bottom_left .linkComponent .link,
+  .globalLayoutComponent.layout7.bottom_left .linkComponent .link{
+  
+    justify-self: left;
+    align-self: flex-end;
+  }
+  .globalLayoutComponent.layout2.bottom_center .linkComponent,
+  .globalLayoutComponent.layout4.bottom_center .linkComponent,
+  .globalLayoutComponent.layout6.bottom_center .linkComponent .link,
+  .globalLayoutComponent.layout7.bottom_center .linkComponent .link{
+    justify-self: center;
+    align-self: flex-end;
+  }
+  .globalLayoutComponent.layout2.bottom_right .linkComponent,
+  .globalLayoutComponent.layout4.bottom_right .linkComponent,
+  .globalLayoutComponent.layout6.bottom_right .linkComponent .link,
+  .globalLayoutComponent.layout7.bottom_right .linkComponent .link{
+    justify-self: right;
+    align-self: flex-end;
+  }
+
+/* Special Layout Position */
+
+
+
+
+
+
+
+
+.specialLayoutComponent.layout1.top_left .linkComponent .link,
+.specialLayoutComponent.layout2.top_left .linkComponent .link {
+  justify-self: left;
+  align-self: flex-start;
+}
+
+.specialLayoutComponent.layout1.top_center .linkComponent .link,
+.specialLayoutComponent.layout2.top_center .linkComponent .link {
+  justify-self: center;
+  align-self: flex-start;
+}
+
+.specialLayoutComponent.layout1.top_right .linkComponent .link,
+.specialLayoutComponent.layout2.top_right .linkComponent .link {
+  justify-self: right;
+  align-self: flex-start;
+}
+
+.specialLayoutComponent.layout1.center_left .linkComponent .link,
+.specialLayoutComponent.layout2.center_left .linkComponent .link {
+  justify-self: left;
+  align-self: center;
+}
+
+.specialLayoutComponent.layout1.center .linkComponent .link,
+.specialLayoutComponent.layout2.center .linkComponent .link{
+  justify-self: center;
+  align-self: center;
+}
+
+.specialLayoutComponent.layout1.center_right .linkComponent .link,
+.specialLayoutComponent.layout2.center_right .linkComponent .link{
+  justify-self: right;
+  align-self: center;
+}
+
+.specialLayoutComponent.layout1.bottom_left .linkComponent .link,
+.specialLayoutComponent.layout2.bottom_left .linkComponent .link{
+
+  justify-self: left;
+  align-self: flex-end;
+}
+
+.specialLayoutComponent.layout1.bottom_center .linkComponent .link,
+.specialLayoutComponent.layout2.bottom_center .linkComponent .link{
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.specialLayoutComponent.layout1.bottom_right .linkComponent .link,
+.specialLayoutComponent.layout2.bottom_right .linkComponent .link{
+  justify-self: right;
+  align-self: flex-end;
+}

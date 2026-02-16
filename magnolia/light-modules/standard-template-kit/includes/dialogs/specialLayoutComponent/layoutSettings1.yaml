@@ -1,0 +1,15 @@
+label: "Layouts Settings"
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  imageLayoutWidth: 
+    label: Image Width
+    placeholder: 50% or 200px
+    $type: textField
+  imageTextGap: 
+    label: Gap
+    placeholder: 20px
+    $type: textField

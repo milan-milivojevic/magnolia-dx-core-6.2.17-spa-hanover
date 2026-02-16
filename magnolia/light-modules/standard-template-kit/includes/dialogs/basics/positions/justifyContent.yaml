@@ -1,0 +1,24 @@
+label: Horizontal Aligment
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: left
+  options:
+    - name: left  
+      label: Left
+      value: flex-start
+    - name: center
+      label: Center
+      value: center
+    - name: right
+      label: Right
+      value: flex-end
+    - name: between
+      label: Space Between
+      value: space-between
+    - name: around
+      label: Space Around
+      value: space-around
+    - name: evenly
+      label: Space Evenly
+      value: space-evenly

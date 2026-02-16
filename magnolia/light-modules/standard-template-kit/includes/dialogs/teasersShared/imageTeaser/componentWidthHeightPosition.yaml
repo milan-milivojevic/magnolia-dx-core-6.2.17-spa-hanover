@@ -1,0 +1,10 @@
+label: Component
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  componentWidth: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+  componentHeight: !include:/standard-template-kit/includes/dialogs/basics/height.yaml
+  componentPosition: !include:/standard-template-kit/includes/dialogs/basics/positions/marginPosition.yaml

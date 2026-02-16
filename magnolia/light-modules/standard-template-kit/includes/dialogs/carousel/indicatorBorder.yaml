@@ -1,0 +1,14 @@
+label: Bottom Indicator
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  indicatorBorderWidth: !include:/standard-template-kit/includes/dialogs/basics/border/width.yaml
+  indicatorBorderStyle: !include:/standard-template-kit/includes/dialogs/basics/border/style.yaml
+  indicatorBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
+  indicatorActiveBorderColor: !include:/standard-template-kit/includes/dialogs/basics/border/color.yaml
+    label: Active Border Color
+  
+  

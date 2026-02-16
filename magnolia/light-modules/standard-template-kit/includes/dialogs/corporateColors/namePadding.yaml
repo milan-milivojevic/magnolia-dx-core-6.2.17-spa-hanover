@@ -1,0 +1,12 @@
+label: Color Name
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  namePaddingTop: !include:/standard-template-kit/includes/dialogs/basics/padding/top.yaml
+  namePaddingRight: !include:/standard-template-kit/includes/dialogs/basics/padding/right.yaml
+  namePaddingBottom: !include:/standard-template-kit/includes/dialogs/basics/padding/bottom.yaml
+  namePaddingLeft: !include:/standard-template-kit/includes/dialogs/basics/padding/left.yaml
+  

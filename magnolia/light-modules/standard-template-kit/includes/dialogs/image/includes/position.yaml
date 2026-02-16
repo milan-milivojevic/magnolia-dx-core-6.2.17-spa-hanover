@@ -1,0 +1,31 @@
+label: Fit Position
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: unset
+  options:
+    - name: unset
+      label: Auto
+      value: unset
+    - name: topLeft  
+      label: Top Left
+      value: top left
+    - name: topCenter
+      label: Top Center
+      value: top center
+    - name: topRight
+      label: Top Right
+      value: top right
+    - name: center
+      label: Center
+      value: center
+    - name: bottomLeft
+      label: Bottom Left
+      value: bottom left
+    - name: bottomCenter
+      label: Bottom Center
+      value: bottom center
+    - name: bottomRight
+      label: Bottom Right
+      value: bottom right
+    

@@ -1,0 +1,24 @@
+title: Configuration Page (Layout Components)
+
+# baseUrl: http://localhost:3000
+# routeTemplate: '/{language}{{@path}}'
+templateScript: /standard-template-kit/webresources/build/index.html
+
+dialog: standard-template-kit:pages/config/layoutComponents
+
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+
+areas:
+  globalLayoutComponentComponents:
+    title: Global Layout Component Configuration Components Area
+    availableComponents:      
+      globalLayoutComponentConfig:
+        id: standard-template-kit:components/advanced/config/globalLayoutComponentConfig
+  specialLayoutComponentComponents:
+    title: Special Layout Component Configuration Components Area
+    availableComponents:      
+      specialLayoutComponentConfig:
+        id: standard-template-kit:components/advanced/config/specialLayoutComponentConfig
+
+

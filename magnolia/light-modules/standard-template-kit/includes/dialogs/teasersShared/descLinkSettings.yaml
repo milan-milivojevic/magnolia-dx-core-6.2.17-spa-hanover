@@ -1,0 +1,14 @@
+label: Desc & Link Layout Settings
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  descRowLayoutWidth: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+    label: Description Width
+  linkRowLayoutWidth: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+    label: Link Wrapper Width
+  descLinkGap: !include:/standard-template-kit/includes/dialogs/listComponents/includes/gap.yaml
+    label: Desc & Link Gap
+  descLinkPosition: !include:/standard-template-kit/includes/dialogs/basics/positions/horizontalPosition.yaml

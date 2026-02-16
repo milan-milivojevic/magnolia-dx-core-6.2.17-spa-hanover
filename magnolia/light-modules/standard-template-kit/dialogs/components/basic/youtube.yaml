@@ -1,0 +1,29 @@
+label: Youtube Video
+wide: true
+form:
+  properties:
+    video: !include:/standard-template-kit/includes/dialogs/video/video.yaml
+    mediaOptions: !include:/standard-template-kit/includes/dialogs/shared/mediaOptions.yaml
+    
+    styleWithCheckbox: !include:/standard-template-kit/includes/dialogs/shared/styleWithCheckbox.yaml
+    padding: !include:/standard-template-kit/includes/dialogs/shared/padding.yaml
+    backgroundColors: !include:/standard-template-kit/includes/dialogs/shared/backgroundColors.yaml
+    border: !include:/standard-template-kit/includes/dialogs/shared/border.yaml
+    widthHeightPosition: !include:/standard-template-kit/includes/dialogs/shared/widthHeightPosition.yaml
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: data
+      - label: Data
+        fields:
+          - name: video
+          - name: mediaOptions
+      - name: styles
+      - label: Video styles
+        fields:
+          - name: styleWithCheckbox
+          - name: padding    
+          - name: backgroundColors          
+          - name: border  
+          - name: widthHeightPosition

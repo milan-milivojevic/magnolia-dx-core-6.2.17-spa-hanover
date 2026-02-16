@@ -1,0 +1,12 @@
+label: Bold
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: none
+  options:
+    - name: normal
+      value: normal
+      label: normal
+    - name: bold
+      value: bold
+      label: bold

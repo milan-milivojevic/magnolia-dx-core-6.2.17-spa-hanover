@@ -1,0 +1,12 @@
+label: Autoplay
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  options:  
+    - name: false
+      value: false
+      label: No
+    - name: true
+      value: true
+      label: Yes
+    

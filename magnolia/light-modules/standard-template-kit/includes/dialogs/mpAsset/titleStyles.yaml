@@ -1,0 +1,12 @@
+label: Title Styles
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  titleLevel: !include:/standard-template-kit/includes/dialogs/text/includes/headlineLevel.yaml
+  titlePosition: !include:/standard-template-kit/includes/dialogs/basics/positions/horizontalPosition.yaml
+  titleFontFamily: !include:/standard-template-kit/includes/dialogs/text/includes/fontFamily.yaml
+  titleFontSize: !include:/standard-template-kit/includes/dialogs/text/includes/fontSize.yaml
+  titleColor: !include:/standard-template-kit/includes/dialogs/text/includes/fontColor.yaml

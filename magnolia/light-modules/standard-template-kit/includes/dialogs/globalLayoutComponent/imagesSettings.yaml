@@ -1,0 +1,15 @@
+label: Images
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  image1Width: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+    label: Left Image Width
+  image2Width: !include:/standard-template-kit/includes/dialogs/basics/width.yaml
+    label: Right Image Width
+  imagesHorizontalPosition: !include:/standard-template-kit/includes/dialogs/basics/positions/horizontalPosition.yaml
+    label: Images Horizontal Position
+  
+      

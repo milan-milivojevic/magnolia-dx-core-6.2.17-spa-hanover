@@ -1,0 +1,28 @@
+label: Search Options
+$type: checkBoxGroupField
+layout: horizontal
+defaultValue:
+  - static
+  - mp
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: Static
+      label: Static
+      value: static
+    - name: Media Pool
+      label: Media Pool
+      value: mp
+    - name: Templates
+      label: Templates (W2P)
+      value: w2p
+    - name: Global Search
+      label: Global Search
+      value: global
+    - name: Job Manager
+      label: Job Manager
+      value: jm
+    - name: PIM
+      label: PIM
+      value: pim
+    

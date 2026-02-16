@@ -1,0 +1,13 @@
+$type: compositeField
+label: "Image Config Style"
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:
+  imageStyleName: !include:/standard-template-kit/includes/dialogs/shared/styleName.yaml
+  imageNoStyles:
+    $type: checkBoxField
+    label: Without Config Styles
+    buttonLabel: "yes/no"
+    defaultValue: true

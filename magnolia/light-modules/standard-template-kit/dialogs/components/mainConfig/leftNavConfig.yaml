@@ -1,0 +1,17 @@
+label: Left Navigation Configuration
+wide: true
+form:
+  properties:
+    leftNavSettings: !include:/standard-template-kit/includes/dialogs/navigation/left/leftNavSettings.yaml
+    leftNavRightBorder: !include:/standard-template-kit/includes/dialogs/navigation/left/leftNavRightBorder.yaml
+    leftNavPadding: !include:/standard-template-kit/includes/dialogs/navigation/left/leftNavPadding.yaml
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: leftHandNav
+      - label: Left Hand Navigation
+        fields:
+          - name: leftNavSettings
+          - name: leftNavRightBorder
+          - name: leftNavPadding

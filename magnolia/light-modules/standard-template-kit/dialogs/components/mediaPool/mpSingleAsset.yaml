@@ -1,0 +1,38 @@
+label: Single MP Asset
+wide: true
+form:
+  properties:
+    
+    assetId: !include:/standard-template-kit/includes/dialogs/mpAsset/assetId.yaml
+    defaultView: !include:/standard-template-kit/includes/dialogs/mpAsset/defaultView.yaml
+
+    title: !include:/standard-template-kit/includes/dialogs/mpAsset/title.yaml
+    titleStyles: !include:/standard-template-kit/includes/dialogs/mpAsset/titleStyles.yaml
+    titlePaddings: !include:/standard-template-kit/includes/dialogs/mpAsset/titlePaddings.yaml    
+    
+    actions: !include:/standard-template-kit/includes/dialogs/mpSearch/actions.yaml
+
+    acl: !include:/standard-template-kit/includes/dialogs/acl/acl.yaml
+      
+  layout:
+    $type: tabbedLayout
+    tabs:       
+      - name: assetId
+      - label: Asset ID
+        fields:
+          - name: assetId   
+          - name: defaultView 
+      - name: title
+      - label: Title
+        fields:
+          - name: title
+          - name: titleStyles   
+          - name: titlePaddings   
+      - name: actions
+      - label: Actions
+        fields:
+          - name: actions
+      - name: acl
+      - label: Audience Control
+        fields:
+          - name: acl

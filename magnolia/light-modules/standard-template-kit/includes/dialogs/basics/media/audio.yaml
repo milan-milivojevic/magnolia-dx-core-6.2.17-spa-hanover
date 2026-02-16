@@ -1,0 +1,4 @@
+label: Audio
+$type: damLinkField
+textInputAllowed: true
+i18n: true

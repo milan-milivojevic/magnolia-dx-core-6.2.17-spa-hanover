@@ -1,0 +1,43 @@
+label: Main Section Configuration
+wide: true
+form:
+  properties:
+    layout:
+      label: Layout
+      placeholder: Choose Layout
+      $type: comboBoxField
+      datasource:
+        $type: optionListDatasource
+        options:
+          - name: layout1
+            value: 1
+            label: "1: 1 column"
+          - name: layout2
+            value: 2
+            label: "2: 2 columns (50%:50%)"
+          - name: layout21
+            value: 2.1
+            label: "3: 2 columns (75%:25%)"
+          - name: layout22
+            value: 2.2
+            label: "4: 2 columns (25%:75%)"
+          - name: layout23
+            value: 2.3
+            label: "5: 2 columns (66%:33%)"
+          - name: layout24
+            value: 2.4
+            label: "6: 2 columns (33%:66%)"
+          - name: layout3
+            value: 3
+            label: "7: 3 columns (33%:33%:33%)"
+          - name: layout4
+            value: 4
+            label: "8: 4 columns (25%:25%:25%:25%)"
+          - name: layout5
+            value: 5
+            label: "9: 5 columns (20%:20%:20%:20%:20%)"
+          - name: layout6
+            value: 6
+            label: "10: 6 columns (16%:16%:16%:16%:16%:16%)"
+            
+    padding: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperPadding.yaml

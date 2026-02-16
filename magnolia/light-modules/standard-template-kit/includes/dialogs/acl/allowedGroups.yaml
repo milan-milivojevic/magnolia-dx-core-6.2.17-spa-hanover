@@ -1,0 +1,10 @@
+label: Groups Allowed
+$type: twinColSelectField
+leftColumnCaption: "Available groups"
+rightColumnCaption: "User is member of"
+datasource:
+  $type: jcrDatasource
+  workspace: usergroups
+  allowedNodeTypes: 
+    - mgnl:group 
+converterClass: info.magnolia.ui.editor.converter.JcrNodeToPathConverter

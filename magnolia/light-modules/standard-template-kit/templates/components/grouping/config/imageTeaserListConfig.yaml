@@ -1,0 +1,9 @@
+title: Image Teaser List Configuration
+dialog: standard-template-kit:components/grouping/config/imageTeaserListConfig
+areas:
+areas:
+  column1: &column1
+    title: Image Teasers
+    availableComponents:
+      textLink:
+        id: standard-template-kit:components/advanced/imageTeaser

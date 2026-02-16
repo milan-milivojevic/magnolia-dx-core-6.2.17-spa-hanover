@@ -1,0 +1,21 @@
+{   
+    "ids": [
+    ],
+    "searchText": "",
+    "propertySelections": {},
+    "databaseId": "",
+    "color": "",
+    "format": "",
+    "printMethod": "",
+    "showSmartPages": null,
+    "showSmartBlocks": null,
+    "showArchived": null,
+    "showInvalid": true,
+    "showOwnTemplates": null,
+    "statuses": [
+        0,
+        1,
+        2,
+        3
+    ]
+}

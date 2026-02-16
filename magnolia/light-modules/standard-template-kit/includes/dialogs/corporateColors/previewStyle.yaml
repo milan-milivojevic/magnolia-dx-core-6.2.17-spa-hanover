@@ -1,0 +1,21 @@
+label: Style
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  defaultValue: unset
+  options:
+    - name: unset
+      value: unset
+      label: Unset
+    - name: square
+      value: square
+      label: Square
+    - name: circle
+      value: circle
+      label: Circle
+    - name: squareName
+      value: squareName
+      label: Square with Name
+    - name: circleName
+      value: circleName
+      label: Circle with Name

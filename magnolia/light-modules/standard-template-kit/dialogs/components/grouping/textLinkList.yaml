@@ -1,0 +1,37 @@
+label: Text & Link List
+wide: true
+form:
+  properties:
+
+    styleWithCheckbox: !include:/standard-template-kit/includes/dialogs/shared/styleWithCheckbox.yaml
+    layout: !include:/standard-template-kit/includes/dialogs/listComponents/listLayout.yaml  
+    headline: !include:/standard-template-kit/includes/dialogs/text/headline.yaml
+    gapsWidthPosition: !include:/standard-template-kit/includes/dialogs/listComponents/gapsWidthPosition.yaml
+      label: List
+    padding: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperPadding.yaml
+      label: List
+    border: !include:/standard-template-kit/includes/dialogs/wrapper/wrapperBorder.yaml
+      label: List
+
+    headlineDropdowns: !include:/standard-template-kit/includes/dialogs/text/headlineDropdowns.yaml
+    headlineTextStyles: !include:/standard-template-kit/includes/dialogs/text/headlineTextStyles.yaml
+    headlinePadding: !include:/standard-template-kit/includes/dialogs/text/headlinePadding.yaml            
+    
+  layout:
+    $type: tabbedLayout
+    tabs:
+      - name: listSettings
+      - label: List Settings
+        fields:
+          - name: styleWithCheckbox  
+          - name: layout    
+          - name: headline      
+          - name: gapsWidthPosition
+          - name: padding
+          - name: border
+      - name: headlineStyles
+      - label: Title Styles
+        fields:          
+          - name: headlineDropdowns
+          - name: headlineTextStyles
+          - name: headlinePadding 

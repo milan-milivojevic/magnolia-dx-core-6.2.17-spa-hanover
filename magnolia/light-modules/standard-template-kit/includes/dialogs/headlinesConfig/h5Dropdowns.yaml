@@ -1,0 +1,12 @@
+label: ""
+$type: compositeField
+layout:
+  $type: horizontal
+itemProvider:
+  $type: currentItemProvider
+properties:  
+  h5FontFamily: !include:/standard-template-kit/includes/dialogs/text/includes/fontFamily.yaml
+  h5TextTransform: !include:/standard-template-kit/includes/dialogs/text/includes/textTransform.yaml  
+  h5Position: !include:/standard-template-kit/includes/dialogs/basics/positionLRC.yaml
+  h5Bold: !include:/standard-template-kit/includes/dialogs/text/includes/bold.yaml
+  h5Italic: !include:/standard-template-kit/includes/dialogs/text/includes/italic.yaml

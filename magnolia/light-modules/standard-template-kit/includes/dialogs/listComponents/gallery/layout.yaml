@@ -1,0 +1,55 @@
+label: Layout
+required: true
+placeholder: Choose Layout
+$type: comboBoxField
+datasource:
+  $type: optionListDatasource
+  options:
+    - name: custom
+      value: Custom
+      label: "Custom Layout"
+    - name: layout1
+      value: 1
+      label: "1: 1 column"
+    - name: layout2
+      value: 2
+      label: "2: 2 columns (50%:50%)"
+    - name: layout2.1
+      value: 21
+      label: "3: 2 columns (75%:25%)"
+    - name: layout2.2
+      value: 22
+      label: "4: 2 columns (25%:75%)"
+    - name: layout2.3
+      value: 23
+      label: "5: 2 columns (66%:33%)"
+    - name: layout2.4
+      value: 24
+      label: "6: 2 columns (33%:66%)"
+    - name: layout3
+      value: 3
+      label: "7: 3 columns (33%:33%:33%)"
+    - name: layout3.1
+      value: 31
+      label: "8: 3 columns (50%:25%:25%)"
+    - name: layout3.2
+      value: 32
+      label: "9: 3 columns (25%:50%:25%)"
+    - name: layout3.3
+      value: 33
+      label: "10: 3 columns (25%:25%:50%)"
+    - name: layout4
+      value: 4
+      label: "11: 4 columns (25%:25%:25%:25%)"
+    - name: layout5
+      value: 5
+      label: "12: 5 columns (20%:20%:20%:20%:20%)"
+    - name: layout6
+      value: 6
+      label: "13: 6 columns (16%:16%:16%:16%:16%:16%)"
+    - name: specialLayout1
+      value: s12
+      label: "14: row1: 2 columns (50%:50%) - row2: 1 column"
+    - name: specialLayout2
+      value: s21
+      label: "15: row1: 1 column - row2: 2 columns (50%:50%)"
