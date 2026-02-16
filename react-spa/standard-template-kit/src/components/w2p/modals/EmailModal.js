@@ -10,13 +10,10 @@ const EmailModal = ({ documentId, isOpen, onClose }) => {
 
   const handleIframeLoad = () => {
     if (iframeRef.current) {
-      // Access the iframe's document
       const iframeDocument = iframeRef.current.contentDocument;
 
-      // Create a new style element
       const styleElement = iframeDocument.createElement('style');
 
-      // Define your CSS styles here
       const cssStyles = `
         #popupHeader,
         #popupFooter {
@@ -42,10 +39,8 @@ const EmailModal = ({ documentId, isOpen, onClose }) => {
         }
       `;
 
-      // Set the style element's content to your CSS styles
       styleElement.innerHTML = cssStyles;
 
-      // Append the style element to the iframe's document head
       iframeDocument.head.appendChild(styleElement);
     }
   };
@@ -66,7 +61,6 @@ const EmailModal = ({ documentId, isOpen, onClose }) => {
           <iframe className="createTemplateIframe"
                   ref={iframeRef}
                   title={"Send Document via Email"}
-                  // src={'/DownloadDocumentByMail.do?action=view&openerID=common&advertInstanceId=' + documentId}
                   src={'/btb/InitAdvertInstancePreview.do?advertInstanceId=' + documentId}
                   onLoad={handleIframeLoad}
           ></iframe>

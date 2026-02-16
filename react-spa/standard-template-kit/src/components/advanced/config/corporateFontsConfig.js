@@ -9,9 +9,7 @@ function findNodeById(node, targetId) {
   }
 
   if (node['@nodes'] && Array.isArray(node['@nodes'])) {
-    // @nodes je polje stringova koji su imena children čvorova
     for (const childName of node['@nodes']) {
-      // Svaki child je node[childName]
       const found = findNodeById(node[childName], targetId);
       if (found) {
         return found;
@@ -234,7 +232,5 @@ function CorporateFontsConfig ({
     </div>
   )
 }
-
-
 
 export default CorporateFontsConfig;

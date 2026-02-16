@@ -160,7 +160,6 @@ function MpSearch ({
     });
   }, [selectedCategories, selectedSuffixes, selectedTags, selectedVdbs, selectedKeywords]);
 
-  // Function to update selectedCategories state
   const updateSelectedCategories = (selectedValues) => {
     setSelectedCategories(selectedValues);
   };
@@ -227,7 +226,6 @@ function MpSearch ({
     return data.items;    
   };    
 
-
   const loadMoreAssets = () => {
     const currentOffset = offset + 12;
 
@@ -286,7 +284,6 @@ function MpSearch ({
       })
   };
 
-  // New function to reset all filters
   const resetAllFilters = () => {
     setSelectedCategories([]);
     setSelectedSuffixes([]);
@@ -345,7 +342,7 @@ function MpSearch ({
             selectedTags={selectedTags}
             selectedKeywords={selectedKeywords}
           />
-          {/* <VdbFilter onUpdateSelectedVdbs={updateSelectedVdbs} selectedVdbs={selectedVdbs}/> */}        
+          {}        
           <div className="resetAllWrapper">
             <Button className="filterButton" onClick={resetAllFilters}>Reset All</Button>
           </div>

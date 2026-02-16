@@ -1,4 +1,3 @@
-/*w2p Card */
 
 button.isFavourite svg {
     fill: #7ca940;
@@ -15,9 +14,6 @@ button.notFavourite svg {
 button.notFavourite:hover svg {    
     fill: #7ca940;
 }
-
-
-/* Detail modal */
 
 .closeButtonWrapper.w2p {
     justify-content: space-between;
@@ -46,8 +42,6 @@ button.notFavourite:hover svg {
     border: 0;
 }
 
-/* Detail modal */
-
 .createModal.w2p {
     display: flex;
     gap: 40px;
@@ -65,8 +59,6 @@ button.notFavourite:hover svg {
 .createModal.downloadModal.w2p {
     padding: 0px;
 }
-
-/* W2P Search */
 
 .searchFilter .css-fvipm8.Mui-focused .MuiOutlinedInput-notchedOutline {
     border-color: #7ca940;
@@ -117,8 +109,6 @@ button.notFavourite:hover svg {
         max-height: calc(95vh - 292px);
     }
 }
-
-/*Delete Modal*/
 
 .deleteModalWrapper.w2p {
     background: #fff;

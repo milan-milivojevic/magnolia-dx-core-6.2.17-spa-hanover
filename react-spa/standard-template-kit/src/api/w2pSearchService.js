@@ -44,7 +44,6 @@ const payloadIds = (templateId) => {
   const payloadCopy = payloadSingleTemplate;
   
   payloadCopy.ids = templateId;
-  // payloadCopy.ids.push(templateId);
 
   return payloadCopy;
 }
@@ -107,16 +106,7 @@ const templatesSearchPayload = (query, selectedVdb, selectedColor, selectedForma
 
   payloadCopy.searchText = query;
 
-  // Postavite osnovnu vrednost za propertySelections
   payloadCopy.propertySelections = {};
-
-  // if (selectedTemplateType) {
-  //   payloadCopy.propertySelections["CUSTOM_PROPERTY(TEMPLATE_TYPE)"] = selectedTemplateType;
-  // }
-
-  // if (selectedDetails) {
-  //   payloadCopy.propertySelections["CUSTOM_PROPERTY(DETAILS)"] = selectedDetails;
-  // }
 
   if (selectedVdb && selectedVdb !== "undefined") {
     payloadCopy.databaseId = selectedVdb;
@@ -190,7 +180,6 @@ const documentsSearchPayload = (query, selectedTemplateType, selectedDetails, se
 
   payloadCopy.searchText = query;
 
-  // Postavite osnovnu vrednost za propertySelections
   payloadCopy.propertySelections = {};
 
   if (selectedTemplateType) {
@@ -221,8 +210,6 @@ export const documentsSearchService = async (query, sortType, sortDirection, siz
   
   return data;
 }
-
-/*Carousel + Payload Search*/
 
 export const payloadSearch = async (payload, sortType, sortDirection, from, size) => {
 
@@ -371,7 +358,6 @@ export const findInstanceId = async (templateId) => {
   return instanceId;
 };
 
-
 export const findFavourites = async () => {
   
   const response = apiServiceHandler(`${BASE_URL}/wp/rest/v2/templates/favorites?sort=title&sort-direction=asc&size=50&from=0`, {
@@ -397,11 +383,3 @@ export const deleteFromFavourites = async (templateId) => {
   })
 };
 
-
-
-// export const getApiBearerToken = () => apiServiceHandler(`${BASE_URL}/rest/sso/auth/jaas/jwt`);
-// const token = await getApiBearerToken();
-// headers: {
-//   "Authorization": `Bearer ${token.access_token}`,
-//   "Content-Type": "application/json"
-// },

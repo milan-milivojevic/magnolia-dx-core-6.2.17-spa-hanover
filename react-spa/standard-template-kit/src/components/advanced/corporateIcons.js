@@ -62,36 +62,8 @@ function CorporateIcons ({
     
   const [configProps, setConfigProps] = useState();
 
-  // useEffect(() => {
-  //   fetch(`${apiBase}${restPath}${nodeName}/Config-Pages/Advanced-Config/corporateIconsComponents/@nodes`)
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       let result = data.find(item => item.styleName === styleName);
-  //       if (!result && noStyles === (false || "false")) {
-  //         result = data[0];
-  //       } else if (noStyles !== (false || "false")) {
-  //         result = null;
-  //       } 
-  //       setConfigProps(result);
-  //     });
-  // }, [styleName, noStyles, apiBase, restPath, nodeName]);
   
   const [dividerConfigProps, setDividerConfigProps] = useState();
-
-  // useEffect(() => {
-  //   fetch(`${apiBase}${restPath}${nodeName}/Config-Pages/Basics-Config/dividerComponents/@nodes`)
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       let styleName =  dividerStyleName || configProps?.dividerStyleName || null;
-  //       let result = data.find(item => item.styleName === styleName);
-  //       if (!result && dividerNoStyles === (false || "false")) {
-  //         result = data[0];
-  //       } else if (dividerNoStyles !== (false || "false")) {
-  //         result = null;
-  //       } 
-  //       setDividerConfigProps(result);
-  //     });
-  // }, [dividerStyleName, dividerNoStyles, configProps?.dividerStyleName, apiBase, restPath, nodeName]);
 
   const downloadLink1 = download1 ? download1['@link'] : linkDefault;  
   const href1 = smallIconLink === "external" && external1 ? external1 : downloadLink1;

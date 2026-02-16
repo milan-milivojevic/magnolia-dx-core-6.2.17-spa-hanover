@@ -16,9 +16,7 @@ function findNodeById(node, targetId) {
   }
 
   if (node['@nodes'] && Array.isArray(node['@nodes'])) {
-    // @nodes je polje stringova koji su imena children čvorova
     for (const childName of node['@nodes']) {
-      // Svaki child je node[childName]
       const found = findNodeById(node[childName], targetId);
       if (found) {
         return found;
@@ -207,7 +205,7 @@ function ImageTeaser ({
           setAclValue(response); 
         })
         .catch((error) => {
-          console.error("Greška prilikom izvršavanja aclCheck:", error);
+          console.error("Error executing aclCheck:", error);
           setAclValue(false);
         });
     } else setAclValue(true);
@@ -215,13 +213,11 @@ function ImageTeaser ({
 
   const dimensionsRef = useRef()
 
-  // Izbačeno iz same komponente, možeš staviti u vrh fajla ili u poseban util
   function useContainerDimensions(myRef, ready) {
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
     useEffect(() => {
       if (!ready) {
-        // Ako još nije dozvoljeno merenje, nemoj da radiš ništa
         return;
       }
 
@@ -235,14 +231,11 @@ function ImageTeaser ({
         height: element.offsetHeight,
       });
 
-      // Postavi trenutne dimenzije
       setDimensions(getDims());
 
-      // Kada se prozor promeni, ponovo meri
       const onResize = () => setDimensions(getDims());
       window.addEventListener("resize", onResize);
 
-      // Ako želiš dodatno da meriš u intervalima (prvih 5 sekundi):
       const intervalId = setInterval(onResize, 200);
       setTimeout(() => clearInterval(intervalId), 5000);
 
@@ -258,20 +251,16 @@ function ImageTeaser ({
   const readyToMeasure = basicAclCheck === true || aclValue === true;
   const { width, height } = useContainerDimensions(dimensionsRef, readyToMeasure);
 
-  // ---------------- LOGIKA ZA "page" MOŽE BITI UUID ILI PATH ----------------
-  // Čuvat ćemo konačni path koji želimo koristiti, npr. /Home/... 
   const [resolvedPath, setResolvedPath] = useState(page);
 
   useEffect(() => {
     if (linkType !== 'page') return;
 
-    // Ako page nije UUID, znači već je path => postavi ga takvog
     if (!isUuid(page)) {
       setResolvedPath(page);
       return;
     }
 
-    // Ako je UUID, fetch-amo navigaciju i pronađemo ga
     async function resolveUuidToPath() {
       try {
         const url = apiBase + process.env.REACT_APP_MGNL_API_NAV + process.env.REACT_APP_MGNL_APP_BASE;
@@ -282,11 +271,10 @@ function ImageTeaser ({
         if (foundNode && foundNode['@path']) {
           setResolvedPath(foundNode['@path']);
         } else {
-          // Ako nije pronađen, fallback
           setResolvedPath(page);
         }
       } catch (e) {
-        console.error('Greška prilikom dohvata navigacije ili kod traženja čvora:', e);
+        console.error('Error fetching navigation or searching for node:', e);
         setResolvedPath(page);
       }
     }
@@ -298,7 +286,7 @@ function ImageTeaser ({
   const href = linkType === "page"
     ? (getRouterBasename() + resolvedPath)
         .replace("//", "/")
-        .replace("Home/Home", "Home")   // stara zamjena
+        .replace("Home/Home", "Home")
     : linkType === "external"
       ? external
       : downloadLink;

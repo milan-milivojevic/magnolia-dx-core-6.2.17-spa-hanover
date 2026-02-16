@@ -3,7 +3,6 @@
 @import url('./styles/groupingComponents.css');
 @import url('./styles/fonts.css');
 @import url('./styles/hanover.css');
-@import url('./styles/hanover1.css');
 @import url('./styles/assetsCss.css');
 @import url('./styles/mediaPool/modal.css');
 @import url('./styles/w2p/modals.css');
@@ -135,9 +134,6 @@ body {
   width: calc(100% / 6);
 }
 
-
-
-
 * {
   box-sizing: border-box;
 }
@@ -146,8 +142,6 @@ p {
   margin: 0;
 }
 
-
-
 .editMode .mgnlEditor {
   display: flex !important;
 }
@@ -155,10 +149,6 @@ p {
 .editMode .mgnlEditor.mgnlPlaceholder {
   display: block !important;
 }
-
-
-
-
 
 .configComponentsPage {
   background-color: #ededed;
@@ -206,13 +196,6 @@ p {
 display: flex;
 flex-direction: column;
 }
-
-
-
-
-
-
-
 
 .corporateIcons .iconsWrapper {
   display: flex;
@@ -267,19 +250,11 @@ flex-direction: column;
   width: 250px;
 }
 
-/* a, figcaption {
-  font-family: 'Sohne Buch';
-} */
-
 a.link svg {
   margin-left: 10px;
 }
 
-
-
 .linkComponent {
   min-width: fit-content;
 }
-
-
 

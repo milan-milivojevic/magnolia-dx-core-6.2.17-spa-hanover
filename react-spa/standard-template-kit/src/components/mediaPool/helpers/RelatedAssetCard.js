@@ -48,10 +48,10 @@ const RelatedAssetCard = ({ relatedAssetData }) => {
   const license = relatedAssetData.license || null;
 
   title = title
-    .replace(/-/g, '_') // Replace dashes with underscores
-    .split('_') // Split the string by underscores into an array
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize each word
-    .join(' '); // Join the words back together with spaces
+    .replace(/-/g, '_')
+    .split('_')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
   
   owner = owner.replace(/,/g, "");
   lastUpdatedTime = moment(lastUpdatedTime).utc().format('MM/DD/YYYY');
@@ -192,19 +192,13 @@ const RelatedAssetCard = ({ relatedAssetData }) => {
       <div className='assetCardContent'>
         <h1 className='assetTitle'>{title}</h1>
         <p><span>Asset ID: </span>{assetId}</p>
-        {/* <p><span>Asset Contact: </span>{owner}</p> */}
+        {}
         <p><span>File Size:</span>{fileSize}</p>
         <p><span>Upload Date:</span>{uploadDate}</p>
         <p><span>Asset Type:</span>{assetResourceType}</p>
-        {/* <p><span>Last change: </span>{lastUpdatedTime}</p> */}
-        {/* {keywords && 
-          <ul className='assetKeywords'>
-            {keywords.map(keyword => <li className='Keyword ID' key={keyword}>{keyword}</li>)}
-          </ul>
-        } */}
-        {/* <div className='fileFormatWrapper'>
-          <div className='fileFormat'>{fileFormat}</div>        
-        </div> */}
+        {}
+        {}
+        {}
       </div>
 
       {showAlert && <AlertPopup showAlert={showAlert} alertMessage={message} />}

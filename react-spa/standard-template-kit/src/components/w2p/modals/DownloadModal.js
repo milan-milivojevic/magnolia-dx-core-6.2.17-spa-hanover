@@ -2,20 +2,16 @@ import React, { useRef } from 'react';
 import { AiOutlineClose } from "react-icons/ai";
 import Modal from 'react-modal';
 
-
 const DownloadModal = ({ documentId, isOpen, onClose }) => {
 
   const iframeRef = useRef(null);
 
   const handleIframeLoad = () => {
     if (iframeRef.current) {
-      // Access the iframe's document
       const iframeDocument = iframeRef.current.contentDocument;
 
-      // Create a new style element
       const styleElement = iframeDocument.createElement('style');
 
-      // Define your CSS styles here
       const cssStyles = `
         #popupHeader,
         #popupFooter {
@@ -41,10 +37,8 @@ const DownloadModal = ({ documentId, isOpen, onClose }) => {
         }
       `;
 
-      // Set the style element's content to your CSS styles
       styleElement.innerHTML = cssStyles;
 
-      // Append the style element to the iframe's document head
       iframeDocument.head.appendChild(styleElement);
     }
   };
@@ -65,7 +59,6 @@ const DownloadModal = ({ documentId, isOpen, onClose }) => {
           <iframe className="createTemplateIframe"
                   ref={iframeRef}
                   title={"Download Document"}
-                  // src={'/DownloadDocument.do?action=view&advertInstanceId=' + documentId}
                   src={'/btb/InitAdvertInstancePreview.do?advertInstanceId=' + documentId}
                   onLoad={handleIframeLoad}
           ></iframe>

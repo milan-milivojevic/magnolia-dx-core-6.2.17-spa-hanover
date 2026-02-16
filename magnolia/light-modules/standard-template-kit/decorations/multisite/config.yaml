@@ -2,7 +2,6 @@ sites:
   fallback:
 
     cors:
-      # This will take effect on DXCORE when Travel Demo IS NOT installed.
       default:
         uris:
           rest:
@@ -14,7 +13,6 @@ sites:
         allowedHeaders:
           all: '*'
 
-      # This will take effect on DXCORE when Travel Demo IS installed.
       travel:
         uris:
           rest:

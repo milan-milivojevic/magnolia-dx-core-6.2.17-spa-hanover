@@ -21,14 +21,5 @@ properties:
     label: Gap
     placeholder: 20px
     $type: textField
-  # tabsLayout:
-  #   label: Layout   
-  #   $type: comboBoxField
-  #   datasource:
-  #     $type: optionListDatasource
-  #     options:
-  #       - name: default
-  #         value: default
-  #         label: Default
   
   

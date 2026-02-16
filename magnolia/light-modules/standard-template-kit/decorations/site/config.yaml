@@ -1,6 +1,5 @@
 site:
 
- # This will take effect on COMMUNITY EDITION 
   cors:
     default:
       uris:

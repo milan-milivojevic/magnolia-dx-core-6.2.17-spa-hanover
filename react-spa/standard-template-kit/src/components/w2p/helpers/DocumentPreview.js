@@ -3,7 +3,7 @@ import noImage from './no_image.jpg';
 
 const DocumentPreview = ({ documentId, logicalPage, documentStatus }) => {
   const handleError = (e) => {
-    e.target.src = noImage; // Replace src with noImage if the image fails to load
+    e.target.src = noImage;
   };
 
   const srcPath = documentStatus === 1 

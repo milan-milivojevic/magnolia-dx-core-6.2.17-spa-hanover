@@ -18,7 +18,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import { FiDownload, FiLink, FiMail, FiShoppingCart, FiEdit } from "react-icons/fi";
 import { ReactComponent as EditAndShop } from '../../../images/home/EditAndShop.svg'
 
-
 const DetailsModal = (props) => {
 
   const {
@@ -114,26 +113,6 @@ const DetailsModal = (props) => {
       })
   };
 
-  // const toggleDownloadModal = () => {
-  //   if (license) {
-  //     setShowDownloadModal(!showDownloadModal);
-  //     if (showDownloadModal) {
-  //       setShowAlert(true);
-  //       setMesage("Download Started");
-  //       setTimeout(() => {
-  //         setShowAlert(false);
-  //       }, 2500);
-  //     }
-  //   } else {
-  //     downloadFile();
-  //     setShowAlert(true);
-  //     setMesage("Download Started");
-  //     setTimeout(() => {
-  //       setShowAlert(false);
-  //     }, 2500);
-  //   }    
-  // }
-
   const toggleDownloadModal = () => {
     setShowDownloadModal(!showDownloadModal);
   }
@@ -150,16 +129,6 @@ const DetailsModal = (props) => {
     }, 2500);
   }
   
-  // const toggleEmailModal = () => {
-  //   setShowEmailModal(!showEmailModal);
-  //   if (showEmailModal) {
-  //     setShowAlert(true);
-  //     setMesage("Email Sent");
-  //     setTimeout(() => {
-  //       setShowAlert(false);
-  //     }, 2500);
-  //   }
-  // };
 
   const toggleEmailModal = () => {
     setShowEmailModal(!showEmailModal);
@@ -206,12 +175,10 @@ const DetailsModal = (props) => {
     getRelatedAssets(assetId);
   }, []);
 
-  // Function to stop scrolling
   const stopScrolling = () => {
     document.body.style.overflow = 'hidden';
   };
 
-  // Function to enable scrolling
   const allowScrolling = () => {
     document.body.style.overflow = 'unset';
   };
@@ -223,7 +190,6 @@ const DetailsModal = (props) => {
       allowScrolling();
     }
 
-    // Cleanup function to set things back to normal when the component is unmounted or modal closed
     return () => allowScrolling();
   }, [isOpen]);
 
@@ -259,7 +225,7 @@ const DetailsModal = (props) => {
               
               {activeTab === 'versions' && (
                 <div className='assetVersions list'>
-                  {/* Ako je postavljena greška za verzije, ispisujemo poruku */}
+                  {}
                   {versionsError ? (
                     <span className='error'><BsExclamationOctagonFill /> You are not allowed to see the versions list</span>
                   ) : (
@@ -309,10 +275,7 @@ const DetailsModal = (props) => {
                 {vdb && 
                   <p><span>VDB: </span>{vdb}</p>        
                 }
-                {/* <p><span>Asset Contact: </span>{owner}</p>
-                <p><span>File Size: </span>{fileSize}</p>                
-                <p><span>Upload Date: </span>{uploadDate}</p>
-                <p><span>Last change: </span>{lastUpdatedTime}</p> */}
+                {}
                 {poratlPage && 
                   <p><span>Portal Page: </span>{poratlPage}</p>
                 } 

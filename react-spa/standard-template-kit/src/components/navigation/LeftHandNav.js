@@ -47,7 +47,6 @@ function LeftHandNav(props, ref) {
           const childObject = {
             name: child.title || child["@name"],
             path: child.componentId === undefined ? child["@path"] : item["@path"] + "#" + child.componentId,
-            //path: child.componentId === undefined ? child["@path"] : item["@path"],
             flatPath: child.componentId === undefined ? child["@path"] : item["@path"],
             componentId: child.componentId === undefined ? undefined : "#" + child.componentId,
             id: child["@id"],

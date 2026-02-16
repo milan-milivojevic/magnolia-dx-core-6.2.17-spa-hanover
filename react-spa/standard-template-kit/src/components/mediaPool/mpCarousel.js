@@ -57,14 +57,6 @@ function MpCarousel ({
   const sliderRef = useRef(null);
   const [products, setProducts] = useState([]);
 
-  // const assetIdsArray = [];
-
-  // for (const key in assetIds) {
-  //   if (key.startsWith('assetIds')) {
-  //     assetIdsArray.push(assetIds[key].assetId);
-  //   }
-  // }  
-
   const assetIdsArray = assetIds?.split(',').map(assetId => assetId.trim());
 
   const settings = {
@@ -81,7 +73,7 @@ function MpCarousel ({
         breakpoint: 1440,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1, // Na manjim ekranima prikazuje samo 1 aset istovremeno
+          slidesToScroll: 1,
         },
       },
       {
@@ -99,7 +91,6 @@ function MpCarousel ({
 
   const resetTransform = () => {
     var interval = setInterval(() => {
-      // Delay the transformation to give react-slick time to update
       const slickList = sliderRef.current.innerSlider.list;
       if (slickList) {
         const slickTrack = slickList.querySelector('.slick-track');
@@ -186,7 +177,7 @@ function MpCarousel ({
           setAclValue(response); 
         })
         .catch((error) => {
-          console.error("Greška prilikom izvršavanja aclCheck:", error);
+          console.error("Error executing aclCheck:", error);
           setAclValue(false);
         });
     } else setAclValue(true);

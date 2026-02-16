@@ -42,8 +42,6 @@ function ImageGalleryConfig ({
 
   const baseUrl = process.env.REACT_APP_MGNL_HOST_NEW;
 
-  /* Filtering images from multi field to get active images array */
-
   const images = [];
 	for (let i = 0; i <= 20; i++) {
 		images.push(multi[`multi${i}`]?.image);

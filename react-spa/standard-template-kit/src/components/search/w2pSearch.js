@@ -37,8 +37,6 @@ function W2PSearch ({
   copyLinkButton,
 }) {
   
-  // const searchParams = new URLSearchParams(window.location.search);
-  // const urlQuery = searchParams.get('q');
 
   const elementRef = useRef(null);
   const baseURL = process.env.REACT_APP_MGNL_HOST_NEW; 
@@ -286,8 +284,7 @@ function W2PSearch ({
               <option value="creationDate,desc">Not selected</option>
               <option value="creationDate,desc">Newest first</option>
               <option value="creationDate,asc">Oldest first</option>
-              {/* <option value="modificationDate,desc">Last updated first</option>
-              <option value="modificationDate,asc">Oldest updated first</option> */}
+              {}
               <option value="title,asc">Name (A-Z)</option>
               <option value="title,desc">Name (Z-A)</option>
             </select>

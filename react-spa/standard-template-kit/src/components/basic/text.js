@@ -147,7 +147,7 @@ function Text ({
           setAclValue(response); 
         })
         .catch((error) => {
-          console.error("Greška prilikom izvršavanja aclCheck:", error);
+          console.error("Error executing aclCheck:", error);
           setAclValue(false);
         });
     } else setAclValue(true);

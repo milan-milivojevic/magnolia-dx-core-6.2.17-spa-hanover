@@ -3,7 +3,7 @@ import noImage from './no_image.jpg';
 
 const TemplatePreview = ({ templateId, isOnline }) => {
   const handleError = (e) => {
-    e.target.src = noImage; // Replace src with noImage if the image fails to load
+    e.target.src = noImage;
   };
 
   const srcPath = isOnline

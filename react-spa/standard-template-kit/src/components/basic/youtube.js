@@ -25,7 +25,7 @@ function Youtube ({
   const justifyContent = position;
 
   return (
-    <div className='youtubeEditMode'> {/* this div is workaround for editMode problem. */}
+    <div className='youtubeEditMode'> {}
       <div className='youtubeWrapper'
         style={{display: 'flex',
                 justifyContent: justifyContent !== undefined ? justifyContent : "left"

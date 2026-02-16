@@ -15,7 +15,6 @@ const DownloadModal = ({ assetId, language, license, isOpen, onClose, closeModal
     fetch(`${baseUrl}/rest/mp/v1.0/assets/${assetId}/downloadSchemes?language=${language}`)
       .then((response) => response.json())
       .then((data) => {
-        // Prikaži sve opcije OSIM „Standard" (id: 306)
         const options = (data[0]?.download_schemes || []).filter(
           (scheme) => scheme.id !== 306
         );
@@ -47,16 +46,14 @@ const DownloadModal = ({ assetId, language, license, isOpen, onClose, closeModal
     (license?.usageVideo?.value === true ? "Video " : "");
 
   const downloadFile = async () => {
-    // 1. Pratimo event u Matomo – pre nego što stvarno otvorimo link
     window._paq = window._paq || [];
     window._paq.push([
       'trackEvent',
-      'Download',          // Kategorija eventa
-      'downloadFile',      // Akcija eventa
-      assetId              // Label eventa (opciono)
+      'Download',
+      'downloadFile',
+      assetId
     ]);
   
-    // 2. Onda radimo postojeću logiku
     const data = await downloadFileDirect(assetId, selectedOption, download_version, language, null);
   
     if (typeof data[0].download_url !== 'undefined') {
@@ -154,8 +151,6 @@ const DownloadModal = ({ assetId, language, license, isOpen, onClose, closeModal
           <div className="downloadButton">
             <button
               onClick={handleDownloadClick}
-              // disabled={!checkboxChecked && license}
-              // className={checkboxChecked && license ? 'enabled' : 'disabled'}
               className='enabled'
             >
               Download

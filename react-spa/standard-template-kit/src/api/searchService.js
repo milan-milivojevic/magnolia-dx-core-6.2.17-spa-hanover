@@ -19,7 +19,6 @@ const apiServiceHandler = async (url, options) => {
   }
 }
 
-
 export const getApiBearerToken = () => apiServiceHandler(`${BASE_URL}/rest/sso/auth/jaas/jwt`);
 
 const paylodID = (assetId) => {
@@ -54,7 +53,6 @@ export const idSearch = async (assetId) => {
   return matchingItem;
 }
 
-
 export const downloadFileDirect = async (id, selectedOption, download_version, language, licenseId) => {
 
   const token = await getApiBearerToken();
@@ -81,7 +79,6 @@ export const downloadFileDirect = async (id, selectedOption, download_version, l
   const data = await response;
   return data;
 };
-
 
 const updateCustomSearchPayload = (requestPayload, sortingType, isAsc, offset, limit) => {
 
@@ -118,7 +115,6 @@ export const customSearch = async (requestPayload, sortingType, isAsc, offset, l
   return data;
 }
 
-
 const updateSearchPayload = (sortingType, isAsc, offset, limit, query, selectedCategories, selectedSuffixes, selectedTags, selectedVdbs, selectedKeywords) => {
 
   const sortingObject = sortingType === 'relevance' ? [{ "@type": sortingType, "asc": isAsc }] : [{ "@type": "field", "field": sortingType, "asc": isAsc }];
@@ -151,26 +147,6 @@ const updateSearchPayload = (sortingType, isAsc, offset, limit, query, selectedC
       updatedPayload.criteria.subs.splice(categoriesIndex, 1); 
   }
 
-  // const suffixesIndex = updatedPayload.criteria.subs.findIndex(
-  //   sub => sub["@type"] === "in" && sub.fields && sub.fields.includes("extension")
-  // );
-
-  // if (selectedSuffixes && selectedSuffixes.length > 0) {
-  //   const newObject = {
-  //     "@type": "in",
-  //     "fields": ["extension"],
-  //     "text_value": selectedSuffixes,
-  //   };
-
-  //   if (suffixesIndex > -1) {
-  //     updatedPayload.criteria.subs[suffixesIndex] = newObject;
-  //   } else {
-  //     updatedPayload.criteria.subs.push(newObject);
-  //   }
-  // } else if (suffixesIndex > -1) {
-  //   updatedPayload.criteria.subs.splice(suffixesIndex, 1);
-  // }
-
   const suffixesIndex = updatedPayload.criteria.subs.findIndex(
     sub => sub["@type"] === "in" && sub.fields && sub.fields.includes("customAttribute_28.id")
   );
@@ -191,8 +167,6 @@ const updateSearchPayload = (sortingType, isAsc, offset, limit, query, selectedC
   } else if (suffixesIndex > -1) {
     updatedPayload.criteria.subs.splice(suffixesIndex, 1);
   }
-
-
 
   const parentVdbsSub = updatedPayload.criteria.subs.find(sub => sub.subs);
 
@@ -216,27 +190,6 @@ const updateSearchPayload = (sortingType, isAsc, offset, limit, query, selectedC
   } else if (vdbsIndex > -1) {
     parentVdbsSub.subs.splice(vdbsIndex, 1);
   }
-
-  // const keywordsIndex = updatedPayload.criteria.subs.findIndex(
-  //   sub => sub["@type"] === "in" && sub.fields && sub.fields.includes("structuredKeywords.id")
-  // );
-
-  // if (selectedKeywords && selectedKeywords.length > 0) {
-  //   const newObject = {
-  //     "@type": "in",
-  //     "fields": ["structuredKeywords.id"],
-  //     "long_value": selectedKeywords,
-  //     "any": true
-  //   };
-
-  //   if (keywordsIndex > -1) {
-  //     updatedPayload.criteria.subs[keywordsIndex] = newObject;
-  //   } else {
-  //     updatedPayload.criteria.subs.push(newObject);
-  //   }
-  // } else if (keywordsIndex > -1) { 
-  //   updatedPayload.criteria.subs.splice(keywordsIndex, 1);  
-  // }
 
   const keywordsIndex = updatedPayload.criteria.subs.findIndex(
     sub => sub["@type"] === "in" && sub.fields && sub.fields.includes("customAttribute_27.id")
@@ -345,7 +298,6 @@ export const assetVariantsService = async (assetId) => {
   return assetVariants;
 };
 
-
 export const assetRelationsService = async (assetId) => {
   try {
     const relationsArray = await apiServiceHandler(`${BASE_URL}/rest/mp/v1.2/assets/${assetId}/relations`, {
@@ -353,14 +305,13 @@ export const assetRelationsService = async (assetId) => {
     });
   
     const relationsArrayUniqueIds = relationsArray.relations
-      .map(item => item.relatedAssetId) // Prvo izvlačimo samo relatedAssetId
+      .map(item => item.relatedAssetId)
       .reduce((unique, item) => {
         return unique.includes(item) ? unique : [...unique, item];
-      }, []); // Onda koristimo reduce da uklonimo duplikate
+      }, []);
    
   
     const payloadArray = relationsArrayUniqueIds.map(assetId => ({ assetId }));
-
 
     const token = await getApiBearerToken();
 
@@ -383,11 +334,3 @@ export const assetRelationsService = async (assetId) => {
   }
 };
 
-
-
-// export const getApiBearerToken = () => apiServiceHandler(`${BASE_URL}/rest/sso/auth/jaas/jwt`);
-// const token = await getApiBearerToken();
-// headers: {
-//   "Authorization": `Bearer ${token.access_token}`,
-//   "Content-Type": "application/json"
-// },

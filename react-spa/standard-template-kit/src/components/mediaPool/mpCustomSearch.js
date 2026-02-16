@@ -54,14 +54,6 @@ function MpCustomSearch ({
 
   const [products, setProducts] = useState([]);
 
-  // const assetIdsArray = [];
-
-  // for (const key in assetsIds) {
-  //   if (key.startsWith('assetsIds')) {
-  //     assetIdsArray.push(assetsIds[key].assetId);
-  //   }
-  // }  
-
   const assetIdsArray = assetIds?.split(',').map(assetId => assetId.trim());
 
   const elasticSearch = async () => {
@@ -75,7 +67,6 @@ function MpCustomSearch ({
       decryptedData = decryptData(encryptedData);
       searchParams = new URLSearchParams(decryptedData)
     }
-
 
     const query =  searchParams.get('query') || "";
     const isAsc = searchParams.get('isAsc') || initialIsAsc;
@@ -142,7 +133,7 @@ function MpCustomSearch ({
           setAclValue(response); 
         })
         .catch((error) => {
-          console.error("Greška prilikom izvršavanja aclCheck:", error);
+          console.error("Error executing aclCheck:", error);
           setAclValue(false);
         });
     } else setAclValue(true);

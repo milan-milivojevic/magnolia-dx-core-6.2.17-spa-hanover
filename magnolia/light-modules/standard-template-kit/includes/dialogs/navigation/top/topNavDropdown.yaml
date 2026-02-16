@@ -11,7 +11,3 @@ properties:
     label: Level 2 Gap
     placeholder: 10% or 20px
     $type: textField
-  # openOnClick: 
-  #   label: Open Dropdown On Click
-  #   buttonLabel: yes/no
-  #   $type: checkBoxField

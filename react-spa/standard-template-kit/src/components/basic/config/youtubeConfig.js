@@ -33,7 +33,7 @@ function YoutubeConfig ({
   };
 
   return (
-    <div className='youtubeEditMode configComponents'> {/* this div is workaround for editMode problem. */}
+    <div className='youtubeEditMode configComponents'> {}
       <div className="copyStyleName">
         <h3>Style Name: <span className="copyAccText" ref={myRef}>{styleName ? styleName : 0}</span></h3>
         <button onClick={handleClick}>

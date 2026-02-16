@@ -74,7 +74,7 @@ function StaticSearch ({globalQuery}) {
     const doc = parser.parseFromString(htmlString, 'text/html');
     
     function highlightTextNode(node) {
-      if (node.nodeType === 3) { // TEXT_NODE
+      if (node.nodeType === 3) {
         const matches = [...node.textContent.matchAll(new RegExp(`(${searchTerm})`, 'gi'))];
         if (matches.length > 0) {
           const spanWrapper = document.createElement('span');
@@ -160,7 +160,6 @@ function StaticSearch ({globalQuery}) {
   const filteredData = orderedData.filter(url => !url.path.includes("/Config-Pages/") && !url.path.includes("/Components-Library/"));
   console.log("filteredData");
   console.log(filteredData);
-
 
   const resultArr = [];
 

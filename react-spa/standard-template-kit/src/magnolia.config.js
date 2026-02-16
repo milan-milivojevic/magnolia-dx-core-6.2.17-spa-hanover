@@ -46,7 +46,6 @@ import Divider from "./components/basic/divider";
 import Html from "./components/basic/html";
 import iFrame from "./components/basic/iframe";
 import Image from "./components/basic/image";
-import ImageTest from "./components/basic/imageTest";
 import Link from "./components/basic/link";
 import SeparationBlock from "./components/basic/separationBlock";
 import Spacer from "./components/basic/spacer";
@@ -221,7 +220,6 @@ const config = {
         "standard-template-kit:components/basic/html": Html,
         "standard-template-kit:components/basic/iframe": iFrame,
         "standard-template-kit:components/basic/image": Image,
-        "standard-template-kit:components/basic/imageTest": ImageTest,
         "standard-template-kit:components/grouping/imageGallery": ImageGallery,
         "standard-template-kit:components/advanced/imageTeaser": ImageTeaser,
         "standard-template-kit:components/grouping/imageTeaserList": ImageTeaserList,

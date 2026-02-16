@@ -15,9 +15,7 @@ function findNodeById(node, targetId) {
   }
 
   if (node['@nodes'] && Array.isArray(node['@nodes'])) {
-    // @nodes je polje stringova koji su imena children čvorova
     for (const childName of node['@nodes']) {
-      // Svaki child je node[childName]
       const found = findNodeById(node[childName], targetId);
       if (found) {
         return found;
@@ -189,20 +187,16 @@ function CardTeaser ({
       });
   }, [linkStyleName, linkNoStyles, configProps?.linkStyleName, apiBase, restPath, nodeName]);
 
-// ---------------- LOGIKA ZA "page" MOŽE BITI UUID ILI PATH ----------------
-  // Čuvat ćemo konačni path koji želimo koristiti, npr. /Home/... 
   const [resolvedPath, setResolvedPath] = useState(page);
 
   useEffect(() => {
     if (linkType !== 'page') return;
 
-    // Ako page nije UUID, znači već je path => postavi ga takvog
     if (!isUuid(page)) {
       setResolvedPath(page);
       return;
     }
 
-    // Ako je UUID, fetch-amo navigaciju i pronađemo ga
     async function resolveUuidToPath() {
       try {
         const url = apiBase + process.env.REACT_APP_MGNL_API_NAV + process.env.REACT_APP_MGNL_APP_BASE;
@@ -213,11 +207,10 @@ function CardTeaser ({
         if (foundNode && foundNode['@path']) {
           setResolvedPath(foundNode['@path']);
         } else {
-          // Ako nije pronađen, fallback
           setResolvedPath(page);
         }
       } catch (e) {
-        console.error('Greška prilikom dohvata navigacije ili kod traženja čvora:', e);
+        console.error('Error fetching navigation or searching for node:', e);
         setResolvedPath(page);
       }
     }
@@ -229,7 +222,7 @@ function CardTeaser ({
   const href = linkType === "page"
     ? (getRouterBasename() + resolvedPath)
         .replace("//", "/")
-        .replace("Home/Home", "Home")   // stara zamjena
+        .replace("Home/Home", "Home")
     : linkType === "external"
       ? external
       : downloadLink;
