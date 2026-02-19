@@ -1,0 +1,305 @@
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 15px 0 15px;
+  /* -ms-box-shadow: 15px 5px 30px 1px rgba(0, 0, 0, 0.31);
+  -o-box-shadow: 15px 5px 30px 1px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 15px 5px 30px 1px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 15px 5px 30px 1px rgba(0, 0, 0, 0.31);
+  box-shadow: 15px 5px 30px 1px rgba(0, 0, 0, 0.31);   */
+}
+
+.editMode header {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+header .logo {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 40px 0;
+}
+
+header .logo a {
+  display: flex;
+  width: 600px;
+}
+
+.rightHeader {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+.rightHeader .userLinks {
+  display: flex;
+}
+
+.rightHeader .userLinks a {
+  display: flex;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #ecebeb;
+}
+
+.rightHeader .userLinks a:hover {
+  background-color: #777;
+}
+
+.rightHeader .headerSearch {
+  align-self: center;
+  height: 38px;
+}
+
+.rightHeader .logout div {
+  font-size: 22px;
+  padding: 8px 9px 8px 9px;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.rightHeader .logout div a {
+  color: #fff;
+}
+
+.rightHeader .logout div a:hover {
+  color: #000;
+}
+
+.headerSearch input.searchInput {
+  padding: 0px 10px;
+  width: 140px;
+  background-color: #fff;
+  border: 1px solid #cbcbcb;
+  color: #333;
+  font-family: 'MuseoSans300';
+}
+
+input.searchInput[type="text"] {
+  font-size: 14px;
+}
+
+input.searchInput::placeholder {
+  color: #cbcbcb;
+  font-size: 14px;
+}
+
+input.searchInput:focus {
+  border-color: #6a9130;
+  outline: 0;
+}
+
+.headerSearch button {
+  background-color: #6a9130;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 8px;
+  width: 38px;
+  font-size: 20px;
+}
+
+.headerSearch button:hover {
+  color: #000;
+}
+
+.topNav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.editMode .topNav {
+  position: relative;
+  top: 0 !important;
+}
+
+.topNav .menus {
+  display: flex;
+  list-style: none;
+}
+
+/* Cheat */
+
+li.level-0:has(> ul.dropdown.level-1.show) > button a {
+  background-color: #777;
+}
+
+.pageContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 285px);
+}
+
+.editMode .pageContainer {
+  top: 0 !important;
+}
+
+.configComponentsPage {
+  max-width: 1170px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 15px;
+  margin: 0 auto;
+}
+
+
+.mpSearchPage,
+.w2pSearchPage {
+  width: 100%;
+}
+
+div.linkComponent {
+  max-width: 100%;
+  min-width: unset;
+}
+
+.corporateIdentityColors {
+  max-width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 60px 15px 30px 15px;
+}
+
+footer .links {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+footer .links > div {
+  border-top: 1px solid #000;
+  padding: 20px 0px;
+  width: 25%;
+}
+
+footer .links a {
+  color: #005580;
+  font-family: MuseoSans500;
+  font-size: 17px;
+}
+
+footer .footer {
+  color: #333;
+  font-family: MuseoSans500;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Mozila Firefox Fixes */
+h1 {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .description * {
+  color: inherit;
+} */
+
+
+.leftNavPage {
+  width: 1300px;
+}
+
+.leftNavPage .leftHandNav {
+  height: calc(100vh - 90px);
+  bottom: 0px;
+}
+
+.leftNavPage .rightMainContent {
+  min-height: calc(100vh - 90px);
+  position: relative;
+  left: 220px;
+}
+
+.leftHandNav ul.menus {
+  max-height: 100%;
+}
+
+.leftHandNav .menu-item.level-1.active .dropdown {
+  display: block;
+}
+
+.leftHandNav .menu-item.level-0 > button {
+  display: none;
+}
+
+body {
+  color: #414141;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+strong {
+  font-weight: normal;
+  font-family: 'MuseoSans700';
+}
+
+table td {
+  padding: 10px;
+  font-family: 'MuseoSans500';
+}
+
+table td strong {
+  font-family: 'MuseoSans900';
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.breadcrumb {
+  max-width: 1170px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 15px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.breadcrumb a {
+  color: #003150;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  font-family: 'MuseoSans500';
+}
+
+.breadcrumb a:hover {
+  color: #235e95;
+}
+
+.breadcrumb svg {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #003150;
+}
+
+.breadcrumb .lastItem {
+  color: #df7a00;
+  font-family: MuseoSans500;
+  font-size: 14px;
+  line-height: 18px;
+}
